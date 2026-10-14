@@ -1,0 +1,33 @@
+{
+	"scheme": {
+		"type": "string",
+		"enum": [ "light", "muted", "dark" ],
+		"default": "light"
+	},
+	"titleColor": {
+		"type": "string",
+		"default": ""
+	},
+	"textColor": {
+		"type": "string",
+		"default": ""
+	},
+	"accentColor": {
+		"type": "string",
+		"default": ""
+	},
+	"spaceTop": {
+		"type": "string",
+		"enum": [ "none", "sm", "md", "lg" ],
+		"default": "md"
+	},
+	"spaceBottom": {
+		"type": "string",
+		"enum": [ "none", "sm", "md", "lg" ],
+		"default": "md"
+	},
+	"animate": {
+		"type": "boolean",
+		"default": true
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"name": "ci-theme",
+	"version": "1.0.0",
+	"private": true,
+	"description": "Block theme for professional services firms: one native block per section of the design.",
+	"author": "Nicolás Pereyra",
+	"license": "GPL-2.0-or-later",
+	"scripts": {
+		"build": "wp-scripts build --webpack-copy-php",
+		"start": "wp-scripts start --webpack-copy-php"
+	},
+	"dependencies": {
+		"gsap": "3.15.0",
+		"maplibre-gl": "6.13.0"
+	},
+	"devDependencies": {
+		"@wordpress/icons": "16.0.0",
+		"@wordpress/scripts": "36.1.0"
+	}
+}

@@ -73,12 +73,7 @@ if ( ! class_exists( 'CI_Theme_Setup' ) ) {
 				'<link rel="preload" href="%s" as="font" type="font/woff2" crossorigin>' . "\n",
 				esc_url( CI_THEME_URI . 'assets/fonts/geist/Geist-Variable.woff2' )
 			);
-			$color = '';
-			foreach ( (array) wp_get_global_settings( array( 'color', 'palette', 'theme' ) ) as $entry ) {
-				if ( isset( $entry['slug'], $entry['color'] ) && 'navy' === $entry['slug'] ) {
-					$color = $entry['color'];
-				}
-			}
+			$color = CI_Theme_Section::hex( 'navy' );
 			if ( $color ) {
 				printf( '<meta name="theme-color" content="%s">' . "\n", esc_attr( $color ) );
 			}

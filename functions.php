@@ -27,4 +27,7 @@ if ( ! function_exists( 'ci_theme_asset_version' ) ) {
 }
 
 require_once CI_THEME_DIR . 'inc/setup/setup.php';
+require_once CI_THEME_DIR . 'inc/section/section.php';
 require_once CI_THEME_DIR . 'inc/graphics/graphics.php';
+require_once CI_THEME_DIR . 'inc/motion/motion.php';
+require_once CI_THEME_DIR . 'inc/blocks/blocks.php';

@@ -1,0 +1,130 @@
+/* Editor library: preview, repeater and panels. Loaded in the editor only. */
+
+.ci-editor-stack {
+	display: grid;
+	gap: 16px;
+}
+
+.ci-editor-help {
+	margin: 0;
+	font-size: 12px;
+	color: #757575;
+}
+
+/* Preview: while it updates, the previous version is dimmed. */
+.ci-editor-preview-loading {
+	opacity: 0.6;
+	transition: opacity 0.2s;
+}
+
+.ci-editor-preview-status {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 120px;
+	padding: 24px;
+	border: 1px dashed #c3c7d3;
+	border-radius: 8px;
+	background: #f8fafc;
+	color: #475569;
+	font-size: 14px;
+	text-align: center;
+}
+
+/* Repeater */
+.ci-repeater {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 12px;
+}
+
+.ci-repeater-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 8px;
+}
+
+.ci-repeater-row {
+	margin: 0;
+	border: 1px solid #e2e8f0;
+	border-radius: 6px;
+	background: #fff;
+}
+
+.ci-repeater-row.is-open {
+	border-color: #94a3b8;
+}
+
+.ci-repeater-head {
+	padding: 2px 4px;
+}
+
+/* Long titles are truncated with "…" instead of widening the panel. */
+.ci-repeater-head > *,
+.ci-repeater-toggle.components-button {
+	min-width: 0;
+}
+
+.ci-repeater-toggle.components-button {
+	width: 100%;
+	justify-content: flex-start;
+	gap: 8px;
+	text-align: left;
+}
+
+.ci-repeater-num {
+	flex: none;
+	font-size: 11px;
+	font-variant-numeric: tabular-nums;
+	color: #64748b;
+}
+
+.ci-repeater-title {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.ci-repeater-body {
+	padding: 12px;
+	border-top: 1px solid #e2e8f0;
+	background: #f8fafc;
+	border-radius: 0 0 6px 6px;
+}
+
+/* Image picker */
+.ci-image-field-preview {
+	display: block;
+	width: 100%;
+	padding: 0;
+	border: 1px solid #e2e8f0;
+	border-radius: 6px;
+	background: #f8fafc;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.ci-image-field-preview img {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-height: 180px;
+	object-fit: cover;
+}
+
+/* Group of fields inside a panel (e.g. each field of the contact form). */
+.ci-editor-group {
+	padding-bottom: 16px;
+	border-bottom: 1px solid #e2e8f0;
+}
+
+/* The WordPress link field comes with a fixed width of 300 px. */
+.ci-editor-stack .block-editor-url-input,
+.ci-editor-stack .block-editor-url-input input[type="text"] {
+	width: 100%;
+	min-width: 0;
+	max-width: 100%;
+}

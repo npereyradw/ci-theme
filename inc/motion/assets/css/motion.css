@@ -1,0 +1,103 @@
+/*
+ * Animations (src/motion): while GSAP prepares the page, animated elements stay hidden to avoid
+ * a flash. If JavaScript fails, the <head> script removes .ci-motion after 1.2 s and everything
+ * shows normally. Sections with animations turned off ([data-anim-off]) are left untouched.
+ */
+html.ci-motion:not(.ci-motion-ready) :is(
+	.ci-h1,
+	.ci-h2,
+	.ci-eyebrow,
+	.ci-lead,
+	.ci-text,
+	.ci-link,
+	.ci-btn-row,
+	.ci-breadcrumbs,
+	.ci-cards > *,
+	.ci-arc,
+	[data-anim],
+	[data-anim-stagger] > *,
+	[data-cover],
+	[data-area-icon]
+):not([data-anim-css], [data-anim-css] *, [data-anim-off] *) {
+	visibility: hidden;
+}
+
+/* CSS entrance of the main above-the-fold content ([data-anim-css]): it starts with the first
+   paint, without waiting for JavaScript, so the LCP stays fast. Same motion, duration and easing
+   as the script (expo.out / expo.inOut). */
+@keyframes ci-css-rise {
+
+	from {
+		opacity: 0;
+		transform: translateY(22px);
+	}
+}
+
+/* Starts slightly lower than the block height so accents and dots do not peek out. */
+@keyframes ci-css-mask {
+
+	from {
+		transform: translateY(calc(100% + 0.5em));
+	}
+}
+
+@keyframes ci-css-cover {
+
+	from {
+		clip-path: inset(100% 0% 0% 0% round 8px);
+	}
+
+	to {
+		clip-path: inset(0% 0% 0% 0% round 8px);
+	}
+}
+
+@keyframes ci-css-zoom {
+
+	from {
+		transform: scale(1.18);
+	}
+}
+
+/* Entrance order (same stagger as the script: 0.09 s between elements). */
+[data-anim-step="1"] {
+	--ci-anim-delay: 0.09s;
+}
+
+[data-anim-step="2"] {
+	--ci-anim-delay: 0.18s;
+}
+
+[data-anim-step="3"] {
+	--ci-anim-delay: 0.27s;
+}
+
+html.ci-motion :not([data-anim-off] *)[data-anim-css="rise"] {
+	animation: ci-css-rise 0.9s var(--ci-ease-out) var(--ci-anim-delay, 0s) both;
+}
+
+/* Title: the text rises behind a mask (the title clips; the span moves). */
+html.ci-motion :not([data-anim-off] *)[data-anim-css="mask"] {
+	overflow: clip;
+	padding-bottom: 0.08em;
+	margin-bottom: -0.08em;
+}
+
+html.ci-motion :not([data-anim-off] *)[data-anim-css="mask"] > span {
+	display: block;
+	animation: ci-css-mask 1.2s var(--ci-ease-out) var(--ci-anim-delay, 0s) both;
+}
+
+html.ci-motion :not([data-anim-off] *)[data-anim-css="cover"] {
+	animation: ci-css-cover 1.1s var(--ci-ease-in-out) both;
+}
+
+html.ci-motion :not([data-anim-off] *)[data-anim-css="cover"] img {
+	animation: ci-css-zoom 1.6s var(--ci-ease-out) 0.15s both;
+}
+
+/* Title lines (SplitText): the mask must not clip accents or descenders. */
+.ci-split-line {
+	padding-bottom: 0.08em;
+	margin-bottom: -0.08em;
+}
