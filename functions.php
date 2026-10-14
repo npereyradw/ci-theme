@@ -34,4 +34,5 @@ require_once CI_THEME_DIR . 'inc/breadcrumbs/breadcrumbs.php';
 require_once CI_THEME_DIR . 'inc/routes/routes.php';
 require_once CI_THEME_DIR . 'inc/forms/forms.php';
 require_once CI_THEME_DIR . 'inc/motion/motion.php';
+require_once CI_THEME_DIR . 'inc/privacy/privacy.php';
 require_once CI_THEME_DIR . 'inc/blocks/blocks.php';
