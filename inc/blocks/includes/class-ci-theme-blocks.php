@@ -211,6 +211,8 @@ if ( ! class_exists( 'CI_Theme_Blocks' ) ) {
 				case 'wp_block':
 					return array_merge( $sections, self::text_blocks() );
 				case 'post':
+				case CI_Theme_Content::SERVICE:
+				case CI_Theme_Content::PROJECT:
 					return self::text_blocks();
 				default:
 					return $allowed;

@@ -1,0 +1,105 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/site-footer",
+	"version": "0.1.0",
+	"title": "Site footer",
+	"category": "ci-template",
+	"icon": "align-pull-right",
+	"description": "Footer with the logo, site links, services, contact details, institutions and the legal notice. Services, contact details, social profiles and institutions are loaded automatically.",
+	"keywords": [
+		"footer",
+		"contact",
+		"institutions"
+	],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"about": {
+			"type": "string",
+			"default": "A short description of the firm and what it does."
+		},
+		"logoDark": {
+			"type": "integer",
+			"default": 0
+		},
+		"siteTitle": {
+			"type": "string",
+			"default": "Site"
+		},
+		"siteLinks": {
+			"type": "array",
+			"default": [
+				{
+					"label": "Home",
+					"url": "/"
+				},
+				{
+					"label": "About",
+					"url": "/about/"
+				},
+				{
+					"label": "Services",
+					"url": "/services/"
+				},
+				{
+					"label": "Projects",
+					"url": "/projects/"
+				},
+				{
+					"label": "News",
+					"url": "/news/"
+				},
+				{
+					"label": "Contact",
+					"url": "/contact/"
+				}
+			]
+		},
+		"showServices": {
+			"type": "boolean",
+			"default": true
+		},
+		"servicesTitle": {
+			"type": "string",
+			"default": "Services"
+		},
+		"contactTitle": {
+			"type": "string",
+			"default": "Contact"
+		},
+		"showInstitutions": {
+			"type": "boolean",
+			"default": true
+		},
+		"institutionsLabel": {
+			"type": "string",
+			"default": "Registered with"
+		},
+		"legal": {
+			"type": "string",
+			"default": "© {year} {site}"
+		},
+		"privacyLabel": {
+			"type": "string",
+			"default": "Privacy and cookie policy"
+		},
+		"privacyUrl": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"html": false,
+		"multiple": false,
+		"reusable": false
+	},
+	"example": {
+		"attributes": {}
+	},
+	"editorScript": "file:./index.js",
+	"style": [
+		"file:./style-index.css",
+		"ci-theme-institutions"
+	],
+	"render": "file:./render.php"
+}

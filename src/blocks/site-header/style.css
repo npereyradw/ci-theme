@@ -1,0 +1,925 @@
+/* ci/site-header — site header. */
+
+/* Header: fixed floating bar + "Menu" pill + full-screen menu. */
+
+.ci-header {
+	position: fixed;
+	z-index: 50;
+	top: 0;
+	left: 0;
+	right: 0;
+	color: var(--ci-navy);
+	pointer-events: none;
+}
+
+.ci-header a {
+	text-decoration: none;
+}
+
+/* ── Bar ────────────────────────────────────── */
+.ci-header-bar {
+	position: relative;
+	z-index: 2;
+
+	/* The shadow follows the clipped shape (bar or pill). */
+	filter: drop-shadow(0 12px 22px rgba(28, 37, 69, 0.22));
+	width: min(1240px, calc(100% - 2 * var(--ci-gutter)));
+	height: var(--ci-header-h);
+	margin: 0 auto;
+}
+
+.ci-header-bar-bg {
+	position: absolute;
+	inset: 0;
+	background: #fff;
+	border: 1px solid var(--ci-line);
+	border-top: 0;
+	border-radius: 0 0 16px 16px;
+	pointer-events: auto;
+	transition: opacity 0.3s;
+}
+
+.ci-header-bar-items {
+	position: relative;
+	height: 100%;
+	padding: 0 20px;
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	align-items: center;
+	transition: opacity 0.25s, visibility 0.25s;
+}
+
+.ci-header-bar-items > * {
+	pointer-events: auto;
+}
+
+/* Invisible bridge between the bar and the submenu: moving the pointer down to the services
+	 does not cross an "empty" gap that would close the submenu. */
+.ci-header[data-sub] .ci-header-bar::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100%;
+	height: 14px;
+	pointer-events: auto;
+}
+
+.ci-header[data-open] .ci-header-bar-items {
+	opacity: 0;
+	visibility: hidden;
+	transition-duration: 0.12s;
+}
+
+/* Navigation (desktop) */
+.ci-header-nav {
+	justify-self: start;
+	display: flex;
+	align-items: center;
+}
+
+.ci-header-nav-group {
+	display: flex;
+	align-items: center;
+}
+
+.ci-header-nav-link {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	height: var(--ci-header-h);
+	padding: 0 10px;
+	font-size: 15px;
+	font-weight: 500;
+	color: var(--ci-navy);
+}
+
+.ci-header-nav-link:hover,
+.ci-header-nav-link:focus-visible {
+	color: var(--ci-navy);
+}
+
+.ci-header-nav-group .ci-header-nav-link {
+	padding-right: 4px;
+}
+
+.ci-header-nav-link-active {
+	font-weight: 600;
+}
+
+/* Marker: a thin line drawn under the text that ends in a yellow dot. Always visible on the
+	 current page; on the others, on hover. */
+.ci-header-mark {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	bottom: 20px;
+	height: 6px;
+	pointer-events: none;
+}
+
+.ci-header-nav-group .ci-header-mark {
+	right: 4px;
+}
+
+.ci-header-mark-line {
+	position: absolute;
+	left: 0;
+	right: 9px;
+	top: 2px;
+	height: 2px;
+	border-radius: 1px;
+	background: var(--ci-navy);
+	transform: scaleX(0);
+	transform-origin: 0 50%;
+	transition: transform 0.55s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.ci-header-mark-dot {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: var(--ci-yellow);
+	transform: scale(0);
+	transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 0.3s;
+}
+
+.ci-header-nav-link:hover .ci-header-mark-line,
+.ci-header-nav-link:focus-visible .ci-header-mark-line,
+.ci-header-nav-link-active .ci-header-mark-line {
+	transform: scaleX(1);
+}
+
+.ci-header-nav-link:hover .ci-header-mark-dot,
+.ci-header-nav-link:focus-visible .ci-header-mark-dot,
+.ci-header-nav-link-active .ci-header-mark-dot {
+	transform: scale(1);
+}
+
+/* On pointer leave, the dot goes first and the line retracts without delay. */
+.ci-header-nav-link:not(:hover, :focus-visible, .ci-header-nav-link-active)
+.ci-header-mark-dot {
+	transition-delay: 0s;
+}
+
+.ci-header-nav-toggle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 44px;
+	padding: 0 10px 0 0;
+	border: 0;
+	background: transparent;
+	color: var(--ci-navy);
+	cursor: pointer;
+}
+
+.ci-header-nav-toggle svg {
+	transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ci-header-nav-toggle-open svg {
+	transform: rotate(180deg);
+}
+
+/* Centered logo. Its boxes are flex (not block) so they measure exactly as the logo (40 px) and
+	 land on a whole pixel: at half-pixel positions the curves look jagged. */
+.ci-header-logo {
+	justify-self: center;
+	display: flex;
+}
+
+.ci-header-logo-full {
+	display: flex;
+}
+
+.ci-header-logo-compact {
+	display: none;
+}
+
+/* Main button on the right */
+.ci-header-cta {
+	justify-self: end;
+	display: inline-flex;
+	align-items: center;
+	height: 44px;
+	padding: 0 22px;
+	padding-bottom: var(--ci-optical);
+	border-radius: 999px;
+	background: var(--ci-red);
+	color: #fff;
+	font-weight: 600;
+	font-size: 15px;
+	transition:
+		background 0.2s,
+		opacity 0.3s,
+		visibility 0.3s,
+		transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ci-header-cta:hover,
+.ci-header-cta:focus-visible,
+.ci-header-cta:active {
+	background: var(--ci-red-dark);
+	color: #fff;
+}
+
+.ci-header-cta:active {
+	transform: scale(0.97);
+}
+
+.ci-header-cta-short {
+	display: none;
+}
+
+/* ── Menu button (pill) ────────────────────── */
+.ci-header-toggle {
+	position: absolute;
+	top: 50%;
+	right: 12px;
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	height: 48px;
+	padding: 0 20px 0 16px;
+	padding-bottom: var(--ci-optical);
+	border: 0;
+	border-radius: 999px;
+	overflow: clip;
+	background: transparent;
+	color: var(--ci-navy);
+	font: inherit;
+	font-weight: 600;
+	font-size: 15px;
+	cursor: pointer;
+	pointer-events: none;
+	transform: translateY(-50%);
+	-webkit-tap-highlight-color: transparent;
+}
+
+.ci-header[data-scrolled] .ci-header-toggle,
+.ci-header[data-open] .ci-header-toggle {
+	pointer-events: auto;
+}
+
+/* Desktop: the pill (and its text) does not exist until the bar collapses.
+	 Hidden from the first paint, before JavaScript loads. */
+@media (min-width: 1180px) {
+
+	.ci-header:not([data-scrolled]):not([data-open]) .ci-header-toggle {
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+
+/* Both words share the same grid cell, so the button keeps its width. */
+.ci-header-toggle-label {
+	display: inline-grid;
+}
+
+.ci-header-toggle-word {
+	grid-area: 1 / 1;
+	text-align: center;
+}
+
+.ci-header-toggle-word-close {
+	visibility: hidden;
+}
+
+/* Pill fills (blue and white) that grow from the center when the menu opens. */
+.ci-header-toggle-fill {
+	position: absolute;
+	inset: 0;
+	border-radius: inherit;
+	background: var(--ci-navy);
+	clip-path: circle(0% at 50% 50%);
+	pointer-events: none;
+}
+
+.ci-header-toggle-fill-white {
+	background: #fff;
+}
+
+/* Text and icon always above the fills (with order: -1 on mobile, the flex paint order would
+	 leave them below). */
+.ci-header-toggle-icon,
+.ci-header-toggle-label {
+	position: relative;
+	z-index: 1;
+}
+
+.ci-header-toggle-icon {
+	position: relative;
+	width: 20px;
+	height: 14px;
+	margin-top: var(--ci-optical);
+}
+
+.ci-header-toggle-line,
+.ci-header-toggle-accent {
+	position: absolute;
+	left: 0;
+	height: 2px;
+	border-radius: 2px;
+	background: currentcolor;
+	transition: transform 0.6s cubic-bezier(0.7, 0, 0.2, 1), opacity 0.3s, background 0.3s;
+}
+
+.ci-header-toggle-line {
+	width: 20px;
+}
+
+.ci-header-toggle-line:nth-child(1) {
+	top: 0;
+}
+
+.ci-header-toggle-line:nth-child(2) {
+	top: 6px;
+}
+
+.ci-header-toggle-accent {
+	top: 12px;
+	left: 8px;
+	width: 12px;
+	background: var(--ci-red-bright);
+}
+
+.ci-header[data-open] .ci-header-toggle-line,
+.ci-header[data-open] .ci-header-toggle-accent {
+	transition-delay: 0.45s;
+}
+
+.ci-header[data-open] .ci-header-toggle-line:nth-child(1) {
+	transform: translateY(6px) rotate(45deg);
+}
+
+.ci-header[data-open] .ci-header-toggle-line:nth-child(2) {
+	transform: rotate(-45deg);
+}
+
+.ci-header[data-open] .ci-header-toggle-accent {
+	opacity: 0;
+	transform: translateX(8px) scaleX(0);
+}
+
+/* ── Services submenu (desktop) ────────────── */
+.ci-header-sub {
+	position: absolute;
+	top: calc(100% + 10px);
+	left: 0;
+	right: 0;
+	pointer-events: auto;
+	background: #fff;
+	border-radius: 16px;
+	box-shadow: 0 24px 48px -24px rgba(28, 37, 69, 0.45);
+}
+
+.ci-header-sub[hidden] {
+	display: none;
+}
+
+.ci-header-sub-inner {
+	padding: 24px 28px 28px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 320px;
+	gap: 4px 32px;
+}
+
+.ci-header-sub-link {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding: 14px 12px;
+	border-radius: 8px;
+	color: var(--ci-navy);
+	border-bottom: 1px solid #eceef2;
+}
+
+.ci-header-sub-link:hover,
+.ci-header-sub-link:focus-visible {
+	background: #f2f3f7;
+	color: var(--ci-navy);
+}
+
+.ci-header-sub-num {
+	font-size: 12px;
+	color: var(--ci-muted);
+}
+
+.ci-header-sub-title {
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.ci-header-sub-all {
+	color: var(--ci-red);
+	font-weight: 600;
+	font-size: 15px;
+	border-bottom: 0;
+}
+
+.ci-header-badge {
+	margin-left: auto;
+	font-size: 10px;
+	letter-spacing: 0.01em;
+	color: var(--ci-navy);
+	background: var(--ci-yellow);
+	padding: 3px 7px;
+	border-radius: 999px;
+}
+
+.ci-header-sub-aside {
+	grid-column: 3;
+	grid-row: 1 / span 4;
+	position: relative;
+	overflow: clip;
+	background: var(--ci-navy);
+	color: #fff;
+	border-radius: 12px;
+	padding: 28px;
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.ci-header-sub-aside-arc {
+	position: absolute;
+	right: -40px;
+	bottom: -40px;
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	border: 22px solid rgba(255, 255, 255, 0.08);
+	border-right-color: transparent;
+}
+
+.ci-header-sub-aside-dot {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background: var(--ci-yellow);
+}
+
+.ci-header-sub-aside-title {
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 1.25;
+}
+
+.ci-header-sub-aside-text {
+	font-size: 15px;
+	line-height: 1.55;
+	color: var(--ci-ink-on-dark);
+}
+
+.ci-header-sub-aside-link {
+	align-self: flex-start;
+	margin-top: 6px;
+	color: var(--ci-yellow);
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.ci-header-sub-aside-link:hover,
+.ci-header-sub-aside-link:focus-visible {
+	color: #fff;
+}
+
+/* ── Full-screen menu ───────────────────────── */
+.ci-header-menu {
+	position: fixed;
+	z-index: 1;
+	inset: 0;
+	pointer-events: auto;
+	overflow-x: clip;
+	overflow-y: auto;
+	overscroll-behavior: contain;
+	background: var(--ci-navy);
+	color: #fff;
+	padding: calc(var(--ci-header-h) + 24px) var(--ci-gutter) 48px;
+	isolation: isolate;
+}
+
+.ci-header-menu[hidden] {
+	display: none;
+}
+
+.ci-header-menu:focus {
+	outline: none;
+}
+
+.ci-header-menu-logo {
+	position: absolute;
+	top: calc((var(--ci-header-h) - 34px) / 2);
+	left: max(var(--ci-gutter), calc((100% - 1240px) / 2 + 20px));
+	display: flex;
+}
+
+/* Background illustration (arc, disc, bar) drawn when the menu opens */
+.ci-header-menu-art {
+	position: absolute;
+	z-index: -1;
+	right: -90px;
+	bottom: -60px;
+	width: min(46vw, 520px);
+	height: min(46vw, 520px);
+	overflow: visible;
+	pointer-events: none;
+	opacity: 0.9;
+}
+
+.ci-header-menu-grid {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+	gap: 48px 72px;
+	align-items: start;
+}
+
+.ci-header-menu-nav {
+	display: flex;
+	flex-direction: column;
+}
+
+.ci-header-menu-item {
+	position: relative;
+	padding: 6px 0;
+}
+
+.ci-header-menu-link {
+	display: flex;
+	align-items: center;
+	min-height: 60px;
+	font-weight: 500;
+	font-size: clamp(36px, 4.4vw, 60px);
+	line-height: 1.05;
+	letter-spacing: -0.03em;
+	color: #fff;
+}
+
+.ci-header-menu-link:hover,
+.ci-header-menu-link:focus-visible,
+.ci-header-menu-link-active {
+	color: var(--ci-yellow);
+}
+
+/* Mask so each word rises from below */
+.ci-header-menu-mask {
+	display: block;
+	overflow: clip;
+	padding-block: 0.06em;
+}
+
+.ci-header-menu-mask > span {
+	display: block;
+}
+
+/* Divider line drawn from left to right */
+.ci-header-menu-rule {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 1px;
+	background: rgba(255, 255, 255, 0.14);
+}
+
+.ci-header-menu-subs-inline {
+	display: none;
+}
+
+.ci-header-menu-side {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	padding-top: 12px;
+}
+
+.ci-header-menu-side-title {
+	margin: 0 0 6px;
+	font-size: 13px;
+	letter-spacing: 0.01em;
+	color: var(--ci-yellow);
+}
+
+.ci-header-menu-subs-side {
+	display: flex;
+	flex-direction: column;
+}
+
+.ci-header-menu-sub {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	min-height: 42px;
+	color: var(--ci-ink-on-dark);
+	font-size: 16px;
+}
+
+.ci-header-menu-sub:hover,
+.ci-header-menu-sub:focus-visible {
+	color: #fff;
+}
+
+.ci-header-menu-sub .ci-header-badge {
+	margin-left: 0;
+	padding: 2px 6px;
+}
+
+.ci-header-menu-sub-num {
+	font-size: 12px;
+	color: #8c94b3;
+}
+
+.ci-header-menu-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.ci-header-menu-primary,
+.ci-header-menu-ghost {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	height: 52px;
+	padding: 0 24px;
+	padding-bottom: var(--ci-optical);
+	border-radius: 999px;
+	color: #fff;
+	font-weight: 600;
+	font-size: 16px;
+	transition: background 0.2s, color 0.2s, transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ci-header-menu-primary {
+	background: var(--ci-red);
+}
+
+.ci-header-menu-primary:hover,
+.ci-header-menu-primary:focus-visible,
+.ci-header-menu-primary:active {
+	background: var(--ci-red-dark);
+	color: #fff;
+}
+
+.ci-header-menu-ghost {
+	border: 1.5px solid rgba(255, 255, 255, 0.6);
+}
+
+.ci-header-menu-ghost:hover,
+.ci-header-menu-ghost:focus-visible,
+.ci-header-menu-ghost:active {
+	background: #fff;
+	color: var(--ci-navy);
+}
+
+.ci-header-menu-primary:active,
+.ci-header-menu-ghost:active {
+	transform: scale(0.97);
+}
+
+.ci-header-whatsapp-dot {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #3ddc84;
+}
+
+.ci-header-menu-contact {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	font-size: 15px;
+	color: var(--ci-ink-on-dark);
+}
+
+.ci-header-menu-contact a {
+	color: #fff;
+	min-height: 32px;
+	display: flex;
+	align-items: center;
+}
+
+.ci-header-menu-meta {
+	font-size: 13px;
+	color: #b9bfd3;
+}
+
+/* ── Up to 1179px: compact bar (logo, call to action, burger) ── */
+@media (max-width: 1179px) {
+
+	.ci-header-bar-items {
+		display: flex;
+		gap: 8px;
+		padding: 0 68px 0 16px;
+	}
+
+	.ci-header-nav {
+		display: none;
+	}
+
+	.ci-header-logo {
+		margin-right: auto;
+	}
+
+	.ci-header-logo-full {
+		display: none;
+	}
+
+	.ci-header-logo-compact {
+		display: flex;
+	}
+
+	.ci-header-cta {
+		height: 40px;
+		padding: 0 16px;
+		padding-bottom: var(--ci-optical);
+		font-size: 14px;
+	}
+
+	.ci-header-cta-full {
+		display: none;
+	}
+
+	.ci-header-cta-short {
+		display: inline;
+	}
+
+	/* Phones: edge-to-edge white bar fixed at the top (it never turns into a pill). */
+	.ci-header-bar {
+		width: 100%;
+		filter: none;
+	}
+
+	.ci-header-bar-bg {
+		border: 0;
+		border-bottom: 1px solid var(--ci-line);
+		border-radius: 0;
+	}
+
+	.ci-header-bar-items {
+		padding: 0 64px 0 var(--ci-gutter);
+	}
+
+	/* With the menu open the bar stays visible (in blue): logo, and burger → X. */
+	.ci-header[data-open] .ci-header-bar-items {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.ci-header[data-open] .ci-header-cta {
+		opacity: 0;
+		visibility: hidden;
+		transform: translateX(12px) scale(0.92);
+	}
+
+	/* Burger without background or text */
+	.ci-header-toggle {
+		right: calc(var(--ci-gutter) - 12px);
+		height: 44px;
+		padding: 0 12px;
+		background: transparent;
+		color: var(--ci-navy);
+		pointer-events: auto;
+		transition: color 0.4s;
+	}
+
+	.ci-header-toggle-icon {
+		margin-top: 0;
+	}
+
+	.ci-header-toggle-label,
+	.ci-header-toggle-fill {
+		display: none;
+	}
+
+	.ci-header[data-open] .ci-header-toggle {
+		color: #fff;
+	}
+
+	.ci-header[data-open] .ci-header-toggle-line,
+	.ci-header[data-open] .ci-header-toggle-accent {
+		transition-delay: 0s;
+	}
+
+	.ci-header-menu-logo {
+		display: none;
+	}
+
+	.ci-header-sub {
+		display: none;
+	}
+
+	.ci-header-menu {
+		padding-top: calc(var(--ci-header-h) + 8px);
+	}
+
+	.ci-header-menu-grid {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 28px;
+	}
+
+	.ci-header-menu-item {
+		padding: 0;
+	}
+
+	.ci-header-menu-link {
+		font-size: 26px;
+		letter-spacing: -0.02em;
+	}
+
+	.ci-header-menu-subs-inline {
+		display: block;
+		padding-bottom: 12px;
+	}
+
+	.ci-header-menu-subs-side {
+		display: none;
+	}
+
+	.ci-header-menu-side {
+		gap: 24px;
+		padding-top: 0;
+	}
+
+	.ci-header-menu-actions {
+		flex-direction: column;
+	}
+
+	.ci-header-menu-art {
+		top: 96px;
+		bottom: auto;
+		right: -124px;
+		width: 260px;
+		height: 260px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	.ci-header[data-open] .ci-header-toggle {
+		color: var(--ci-navy);
+	}
+
+	.ci-header[data-open] .ci-header-toggle-fill-white {
+		clip-path: none;
+	}
+
+	.ci-header[data-open] .ci-header-bar-bg {
+		visibility: hidden;
+	}
+
+	.ci-header[data-open] [data-label-menu] {
+		visibility: hidden;
+	}
+
+	.ci-header[data-open] [data-label-close] {
+		visibility: visible;
+	}
+
+	.ci-header-toggle,
+	.ci-header-toggle-line,
+	.ci-header-toggle-accent,
+	.ci-header-mark-line,
+	.ci-header-mark-dot,
+	.ci-header-bar-items,
+	.ci-header-bar-bg {
+		transition: none;
+	}
+}
+
+@media (max-width: 1179px) and (prefers-reduced-motion: reduce) {
+
+	.ci-header[data-open] .ci-header-toggle {
+		color: #fff;
+	}
+
+	.ci-header[data-open] .ci-header-bar-bg {
+		visibility: visible;
+		background: var(--ci-navy);
+	}
+}
+
+/* Compact logo (phone bar): color or white version depending on whether the menu is open. */
+.ci-header-logo-dark {
+	display: none;
+}
+
+.ci-header[data-open] .ci-header-logo-compact .ci-header-logo-color {
+	display: none;
+}
+
+.ci-header[data-open] .ci-header-logo-compact .ci-header-logo-dark {
+	display: inline-flex;
+}
+
+.ci-header-logo-color {
+	display: inline-flex;
+}

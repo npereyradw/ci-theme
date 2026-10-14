@@ -1,0 +1,207 @@
+/* ci/site-footer — site footer. */
+
+.ci-footer {
+	container-type: inline-size;
+	position: relative;
+	overflow: clip;
+	background: var(--ci-navy);
+	color: var(--ci-ink-on-dark);
+	font-size: 15px;
+}
+
+.ci-footer a {
+	text-decoration: none;
+}
+
+.ci-footer-arc {
+	position: absolute;
+	right: -180px;
+	top: -180px;
+	width: 520px;
+	height: 520px;
+	border-radius: 50%;
+	border: 64px solid rgba(255, 255, 255, 0.04);
+	border-right-color: transparent;
+	pointer-events: none;
+}
+
+.ci-footer-inner {
+	position: relative;
+	max-width: var(--ci-max);
+	margin: 0 auto;
+	padding: clamp(56px, 7cqi, 88px) clamp(20px, 3.2cqi, 40px) 32px;
+	display: flex;
+	flex-direction: column;
+	gap: 56px;
+}
+
+.ci-footer-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
+	gap: 40px 48px;
+}
+
+.ci-footer-brand {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	min-width: 0;
+}
+
+.ci-footer-logo {
+	align-self: flex-start;
+	display: inline-flex;
+	border-radius: 4px;
+	transition: opacity 0.2s;
+}
+
+.ci-footer-logo:hover {
+	opacity: 0.85;
+}
+
+.ci-footer-about {
+	margin: 0;
+	line-height: 1.6;
+	text-wrap: pretty;
+}
+
+.ci-footer-social {
+	display: flex;
+	gap: 10px;
+}
+
+.ci-footer-social-link {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-weight: 500;
+	font-size: 15px;
+	transition: background 0.2s, color 0.2s;
+}
+
+.ci-footer-social-link:hover,
+.ci-footer-social-link:focus-visible {
+	background: #fff;
+	color: var(--ci-navy);
+}
+
+.ci-footer-col {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.ci-footer-heading {
+	font-size: 12px;
+	letter-spacing: 0.01em;
+	color: var(--ci-yellow);
+	margin-bottom: 4px;
+}
+
+.ci-footer-link {
+	color: #fff;
+
+	/* Touch target of 24 px or more without changing the visible spacing. */
+	padding-block: 4px;
+	margin-block: -4px;
+}
+
+.ci-footer-link:hover,
+.ci-footer-link:focus-visible {
+	color: var(--ci-yellow);
+}
+
+.ci-footer-email {
+	overflow-wrap: anywhere;
+}
+
+.ci-footer-whatsapp {
+	align-self: flex-start;
+	margin-top: 8px;
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	height: 44px;
+	padding: 0 20px;
+	padding-bottom: var(--ci-optical);
+	border-radius: 999px;
+	border: 1.5px solid rgba(255, 255, 255, 0.5);
+	color: #fff;
+	font-weight: 600;
+	transition: background 0.2s, color 0.2s;
+}
+
+.ci-footer-whatsapp:hover,
+.ci-footer-whatsapp:focus-visible {
+	background: #fff;
+	color: var(--ci-navy);
+}
+
+.ci-footer-whatsapp-dot {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #3ddc84;
+}
+
+.ci-footer-inst {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.ci-footer-inst-label {
+	font-size: 12px;
+	letter-spacing: 0.01em;
+	color: #b9bfd3;
+}
+
+.ci-footer-legal-link {
+	color: #b9bfd3;
+	padding-block: 4px;
+	margin-block: -4px;
+}
+
+.ci-footer-legal-link:hover,
+.ci-footer-legal-link:focus-visible {
+	color: var(--ci-yellow);
+}
+
+.ci-footer-legal {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 12px;
+	padding-top: 24px;
+	border-top: 1px solid rgba(255, 255, 255, 0.12);
+	font-size: 13px;
+	color: #b9bfd3;
+}
+
+/* Phones: site links and services side by side; brand and contact span the full width. */
+@container (max-width: 599px) {
+
+	.ci-footer-inner {
+		gap: 40px;
+	}
+
+	.ci-footer-grid {
+		grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+		gap: 36px 20px;
+	}
+
+	.ci-footer-brand,
+	.ci-footer-grid > :last-child {
+		grid-column: 1 / -1;
+	}
+
+	.ci-footer-col {
+		gap: 10px;
+		font-size: 14px;
+	}
+}

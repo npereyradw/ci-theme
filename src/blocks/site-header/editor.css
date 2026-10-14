@@ -1,0 +1,8 @@
+/* In the editor the header does not float: it stays in place inside the template part. */
+.ci-editor-preview .ci-header {
+	position: relative;
+}
+
+.ci-editor-preview .ci-skip-link {
+	display: none;
+}

@@ -1,0 +1,49 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/site-header",
+	"version": "0.1.0",
+	"title": "Site header",
+	"category": "ci-template",
+	"icon": "menu",
+	"description": "Floating bar with the menu, the services submenu and the full-screen menu. Services and contact details are loaded automatically.",
+	"keywords": [ "header", "menu", "navigation" ],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"items": {
+			"type": "array",
+			"default": [
+				{ "label": "About", "url": "/about/", "services": false },
+				{ "label": "Services", "url": "/services/", "services": true },
+				{ "label": "Projects", "url": "/projects/", "services": false },
+				{ "label": "News", "url": "/news/", "services": false },
+				{ "label": "Contact", "url": "/contact/", "services": false }
+			]
+		},
+		"logoDark": { "type": "integer", "default": 0 },
+		"ctaLabel": { "type": "string", "default": "Request a quote" },
+		"ctaShort": { "type": "string", "default": "Quote" },
+		"ctaUrl": { "type": "string", "default": "/contact/" },
+		"subAllLabel": { "type": "string", "default": "View all services →" },
+		"subAllUrl": { "type": "string", "default": "/services/" },
+		"asideTitle": { "type": "string", "default": "Not sure which service you need?" },
+		"asideText": { "type": "string", "default": "Tell us about your project and we will point you in the right direction." },
+		"asideLabel": { "type": "string", "default": "Ask us →" },
+		"asideUrl": { "type": "string", "default": "/contact/" },
+		"menuServicesTitle": { "type": "string", "default": "Services" }
+	},
+	"supports": {
+		"html": false,
+		"multiple": false,
+		"reusable": false,
+		"inserter": true
+	},
+	"example": {
+		"attributes": {}
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"render": "file:./render.php"
+}

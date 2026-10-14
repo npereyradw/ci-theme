@@ -1,0 +1,110 @@
+/* Institutions band (logos of professional bodies). */
+
+.ci-institutions {
+	--ci-inst-line: #c3c7d3;
+	--ci-inst-ink: #1c2545;
+	--ci-inst-muted: #5a6178;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+	gap: 12px;
+}
+
+.ci-institutions--dark {
+	--ci-inst-line: rgba(255, 255, 255, 0.22);
+	--ci-inst-ink: #fff;
+	--ci-inst-muted: #b9bfd3;
+}
+
+.ci-institutions-item {
+	min-height: 96px;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 6px;
+	text-align: center;
+	border: 1px dashed var(--ci-inst-line);
+	border-radius: 8px;
+	color: var(--ci-inst-ink);
+}
+
+.ci-institutions-label {
+	font-size: 10px;
+	letter-spacing: 0.01em;
+	color: var(--ci-inst-muted);
+}
+
+.ci-institutions-acronym {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 1.25;
+}
+
+.ci-institutions-name {
+	font-size: 13px;
+	color: var(--ci-inst-muted);
+}
+
+.ci-institutions-link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6px;
+	width: 100%;
+	color: inherit;
+	text-decoration: none;
+}
+
+.ci-institutions-link:hover .ci-institutions-acronym,
+.ci-institutions-link:focus-visible .ci-institutions-acronym {
+	text-decoration: underline;
+}
+
+.ci-institutions-logo {
+	max-width: 120px;
+	max-height: 40px;
+	width: auto;
+	height: auto;
+	object-fit: contain;
+}
+
+.ci-institutions--dark .ci-institutions-logo {
+	filter: brightness(0) invert(1);
+	opacity: 0.85;
+}
+
+/* Compact (footer on phones): one row of small logos; the text is kept for screen readers and
+	as a tooltip on hover. The footer is the reference container. */
+@container (max-width: 599px) {
+
+	.ci-institutions--compact {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		gap: 8px;
+	}
+
+	.ci-institutions--compact .ci-institutions-item {
+		min-height: 52px;
+		padding: 8px 6px;
+	}
+
+	.ci-institutions--compact .ci-institutions-logo {
+		width: auto !important;
+		height: auto !important;
+		max-width: 100%;
+		max-height: 26px;
+	}
+
+	.ci-institutions--compact
+	:is(.ci-institutions-acronym, .ci-institutions-name, .ci-institutions-label) {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip-path: inset(50%);
+		white-space: nowrap;
+	}
+}
