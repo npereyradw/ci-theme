@@ -569,6 +569,14 @@ function initHeader( header ) {
 		}
 	} );
 
+	// A menu link to an anchor on the same page closes the menu.
+	menu.addEventListener( 'click', ( e ) => {
+		const link = e.target.closest( 'a[href]' );
+		if ( link && link.hash && link.pathname === window.location.pathname ) {
+			setOpen( false );
+		}
+	} );
+
 	window.addEventListener( 'scroll', onScroll, { passive: true } );
 	window.addEventListener( 'resize', onResize );
 
