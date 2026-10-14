@@ -1,0 +1,645 @@
+/*
+ * Base shared by every page: tokens, a minimal reset and the ci-* primitives.
+ * Each section also loads its own CSS from its block.
+ */
+
+/* ── Tokens: short aliases of the theme.json presets ───────────── */
+:root {
+	--ci-navy: var(--wp--preset--color--navy);
+	--ci-navy-2: var(--wp--preset--color--navy-2);
+	--ci-navy-3: var(--wp--preset--color--navy-3);
+	--ci-yellow: var(--wp--preset--color--yellow);
+	--ci-red: var(--wp--preset--color--red);
+	--ci-red-dark: var(--wp--preset--color--red-dark);
+	--ci-red-bright: var(--wp--preset--color--red-bright);
+	--ci-muted: var(--wp--preset--color--muted);
+	--ci-line: var(--wp--preset--color--line);
+	--ci-bg: var(--wp--preset--color--bg);
+	--ci-ink-on-dark: var(--wp--preset--color--ink-on-dark);
+	--ci-ink-2: var(--wp--preset--color--ink-2);
+	--ci-max: var(--wp--custom--max);
+	--ci-gutter: var(--wp--custom--gutter);
+	--ci-section-y: var(--wp--preset--spacing--section-md);
+
+	/* Optical correction: lifts the button text ~1.5px (lowercase letters and descenders). */
+	--ci-optical: var(--wp--custom--optical);
+
+	/* Height of the floating (fixed) header bar. */
+	--ci-header-h: var(--wp--custom--header-h);
+	--ci-ease-out: var(--wp--custom--ease-out);
+	--ci-ease-in-out: var(--wp--custom--ease-in-out);
+}
+
+@media (max-width: 1179px) {
+
+	:root {
+		--ci-header-h: var(--wp--custom--header-h-mobile);
+	}
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Only plain text links (WordPress content); buttons and components define their own hover
+   so they do not inherit the red. */
+a:where(:not([class])):hover {
+	color: var(--ci-red);
+}
+
+:focus-visible {
+	outline: 2px solid var(--ci-red-bright);
+	outline-offset: 2px;
+}
+
+::placeholder {
+	color: #7a8197;
+}
+
+/* "hidden" always hides, even when the component sets its own display (filters, menu). */
+[hidden] {
+	display: none !important;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip-path: inset(50%);
+	white-space: nowrap;
+	border: 0;
+}
+
+.ci-skip-link {
+	position: absolute;
+	left: 16px;
+	top: -60px;
+	z-index: 100;
+	padding: 12px 16px;
+	background: var(--ci-navy);
+	color: #fff;
+	border-radius: 8px;
+}
+
+.ci-skip-link:focus {
+	top: 16px;
+	color: #fff;
+}
+
+/* The header is fixed: content starts below the bar. Dark heroes (.ci-under-header) move up
+   behind the bar, which floats over them. */
+.ci-main {
+	padding-top: var(--ci-header-h);
+}
+
+.ci-main > :where(*) {
+	margin-block: 0;
+}
+
+/* More specific than the WordPress rule that removes the margin of the first block in a flow
+   container (:root :where(.is-layout-flow) > :first-child). */
+body .ci-main .ci-under-header {
+	margin-top: calc(-1 * var(--ci-header-h));
+	padding-top: var(--ci-header-h);
+}
+
+/* ── Layout ───────────────────────────────────────────────────── */
+.ci-container {
+	max-width: var(--ci-max);
+	margin: 0 auto;
+	padding-inline: var(--ci-gutter);
+}
+
+/* --ci-pt / --ci-pb: spacing chosen in the block (unset = the design default). */
+.ci-section {
+	padding-top: var(--ci-pt, var(--ci-section-y));
+	padding-bottom: var(--ci-pb, var(--ci-section-y));
+}
+
+.ci-section--muted {
+	background: var(--ci-bg);
+	border-top: 1px solid var(--ci-line);
+	border-bottom: 1px solid var(--ci-line);
+}
+
+.ci-section--dark {
+	position: relative;
+	overflow: clip;
+	background: var(--ci-navy);
+	color: #fff;
+}
+
+.ci-stack {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.ci-stack--lg {
+	gap: 48px;
+}
+
+.ci-stack--md {
+	gap: 40px;
+}
+
+/* Section heading: title on the left, link on the right */
+.ci-section-head {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+	gap: 20px;
+}
+
+.ci-section-intro {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	max-width: 720px;
+}
+
+/* Eyebrow with an accent bar */
+.ci-eyebrow {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 0;
+	font-size: 13px;
+	letter-spacing: 0.01em;
+	color: var(--ci-muted);
+}
+
+.ci-eyebrow::before {
+	content: "";
+	flex: none;
+	width: 4px;
+	height: 16px;
+	background: var(--ci-accent, var(--ci-red-bright));
+}
+
+.ci-section--dark .ci-eyebrow,
+.ci-eyebrow--light {
+	color: var(--ci-yellow);
+}
+
+/* ── Typography ───────────────────────────────────────────────── */
+.ci-h1 {
+	margin: 0;
+	font-weight: 500;
+	font-size: clamp(36px, 4.6vw, 58px);
+	line-height: 1.06;
+	letter-spacing: -0.035em;
+	text-wrap: balance;
+}
+
+.ci-h2 {
+	margin: 0;
+	font-weight: 500;
+	font-size: clamp(28px, 3.1vw, 40px);
+	line-height: 1.1;
+	letter-spacing: -0.03em;
+	text-wrap: balance;
+}
+
+.ci-h3 {
+	margin: 0;
+	font-weight: 500;
+	font-size: clamp(20px, 2vw, 24px);
+	letter-spacing: -0.02em;
+}
+
+.ci-lead {
+	margin: 0;
+	max-width: 620px;
+	font-size: clamp(17px, 1.5vw, 19px);
+	line-height: 1.6;
+	color: var(--ci-ink-2);
+	text-wrap: pretty;
+}
+
+.ci-section--dark .ci-lead {
+	color: var(--ci-ink-on-dark);
+}
+
+.ci-text {
+	margin: 0;
+	font-size: 17px;
+	line-height: 1.65;
+	color: var(--ci-ink-2);
+	text-wrap: pretty;
+}
+
+.ci-section--dark .ci-text {
+	color: var(--ci-ink-on-dark);
+}
+
+/* Colors chosen in the block Style panel: they override the scheme colors. */
+[style*="--ci-title"] :is(.ci-h1, .ci-h2, .ci-h3, .ci-title) {
+	color: var(--ci-title);
+}
+
+[style*="--ci-body"] :is(.ci-lead, .ci-text, .ci-body) {
+	color: var(--ci-body);
+}
+
+/* ── Breadcrumbs ────────────────────────────────────────────────────── */
+.ci-breadcrumbs ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	font-size: 13px;
+	color: var(--ci-muted);
+}
+
+.ci-breadcrumbs li + li::before {
+	content: "/";
+	margin-right: 8px;
+}
+
+.ci-breadcrumbs a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.ci-breadcrumbs a:hover,
+.ci-breadcrumbs a:focus-visible {
+	text-decoration: underline;
+}
+
+.ci-breadcrumbs [aria-current] {
+	color: var(--ci-navy);
+}
+
+.ci-section--dark .ci-breadcrumbs ol,
+.ci-section--dark .ci-breadcrumbs a {
+	color: #b9bfd3;
+}
+
+.ci-section--dark .ci-breadcrumbs [aria-current] {
+	color: #fff;
+}
+
+/* ── Buttons ────────────────────────────────────────────────────── */
+.ci-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	height: 52px;
+	padding: 0 28px;
+	padding-bottom: var(--ci-optical);
+	border-radius: 999px;
+	border: 0;
+	font: inherit;
+	font-weight: 600;
+	font-size: 16px;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s var(--ci-ease-out);
+	-webkit-tap-highlight-color: transparent;
+}
+
+/* On press: a slight push, the text keeps its color. */
+.ci-btn:active,
+.ci-chip:active {
+	transform: scale(0.97);
+}
+
+.ci-btn--primary {
+	background: var(--ci-red);
+	color: #fff;
+}
+
+.ci-btn--primary:hover,
+.ci-btn--primary:focus-visible,
+.ci-btn--primary:active {
+	background: var(--ci-red-dark);
+	color: #fff;
+}
+
+.ci-btn--dark {
+	background: var(--ci-navy);
+	color: #fff;
+}
+
+.ci-btn--dark:hover,
+.ci-btn--dark:focus-visible {
+	background: var(--ci-navy-2);
+	color: #fff;
+}
+
+.ci-btn--outline {
+	padding-inline: 26px;
+	border: 1.5px solid var(--ci-navy);
+	background: #fff;
+	color: var(--ci-navy);
+}
+
+.ci-btn--outline:hover,
+.ci-btn--outline:focus-visible {
+	background: var(--ci-navy);
+	color: #fff;
+}
+
+.ci-btn--on-dark {
+	padding-inline: 26px;
+	border: 1.5px solid rgba(255, 255, 255, 0.6);
+	background: transparent;
+	color: #fff;
+}
+
+.ci-btn--on-dark:hover,
+.ci-btn--on-dark:focus-visible {
+	background: #fff;
+	color: var(--ci-navy);
+}
+
+.ci-btn--sm {
+	height: 44px;
+	padding-inline: 20px;
+	font-size: 15px;
+}
+
+.ci-btn[disabled] {
+	opacity: 0.6;
+	cursor: progress;
+}
+
+.ci-btn-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.ci-whatsapp-dot {
+	width: 8px;
+	height: 8px;
+	flex: none;
+	border-radius: 50%;
+	background: #3ddc84;
+}
+
+/* Underlined link with an arrow */
+.ci-link {
+	align-self: flex-start;
+	display: inline-flex;
+	align-items: center;
+	min-height: 44px;
+	font-weight: 600;
+	font-size: 16px;
+	color: var(--ci-navy);
+	text-decoration: none;
+	border-bottom: 1.5px solid var(--ci-navy);
+}
+
+.ci-link:hover,
+.ci-link:focus-visible {
+	color: var(--ci-red);
+	border-color: var(--ci-red);
+}
+
+.ci-section--dark .ci-link {
+	color: #fff;
+	border-color: #fff;
+}
+
+/* ── Card grids ─────────────────────────────────────────────── */
+.ci-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+	gap: 20px;
+}
+
+.ci-cards--tall {
+	gap: 40px 24px;
+}
+
+/* ── Chip filters ───────────────────────────────────────────── */
+.ci-chips {
+	display: flex;
+	gap: 8px;
+	overflow-x: auto;
+	max-width: 100%;
+	padding-bottom: 2px;
+}
+
+.ci-chip {
+	flex: none;
+	height: 44px;
+	padding: 0 18px;
+	padding-bottom: var(--ci-optical);
+	border-radius: 999px;
+	border: 1.5px solid var(--ci-navy);
+	background: #fff;
+	color: var(--ci-navy);
+	font: inherit;
+	font-weight: 600;
+	font-size: 15px;
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.ci-chip[aria-pressed="true"],
+.ci-chip[aria-current="page"] {
+	background: var(--ci-navy);
+	color: #fff;
+}
+
+/* ── Editor HTML content (privacy, projects, news) ──────────── */
+.ci-prose {
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+	font-size: 18px;
+	line-height: 1.75;
+	color: #2a3252;
+}
+
+.ci-prose > * {
+	margin: 0;
+}
+
+.ci-prose h2,
+.ci-prose h3 {
+	margin-top: 16px;
+	font-weight: 500;
+	font-size: clamp(20px, 2vw, 24px);
+	line-height: 1.2;
+	letter-spacing: -0.035em;
+	color: var(--ci-navy);
+}
+
+.ci-prose ul {
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+/* Custom bullet with absolute position: the item text (bold, links, etc.) flows normally. */
+.ci-prose ul li {
+	position: relative;
+	padding-left: 22px;
+}
+
+.ci-prose ul li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 11px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: var(--ci-navy);
+}
+
+.ci-prose ol {
+	padding-left: 1.2em;
+}
+
+.ci-prose blockquote,
+.ci-prose .wp-block-quote,
+.ci-prose .wp-block-pullquote {
+	margin: 16px 0;
+	padding: 32px 0;
+	border-top: 1px solid var(--ci-line);
+	border-bottom: 1px solid var(--ci-line);
+	font-weight: 500;
+	font-size: clamp(20px, 2vw, 24px);
+	line-height: 1.35;
+	color: var(--ci-navy);
+}
+
+.ci-prose blockquote::before {
+	content: "";
+	display: block;
+	width: 4px;
+	height: 28px;
+	margin-bottom: 14px;
+	background: var(--ci-red-bright);
+}
+
+.ci-prose img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+
+.ci-prose figure {
+	margin: 0;
+}
+
+.ci-prose figcaption {
+	margin-top: 8px;
+	font-size: 14px;
+	color: var(--ci-muted);
+}
+
+.ci-prose a {
+	color: var(--ci-navy);
+	text-underline-offset: 3px;
+}
+
+.ci-prose a:hover {
+	color: var(--ci-red);
+}
+
+/* Button blocks (e.g. plan PDFs in projects) */
+.ci-prose .wp-block-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.ci-prose .wp-block-button__link {
+	display: inline-flex;
+	align-items: center;
+	min-height: 44px;
+	padding: 0 18px;
+	padding-bottom: var(--ci-optical);
+	border-radius: 999px;
+	border: 1px solid #c3c7d3;
+	background: transparent;
+	font-size: 15px;
+	font-weight: 600;
+	color: var(--ci-navy);
+	text-decoration: none;
+}
+
+.ci-prose .wp-block-button__link:hover,
+.ci-prose .wp-block-button__link:focus-visible {
+	border-color: var(--ci-navy);
+	color: var(--ci-navy);
+}
+
+.ci-prose .wp-block-image,
+.ci-prose .wp-block-gallery {
+	display: grid;
+	gap: 16px;
+}
+
+.ci-prose .wp-block-gallery {
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+}
+
+/* ── Decorations ────────────────────────────────────────────── */
+
+/* Decorative arc (circle with an open border) */
+.ci-arc {
+	position: absolute;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 0.05);
+	border-right-color: transparent;
+	pointer-events: none;
+}
+
+/* Empty state */
+.ci-empty {
+	padding: 56px 24px;
+	border: 1px solid var(--ci-line);
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+	text-align: center;
+}
+
+.ci-empty::before {
+	content: "";
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 7px solid var(--ci-navy);
+	border-right-color: transparent;
+}
+
+.ci-empty-title {
+	margin: 0;
+	font-weight: 500;
+	font-size: 22px;
+}
+
