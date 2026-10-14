@@ -1,0 +1,62 @@
+/* ci/post-header — header of a single post and its cover. */
+
+.ci-post-header-head {
+	max-width: 840px;
+	margin: 0 auto;
+	padding: clamp(40px, 6vw, 88px) var(--ci-gutter) clamp(32px, 4vw, 48px);
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+}
+
+.ci-post-header-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px 14px;
+	font-size: 12px;
+	letter-spacing: 0.01em;
+	color: var(--ci-muted);
+}
+
+.ci-post-header-category {
+	color: var(--ci-red);
+	font-weight: 500;
+}
+
+.ci-post-header-title {
+	margin: 0;
+	font-weight: 500;
+	font-size: clamp(32px, 4vw, 50px);
+	line-height: 1.07;
+	letter-spacing: -0.035em;
+	text-wrap: balance;
+}
+
+.ci-post-header-lead {
+	margin: 0;
+	font-size: clamp(18px, 1.6vw, 21px);
+	line-height: 1.55;
+	color: var(--ci-ink-2);
+	text-wrap: pretty;
+}
+
+.ci-post-header-author {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding-top: 8px;
+}
+
+.ci-post-header-author-text {
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+}
+
+.ci-post-header-author-name {
+	font-weight: 600;
+}
+
+.ci-post-header-author-role {
+	color: var(--ci-muted);
+}

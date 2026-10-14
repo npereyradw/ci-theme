@@ -683,3 +683,12 @@ body .ci-main .ci-under-header {
 	overflow: visible;
 }
 
+/* Legal text ("Text page" template): a comfortable reading column. */
+.ci-page-text {
+	padding-bottom: var(--ci-section-y);
+}
+
+.ci-page-text > .ci-prose {
+	max-width: 760px;
+}
+

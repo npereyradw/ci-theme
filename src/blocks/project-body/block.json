@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/project-body",
+	"version": "0.1.0",
+	"title": "Project description",
+	"category": "ci-template",
+	"icon": "text-page",
+	"description": "For the single project template: the summary and content of the project, and a box to request a quote (with the project service preselected in the form).",
+	"keywords": [ "project", "description", "content", "quote" ],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"title": { "type": "string", "default": "What we did" },
+		"asideTitle": { "type": "string", "default": "Have a similar project?" },
+		"asideText": { "type": "string", "default": "Tell us what you need and we will send you a fixed quote." },
+		"buttonLabel": { "type": "string", "default": "Request a quote" },
+		"buttonUrl": { "type": "string", "default": "/contact/" },
+		"serviceLinkLabel": { "type": "string", "default": "View service:" }
+	},
+	"supports": {
+		"html": false,
+		"multiple": false,
+		"anchor": true
+	},
+	"example": { "attributes": {} },
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"viewScript": "ci-theme-motion",
+	"render": "file:./render.php"
+}

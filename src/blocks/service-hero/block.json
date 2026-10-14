@@ -1,0 +1,43 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/service-hero",
+	"version": "0.1.0",
+	"title": "Service header",
+	"category": "ci-template",
+	"icon": "hammer",
+	"description": "For the single service template: breadcrumbs, number and area, title (H1), description, quote and WhatsApp buttons (or the \"notify me\" form when the service is coming soon) and the \"What it includes\" box. The data comes from the service.",
+	"keywords": [ "service", "header", "coming soon", "includes" ],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"quoteLabel": { "type": "string", "default": "Request a quote →" },
+		"quoteUrl": { "type": "string", "default": "/contact/" },
+		"whatsappLabel": { "type": "string", "default": "Ask on WhatsApp" },
+		"soonBadge": { "type": "string", "default": "Coming soon" },
+		"includesTitle": { "type": "string", "default": "What it includes" },
+		"soonIncludesTitle": { "type": "string", "default": "In preparation" },
+		"notifyFormId": { "type": "integer", "default": 0 },
+		"notifyLabel": { "type": "string", "default": "We will let you know when it is available" },
+		"notifyPlaceholder": { "type": "string", "default": "you@email.com" },
+		"notifyButton": { "type": "string", "default": "Notify me" },
+		"notifySending": { "type": "string", "default": "Sending…" },
+		"notifyPrivacyText": { "type": "string", "default": "By sending you accept the" },
+		"notifyPrivacyLabel": { "type": "string", "default": "Privacy policy" },
+		"notifyPrivacyUrl": { "type": "string", "default": "" },
+		"notifyLinkLabel": { "type": "string", "default": "Need it now? Write to us and we will refer you." },
+		"notifyLinkUrl": { "type": "string", "default": "/contact/" },
+		"msgRequired": { "type": "string", "default": "This field is required." },
+		"msgEmail": { "type": "string", "default": "Enter a valid email address." },
+		"msgError": { "type": "string", "default": "We could not save your request. Please try again." }
+	},
+	"supports": {
+		"html": false,
+		"multiple": false,
+		"anchor": true
+	},
+	"example": { "attributes": {} },
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"viewScript": [ "ci-theme-motion", "ci-theme-forms" ],
+	"render": "file:./render.php"
+}

@@ -1,0 +1,108 @@
+/* ci/project-body — project description and quote box. */
+
+.ci-project-body {
+	padding-block: clamp(56px, 7vw, 96px);
+}
+
+.ci-project-body-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
+	gap: 48px clamp(40px, 6vw, 96px);
+	align-items: start;
+}
+
+.ci-project-body-description {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	max-width: 720px;
+}
+
+.ci-project-body-title {
+	margin: 0;
+	font-weight: 500;
+	font-size: clamp(22px, 2.2vw, 28px);
+	letter-spacing: -0.035em;
+}
+
+.ci-project-body-summary {
+	margin: 0;
+	font-size: 18px;
+	line-height: 1.7;
+	text-wrap: pretty;
+}
+
+.ci-prose.ci-project-body-content {
+	font-size: 17px;
+	line-height: 1.7;
+	color: var(--ci-ink-2);
+}
+
+.ci-project-body-aside {
+	position: relative;
+	overflow: clip;
+	align-self: start;
+	max-width: 460px;
+	background: var(--ci-navy);
+	color: #fff;
+	border-radius: 8px;
+	padding: 32px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.ci-project-body-aside-arc {
+	right: -50px;
+	top: -50px;
+	width: 160px;
+	height: 160px;
+	border-width: 26px;
+	border-color: rgba(255, 255, 255, 0.07);
+	border-right-color: transparent;
+}
+
+.ci-project-body-aside-dot {
+	position: relative;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	background: var(--ci-yellow);
+}
+
+.ci-project-body-aside-title {
+	position: relative;
+	margin: 0;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.2;
+}
+
+.ci-project-body-aside-text {
+	position: relative;
+	margin: 0;
+	font-size: 15px;
+	line-height: 1.6;
+	color: var(--ci-ink-on-dark);
+}
+
+.ci-project-body-aside-btn {
+	position: relative;
+	margin-top: 8px;
+}
+
+.ci-project-body-aside-link {
+	position: relative;
+	min-height: 44px;
+	display: flex;
+	align-items: center;
+	color: var(--ci-yellow);
+	font-weight: 600;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+.ci-project-body-aside-link:hover,
+.ci-project-body-aside-link:focus-visible {
+	color: #fff;
+}

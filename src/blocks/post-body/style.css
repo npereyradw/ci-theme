@@ -1,0 +1,47 @@
+/* ci/post-body — post text in a reading column and share buttons. */
+
+.ci-post-body {
+	max-width: 760px;
+	margin: 0 auto;
+	padding: clamp(40px, 5vw, 72px) var(--ci-gutter);
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+}
+
+.ci-post-body-share {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 10px;
+	margin-top: 24px;
+	padding-top: 24px;
+	border-top: 1px solid var(--ci-line);
+}
+
+.ci-post-body-share-label {
+	font-size: 12px;
+	letter-spacing: 0.01em;
+	color: var(--ci-muted);
+	margin-right: 6px;
+}
+
+.ci-post-body-share-link {
+	height: 44px;
+	padding: 0 18px;
+	padding-bottom: var(--ci-optical);
+	border-radius: 999px;
+	border: 1px solid #c3c7d3;
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	font-weight: 600;
+	color: var(--ci-navy);
+	text-decoration: none;
+}
+
+.ci-post-body-share-link:hover,
+.ci-post-body-share-link:focus-visible {
+	border-color: var(--ci-navy);
+	color: var(--ci-navy);
+}

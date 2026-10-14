@@ -1,0 +1,85 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/not-found",
+	"version": "0.1.0",
+	"title": "Page not found",
+	"category": "ci-template",
+	"icon": "warning",
+	"description": "For the 404 template: the large \"404\", the message, buttons and links to the main sections.",
+	"keywords": [
+		"404",
+		"error",
+		"not found"
+	],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Error 404 · Page not found"
+		},
+		"title": {
+			"type": "string",
+			"default": "We couldn't find the page you are looking for."
+		},
+		"text": {
+			"type": "string",
+			"default": "The link may be broken or the page may have moved. These sections can help."
+		},
+		"buttons": {
+			"type": "array",
+			"default": [
+				{
+					"label": "Back to home",
+					"kind": "link",
+					"url": "/",
+					"style": "dark",
+					"newTab": false
+				},
+				{
+					"label": "Contact us",
+					"kind": "link",
+					"url": "/contact/",
+					"style": "outline",
+					"newTab": false
+				}
+			]
+		},
+		"navLabel": {
+			"type": "string",
+			"default": "Sections"
+		},
+		"links": {
+			"type": "array",
+			"default": [
+				{
+					"label": "Services",
+					"url": "/services/"
+				},
+				{
+					"label": "Projects",
+					"url": "/projects/"
+				},
+				{
+					"label": "News",
+					"url": "/news/"
+				},
+				{
+					"label": "About",
+					"url": "/about/"
+				}
+			]
+		}
+	},
+	"supports": {
+		"html": false,
+		"multiple": false,
+		"anchor": true
+	},
+	"example": {
+		"attributes": {}
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

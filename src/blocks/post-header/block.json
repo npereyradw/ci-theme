@@ -1,0 +1,45 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/post-header",
+	"version": "0.1.0",
+	"title": "Post header",
+	"category": "ci-template",
+	"icon": "megaphone",
+	"description": "For the single post template: breadcrumbs, category, date and reading time, title (H1), lead (the excerpt), author and the image or cover. The data comes from the post.",
+	"keywords": [
+		"news",
+		"post",
+		"article",
+		"header"
+	],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"readingSuffix": {
+			"type": "string",
+			"default": "read"
+		},
+		"authorName": {
+			"type": "string"
+		},
+		"authorRole": {
+			"type": "string",
+			"default": "Editorial team"
+		}
+	},
+	"supports": {
+		"html": false,
+		"multiple": false,
+		"anchor": true
+	},
+	"example": {
+		"attributes": {}
+	},
+	"editorScript": "file:./index.js",
+	"style": [
+		"file:./style-index.css",
+		"ci-theme-cover"
+	],
+	"viewScript": "ci-theme-motion",
+	"render": "file:./render.php"
+}

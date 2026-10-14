@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/project-header",
+	"version": "0.1.0",
+	"title": "Project header",
+	"category": "ci-template",
+	"icon": "building",
+	"description": "For the single project template: breadcrumbs, area, title (H1), fact sheet (client, location, service and year) and the image or cover. The data comes from the project.",
+	"keywords": [ "project", "header", "details", "works" ],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"clientLabel": { "type": "string", "default": "Client" },
+		"locationLabel": { "type": "string", "default": "Location" },
+		"serviceLabel": { "type": "string", "default": "Service" },
+		"yearLabel": { "type": "string", "default": "Year" }
+	},
+	"supports": {
+		"html": false,
+		"multiple": false,
+		"anchor": true
+	},
+	"example": { "attributes": {} },
+	"editorScript": "file:./index.js",
+	"style": [ "file:./style-index.css", "ci-theme-cover" ],
+	"viewScript": "ci-theme-motion",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,75 @@
+/* ci/not-found — 404 page. */
+
+.ci-not-found-inner {
+	padding-block: clamp(64px, 9vw, 140px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 28px;
+}
+
+.ci-not-found-code {
+	display: flex;
+	align-items: center;
+	gap: clamp(8px, 1.5vw, 20px);
+	font-weight: 500;
+	font-size: clamp(120px, 18vw, 240px);
+	line-height: 0.8;
+	letter-spacing: -0.04em;
+}
+
+.ci-not-found-logo {
+	display: block;
+	width: 0.8em;
+	height: 0.8em;
+}
+
+.ci-not-found-label {
+	margin: 0;
+	font-size: 13px;
+	letter-spacing: 0.01em;
+	color: var(--ci-muted);
+}
+
+.ci-not-found-title {
+	max-width: 680px;
+}
+
+.ci-not-found-text {
+	margin: 0;
+	max-width: 520px;
+	font-size: 17px;
+	line-height: 1.6;
+	color: var(--ci-ink-2);
+	text-wrap: pretty;
+}
+
+.ci-not-found-actions {
+	justify-content: center;
+}
+
+.ci-not-found-nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 4px 28px;
+	padding-top: 28px;
+	margin-top: 8px;
+	border-top: 1px solid var(--ci-line);
+	min-width: min(100%, 520px);
+}
+
+.ci-not-found-link {
+	min-height: 44px;
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+	color: var(--ci-navy);
+	text-decoration: none;
+}
+
+.ci-not-found-link:hover,
+.ci-not-found-link:focus-visible {
+	color: var(--ci-red);
+}
