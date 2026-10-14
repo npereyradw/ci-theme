@@ -58,13 +58,23 @@ if ( ! class_exists( 'CI_Theme_Setup' ) ) {
 		}
 
 		/**
-		 * Preloads the variable font: headings are the LCP and must not wait for it.
+		 * Preloads the variable font (headings are the LCP and must not wait for it) and sets the
+		 * browser bar color on phones from the theme palette.
 		 */
 		public static function preload_font() {
 			printf(
 				'<link rel="preload" href="%s" as="font" type="font/woff2" crossorigin>' . "\n",
 				esc_url( CI_THEME_URI . 'assets/fonts/geist/Geist-Variable.woff2' )
 			);
+			$color = '';
+			foreach ( (array) wp_get_global_settings( array( 'color', 'palette', 'theme' ) ) as $entry ) {
+				if ( isset( $entry['slug'], $entry['color'] ) && 'navy' === $entry['slug'] ) {
+					$color = $entry['color'];
+				}
+			}
+			if ( $color ) {
+				printf( '<meta name="theme-color" content="%s">' . "\n", esc_attr( $color ) );
+			}
 		}
 	}
 }
