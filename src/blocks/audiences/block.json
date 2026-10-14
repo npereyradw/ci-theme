@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/audiences",
+	"version": "0.1.0",
+	"title": "Who we work for",
+	"category": "ci-sections",
+	"icon": "groups",
+	"description": "Cards by type of client, each with links to the services that suit them.",
+	"keywords": [ "audiences", "clients", "who we serve", "services" ],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"eyebrow": { "type": "string", "default": "Who we work for" },
+		"title": { "type": "string", "default": "Find the right service for your project." },
+		"items": {
+			"type": "array",
+			"default": [
+				{ "title": "Industry", "text": "Plants, machinery foundations, warehouses and facilities.", "services": [] },
+				{ "title": "Firms and builders", "text": "Calculations, technical documents and site supervision for their projects.", "services": [] },
+				{ "title": "Homeowners", "text": "Homes, extensions and structural design with a fixed quote.", "services": [] }
+			]
+		},
+		"scheme": { "default": "muted" }
+	},
+	"supports": {
+		"ciSection": true,
+		"anchor": true,
+		"html": false
+	},
+	"example": { "attributes": {} },
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"viewScript": "ci-theme-motion",
+	"render": "file:./render.php"
+}

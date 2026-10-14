@@ -35,6 +35,6 @@
 	"example": { "attributes": { "limit": 3 } },
 	"editorScript": "file:./index.js",
 	"style": [ "file:./style-index.css", "ci-theme-cards" ],
-	"viewScript": "ci-theme-motion",
+	"viewScript": [ "ci-theme-motion", "file:./view.js" ],
 	"render": "file:./render.php"
 }

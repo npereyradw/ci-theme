@@ -1,0 +1,60 @@
+/* ci/audiences — cards by type of client with links to their services. */
+
+.ci-audiences-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+	gap: 20px;
+}
+
+.ci-audiences-item {
+	background: #fff;
+	border: 1px solid var(--ci-line);
+	border-radius: 8px;
+	padding: 28px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	color: var(--ci-navy);
+}
+
+.ci-audiences-title {
+	margin: 0;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.ci-audiences-text {
+	margin: 0;
+	font-size: 15px;
+	line-height: 1.6;
+	color: var(--ci-muted);
+	text-wrap: pretty;
+}
+
+.ci-audiences-links {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #eceef2;
+}
+
+.ci-audiences-link {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 48px;
+	border-bottom: 1px solid #eceef2;
+	font-weight: 600;
+	font-size: 15px;
+	color: var(--ci-navy);
+	text-decoration: none;
+}
+
+.ci-audiences-link span {
+	color: var(--ci-red);
+}
+
+.ci-audiences-link:hover,
+.ci-audiences-link:focus-visible {
+	color: var(--ci-red);
+}

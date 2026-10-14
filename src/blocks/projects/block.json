@@ -36,6 +36,6 @@
 	"example": { "attributes": {} },
 	"editorScript": "file:./index.js",
 	"style": [ "file:./style-index.css", "ci-theme-cards", "ci-theme-cover" ],
-	"viewScript": "ci-theme-motion",
+	"viewScript": [ "ci-theme-motion", "file:./view.js" ],
 	"render": "file:./render.php"
 }
