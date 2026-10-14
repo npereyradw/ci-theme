@@ -1,0 +1,96 @@
+/* ci/page-hero — header of the inner pages: dark, light or compact (legal texts). */
+
+.ci-page-hero {
+	position: relative;
+}
+
+.ci-page-hero-inner {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.ci-page-hero-title {
+	max-width: 860px;
+}
+
+/* Light: spacing of the design; the Spacing panel can change it. */
+.ci-page-hero--light .ci-page-hero-inner {
+	padding-top: var(--ci-pt, clamp(48px, 7vw, 96px));
+	padding-bottom: var(--ci-pb, clamp(36px, 4.6vw, 58px));
+}
+
+/* Legal text */
+.ci-page-hero--text .ci-page-hero-inner {
+	gap: 20px;
+	padding-top: var(--ci-pt, clamp(48px, 6vw, 88px));
+	padding-bottom: var(--ci-pb, clamp(28px, 3.6vw, 44px));
+}
+
+.ci-page-hero-updated {
+	margin: 0;
+	font-size: 14px;
+	color: var(--ci-muted);
+}
+
+.ci-page-hero--divider {
+	border-bottom: 1px solid var(--ci-line);
+}
+
+/* With a line below: less space at the bottom, the line already separates. */
+.ci-page-hero--divider:not(.ci-page-hero--filter) .ci-page-hero-inner {
+	padding-bottom: var(--ci-pb, clamp(32px, 4vw, 48px));
+}
+
+/* With the area filter: same space above and below, chips under the text. */
+.ci-page-hero--filter .ci-page-hero-inner {
+	padding-bottom: var(--ci-pb, clamp(48px, 7vw, 96px));
+}
+
+.ci-page-hero-chips {
+	margin-top: 8px;
+}
+
+/* Dark variant */
+.ci-page-hero--dark {
+	overflow: clip;
+}
+
+.ci-page-hero--dark .ci-page-hero-inner {
+	padding-top: var(--ci-pt, clamp(56px, 8vw, 120px));
+	padding-bottom: var(--ci-pb, clamp(56px, 8vw, 120px));
+}
+
+.ci-page-hero--dark .ci-page-hero-title {
+	max-width: 820px;
+}
+
+.ci-page-hero-arc {
+	right: -160px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 620px;
+	height: 620px;
+	border-width: 90px;
+}
+
+.ci-page-hero-dot {
+	position: absolute;
+	right: clamp(40px, 12vw, 200px);
+	top: 50%;
+	transform: translateY(-50%);
+	width: clamp(64px, 9vw, 140px);
+	height: clamp(64px, 9vw, 140px);
+	border-radius: 50%;
+	background: var(--ci-yellow);
+}
+
+@media (max-width: 700px) {
+
+	.ci-page-hero-dot {
+		top: 48px;
+		transform: none;
+		right: 20px;
+	}
+}

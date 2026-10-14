@@ -1,0 +1,83 @@
+/* ci/reach — a large animated arc as the background and the registrations in a list. */
+
+.ci-reach {
+	isolation: isolate;
+}
+
+.ci-reach-art {
+	position: absolute;
+	z-index: -2;
+	top: 0;
+	right: 5%;
+	bottom: 0;
+	width: 42%;
+}
+
+.ci-reach-shade {
+	position: absolute;
+	z-index: -1;
+	inset: 0;
+	background: linear-gradient(90deg, var(--ci-navy) 44%, rgba(28, 37, 69, 0) 56%);
+	pointer-events: none;
+}
+
+.ci-reach-inner {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.ci-reach-inner > * {
+	max-width: 600px;
+}
+
+.ci-reach-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.ci-reach-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	gap: 16px;
+	padding: 16px 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.ci-reach-name {
+	font-weight: 600;
+}
+
+.ci-reach-type {
+	flex: none;
+	font-size: 13px;
+	color: #b9bfd3;
+	text-align: right;
+}
+
+/* Phones: the arc peeks out of the bottom right corner, cut by the edge, without sitting
+   behind the text. */
+@media (max-width: 899px) {
+
+	.ci-reach--art {
+		--ci-pb: 236px;
+	}
+
+	.ci-reach-art {
+		top: auto;
+		left: auto;
+
+		/* The bar ends at 99% of the drawing width: 16px - 1% of 264px ≈ 13px. */
+		right: 13.4px;
+		bottom: -96px;
+		width: 264px;
+		height: 330px;
+	}
+
+	.ci-reach-shade {
+		display: none;
+	}
+}

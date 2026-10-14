@@ -30,6 +30,7 @@ require_once CI_THEME_DIR . 'inc/setup/setup.php';
 require_once CI_THEME_DIR . 'inc/section/section.php';
 require_once CI_THEME_DIR . 'inc/graphics/graphics.php';
 require_once CI_THEME_DIR . 'inc/content/content.php';
+require_once CI_THEME_DIR . 'inc/breadcrumbs/breadcrumbs.php';
 require_once CI_THEME_DIR . 'inc/routes/routes.php';
 require_once CI_THEME_DIR . 'inc/motion/motion.php';
 require_once CI_THEME_DIR . 'inc/blocks/blocks.php';

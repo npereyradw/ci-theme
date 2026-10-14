@@ -1,0 +1,89 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/page-hero",
+	"version": "0.1.0",
+	"title": "Page header",
+	"category": "ci-sections",
+	"icon": "heading",
+	"description": "First section of an inner page: breadcrumbs, main title (H1) and text. Dark with an arc and a dot, light, or compact for legal texts. It can show the area filter of the services page.",
+	"keywords": [
+		"header",
+		"title",
+		"h1",
+		"breadcrumbs",
+		"hero"
+	],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"variant": {
+			"type": "string",
+			"enum": [
+				"light",
+				"dark",
+				"text"
+			],
+			"default": "light"
+		},
+		"title": {
+			"type": "string",
+			"default": "Page title"
+		},
+		"useTitle": {
+			"type": "boolean",
+			"default": false
+		},
+		"showUpdated": {
+			"type": "boolean",
+			"default": false
+		},
+		"updatedLabel": {
+			"type": "string",
+			"default": "Last updated:"
+		},
+		"lead": {
+			"type": "string",
+			"default": ""
+		},
+		"breadcrumbs": {
+			"type": "boolean",
+			"default": true
+		},
+		"breadcrumbLabel": {
+			"type": "string",
+			"default": ""
+		},
+		"decor": {
+			"type": "boolean",
+			"default": true
+		},
+		"divider": {
+			"type": "boolean",
+			"default": false
+		},
+		"areaFilter": {
+			"type": "boolean",
+			"default": false
+		},
+		"allLabel": {
+			"type": "string",
+			"default": "All"
+		}
+	},
+	"supports": {
+		"ciSection": true,
+		"anchor": true,
+		"html": false
+	},
+	"example": {
+		"attributes": {
+			"variant": "dark",
+			"title": "Engineering applied to real projects.",
+			"lead": "A multidisciplinary team that designs, calculates and supervises projects."
+		}
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"viewScript": "ci-theme-motion",
+	"render": "file:./render.php"
+}

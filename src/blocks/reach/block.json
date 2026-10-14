@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/reach",
+	"version": "0.1.0",
+	"title": "Reach and registrations",
+	"category": "ci-dynamic",
+	"icon": "location-alt",
+	"description": "Dark section with a large animated arc in the background, a text and the list of registrations and memberships (from the Institutions section).",
+	"keywords": [ "reach", "nationwide", "registrations", "institutions", "about" ],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"eyebrow": { "type": "string", "default": "Nationwide reach" },
+		"title": { "type": "string", "default": "We design from our office for projects anywhere in the country." },
+		"text": {
+			"type": "string",
+			"default": "Our professional registrations allow us to work on projects across the country, with site visits and remote follow-up."
+		},
+		"showList": { "type": "boolean", "default": true },
+		"showArt": { "type": "boolean", "default": true },
+		"scheme": { "default": "dark", "enum": [ "dark" ] }
+	},
+	"supports": {
+		"ciSection": true,
+		"anchor": true,
+		"html": false
+	},
+	"example": { "attributes": {} },
+	"editorScript": "file:./index.js",
+	"style": [ "file:./style-index.css", "ci-theme-cover" ],
+	"viewScript": "ci-theme-motion",
+	"render": "file:./render.php"
+}

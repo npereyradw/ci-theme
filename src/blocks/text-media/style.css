@@ -1,0 +1,17 @@
+/* ci/text-media — text with a graphic cover or an image. */
+
+.ci-text-media-split {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr));
+	gap: clamp(40px, 5vw, 80px);
+	align-items: center;
+}
+
+/* Media on the left (only with two columns). */
+@media (min-width: 1000px) {
+
+	.ci-text-media--left .ci-text-media-media {
+		order: -1;
+	}
+}

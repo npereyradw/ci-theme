@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/team",
+	"version": "0.1.0",
+	"title": "Team",
+	"category": "ci-dynamic",
+	"icon": "groups",
+	"description": "Text and cards for the team members (photo or initials, role, education and LinkedIn), taken from the Team section.",
+	"keywords": [ "team", "people", "members", "about" ],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"eyebrow": { "type": "string", "default": "Team" },
+		"title": { "type": "string", "default": "The people behind every project" },
+		"text": {
+			"type": "string",
+			"default": "Every project has a direct lead. We coordinate with licensed professionals of each specialty as each project requires."
+		},
+		"placeholderCaption": { "type": "string", "default": "Portrait coming soon" }
+	},
+	"supports": {
+		"ciSection": true,
+		"anchor": true,
+		"html": false
+	},
+	"example": { "attributes": {} },
+	"editorScript": "file:./index.js",
+	"style": [ "file:./style-index.css", "ci-theme-cover" ],
+	"viewScript": "ci-theme-motion",
+	"render": "file:./render.php"
+}

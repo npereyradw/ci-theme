@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/text-media",
+	"version": "0.1.0",
+	"title": "Text and media",
+	"category": "ci-sections",
+	"icon": "align-pull-right",
+	"description": "Eyebrow, title and paragraphs with a graphic cover or an image beside them.",
+	"keywords": [ "story", "text", "image", "illustration", "about" ],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"eyebrow": { "type": "string", "default": "Our story" },
+		"title": { "type": "string", "default": "A consultancy built on engineering experience, with a multidisciplinary team." },
+		"text": {
+			"type": "string",
+			"default": "The firm grew out of years of experience in the design, calculation and supervision of building works. Over time it added architecture and telecommunications to support clients through every stage of a project.\n\nToday we work for industries, architecture studios, builders and private clients across the country."
+		},
+		"media": { "type": "string", "enum": [ "cover", "image" ], "default": "cover" },
+		"coverSeed": { "type": "string", "default": "1" },
+		"image": { "type": "integer", "default": 0 },
+		"ratio": { "type": "string", "enum": [ "5 / 4", "4 / 3", "1 / 1", "16 / 9" ], "default": "5 / 4" },
+		"mediaPosition": { "type": "string", "enum": [ "right", "left" ], "default": "right" }
+	},
+	"supports": {
+		"ciSection": true,
+		"anchor": true,
+		"html": false
+	},
+	"example": { "attributes": {} },
+	"editorScript": "file:./index.js",
+	"style": [ "file:./style-index.css", "ci-theme-cover" ],
+	"viewScript": "ci-theme-motion",
+	"render": "file:./render.php"
+}

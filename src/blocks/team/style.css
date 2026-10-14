@@ -1,0 +1,71 @@
+/* ci/team — team member cards. */
+
+.ci-team-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+	gap: 48px clamp(24px, 3vw, 48px);
+	align-items: start;
+}
+
+.ci-team-card {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	color: inherit;
+}
+
+.ci-team-card-body {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.ci-team-card-role {
+	font-size: 12px;
+	letter-spacing: 0.01em;
+	color: var(--ci-red);
+}
+
+.ci-team-card-name {
+	margin: 0;
+	font-weight: 500;
+	font-size: 22px;
+	letter-spacing: -0.02em;
+}
+
+.ci-team-card-education {
+	font-size: 15px;
+	color: var(--ci-muted);
+}
+
+.ci-team-card-link {
+	align-self: flex-start;
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	min-height: 44px;
+	font-size: 15px;
+	font-weight: 600;
+	color: var(--ci-navy);
+	text-decoration: none;
+	border-bottom: 1.5px solid var(--ci-navy);
+}
+
+.ci-team-card-link:hover,
+.ci-team-card-link:focus-visible {
+	color: var(--ci-red);
+	border-color: var(--ci-red);
+}
+
+.ci-external-icon {
+	flex: none;
+}
+
+.ci-section--dark .ci-team-card-education {
+	color: var(--ci-ink-on-dark);
+}
+
+.ci-section--dark .ci-team-card-link {
+	color: #fff;
+	border-color: #fff;
+}
