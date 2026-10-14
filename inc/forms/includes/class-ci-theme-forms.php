@@ -26,7 +26,16 @@ if ( ! class_exists( 'CI_Theme_Forms' ) ) {
 		public static function init() {
 			add_filter( 'wpcf7_load_js', '__return_false' );
 			add_filter( 'wpcf7_load_css', '__return_false' );
+			add_action( 'wp_enqueue_scripts', array( __CLASS__, 'remove_cf7_recaptcha' ), 1 );
 			add_action( 'init', array( __CLASS__, 'register' ), 5 );
+		}
+
+		/**
+		 * The forms do not use reCAPTCHA: Google's script never loads, even if keys are added in
+		 * Contact Form 7 → Integration.
+		 */
+		public static function remove_cf7_recaptcha() {
+			remove_action( 'wp_enqueue_scripts', 'wpcf7_recaptcha_enqueue_scripts', 20 );
 		}
 
 		/**
