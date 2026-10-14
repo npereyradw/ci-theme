@@ -71,6 +71,7 @@ if ( $listing && ! empty( $attributes['showInquiry'] ) ) {
 }
 ?>
 <?php if ( $listing ) : ?>
+	<?php CI_Theme_Blocks::needs_view( 'ci/services' ); ?>
 	<section <?php echo CI_Theme_Section::wrapper( $attributes, array( 'class' => 'ci-services', 'classes' => array( 'ci-services--listing' ) ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped by get_block_wrapper_attributes(). ?> aria-label="<?php esc_attr_e( 'Services', 'ci-theme' ); ?>" data-ci-services-list>
 		<div class="ci-container">
 			<p class="visually-hidden" aria-live="polite" data-ci-count data-one="<?php esc_attr_e( 'service', 'ci-theme' ); ?>" data-many="<?php esc_attr_e( 'services', 'ci-theme' ); ?>">

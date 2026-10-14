@@ -21,6 +21,7 @@ $text = static function ( $key ) use ( $attributes ) {
 /* ── Listing with filters ─────────────────────────────────────── */
 
 if ( isset( $attributes['layout'] ) && 'listing' === $attributes['layout'] ) :
+	CI_Theme_Blocks::needs_view( 'ci/projects' );
 	$projects = CI_Theme_Content::projects();
 	$services = CI_Theme_Content::services();
 	$areas    = CI_Theme_Content::areas();

@@ -22,6 +22,18 @@ if ( ! class_exists( 'CI_Theme_Blocks' ) ) {
 		const EDITOR_HANDLE    = 'ci-theme-editor';
 
 		/**
+		 * Blocks whose view script is only needed by one of their variants (the listings).
+		 */
+		const OPTIONAL_VIEWS = array( 'ci/services', 'ci/projects' );
+
+		/**
+		 * Blocks that rendered the variant that needs their view script.
+		 *
+		 * @var array<string, bool>
+		 */
+		private static $needed_views = array();
+
+		/**
 		 * Register hooks.
 		 */
 		public static function init() {
@@ -34,6 +46,7 @@ if ( ! class_exists( 'CI_Theme_Blocks' ) ) {
 			// The editor canvas is an iframe: its styles (previews, width) are enqueued here.
 			add_action( 'enqueue_block_assets', array( __CLASS__, 'enqueue_canvas_styles' ) );
 			add_filter( 'allowed_block_types_all', array( __CLASS__, 'allowed_blocks' ), 10, 2 );
+			add_action( 'wp_enqueue_scripts', array( __CLASS__, 'drop_unused_views' ), 30 );
 			// Only the theme patterns: none from the WordPress.org directory.
 			add_filter( 'should_load_remote_block_patterns', '__return_false' );
 		}
@@ -239,6 +252,34 @@ if ( ! class_exists( 'CI_Theme_Blocks' ) ) {
 					return self::text_blocks();
 				default:
 					return $allowed;
+			}
+		}
+
+		/**
+		 * Called from render.php by the variant that uses the view script.
+		 *
+		 * @param string $block Block name.
+		 */
+		public static function needs_view( $block ) {
+			self::$needed_views[ $block ] = true;
+		}
+
+		/**
+		 * The template is rendered before wp_head: drop the view scripts no block needed
+		 * (e.g. the filters of the services and projects listings on the home page).
+		 */
+		public static function drop_unused_views() {
+			foreach ( self::OPTIONAL_VIEWS as $name ) {
+				$type = WP_Block_Type_Registry::get_instance()->get_registered( $name );
+				if ( ! $type || isset( self::$needed_views[ $name ] ) ) {
+					continue;
+				}
+				foreach ( $type->view_script_handles as $handle ) {
+					// Only the block's own view.js (e.g. ci-theme-projects-view-script).
+					if ( false !== strpos( $handle, '-view-script' ) ) {
+						wp_dequeue_script( $handle );
+					}
+				}
 			}
 		}
 	}

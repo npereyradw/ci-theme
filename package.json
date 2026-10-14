@@ -7,7 +7,9 @@
 	"license": "GPL-2.0-or-later",
 	"scripts": {
 		"build": "wp-scripts build --webpack-copy-php",
-		"start": "wp-scripts start --webpack-copy-php"
+		"start": "wp-scripts start --webpack-copy-php",
+		"lint:js": "wp-scripts lint-js src",
+		"lint:css": "wp-scripts lint-style \"src/**/*.css\" \"assets/css/*.css\" \"inc/**/*.css\""
 	},
 	"dependencies": {
 		"gsap": "3.15.0",
