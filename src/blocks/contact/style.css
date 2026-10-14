@@ -1,0 +1,359 @@
+/* ci/contact — contact form with the contact details beside it. */
+
+.ci-contact-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: clamp(32px, 4vw, 56px);
+	align-items: flex-start;
+}
+
+.ci-contact-form-wrap {
+	flex: 1.7 1 520px;
+	min-width: 0;
+}
+
+.ci-contact-aside {
+	flex: 1 1 300px;
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.ci-contact-whatsapp {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	padding: 24px;
+	background: var(--ci-navy);
+	color: #fff;
+	border-radius: 8px;
+	text-decoration: none;
+	transition: background 0.2s;
+}
+
+.ci-contact-whatsapp:hover,
+.ci-contact-whatsapp:focus-visible {
+	background: var(--ci-navy-2);
+	color: #fff;
+}
+
+.ci-contact-whatsapp-text {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.ci-contact-whatsapp-title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: 600;
+	font-size: 17px;
+}
+
+.ci-contact-whatsapp-dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #3ddc84;
+}
+
+.ci-contact-whatsapp-sub {
+	font-size: 14px;
+	color: var(--ci-ink-on-dark);
+}
+
+.ci-contact-whatsapp-arrow {
+	font-size: 20px;
+}
+
+.ci-contact-details {
+	border: 1px solid var(--ci-line);
+	border-radius: 8px;
+}
+
+.ci-contact-details-list {
+	margin: 0;
+}
+
+.ci-contact-detail {
+	padding: 20px 24px;
+	border-bottom: 1px solid #eceef2;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.ci-contact-detail:last-child {
+	border-bottom: 0;
+}
+
+.ci-contact-detail-key {
+	font-size: 12px;
+	letter-spacing: 0.01em;
+	color: var(--ci-muted);
+}
+
+.ci-contact-detail-value {
+	margin: 0;
+	font-weight: 600;
+	font-size: 17px;
+	overflow-wrap: anywhere;
+}
+
+.ci-contact-detail-value a {
+	color: var(--ci-navy);
+	text-decoration: none;
+}
+
+.ci-contact-detail-value a:hover,
+.ci-contact-detail-value a:focus-visible {
+	color: var(--ci-red);
+	text-decoration: underline;
+}
+
+.ci-contact-socials {
+	padding: 20px 24px;
+	display: flex;
+	gap: 10px;
+	border-top: 1px solid #eceef2;
+}
+
+.ci-contact-social {
+	height: 44px;
+	padding: 0 18px;
+	padding-bottom: var(--ci-optical);
+	border-radius: 999px;
+	border: 1px solid #c3c7d3;
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	font-weight: 600;
+	color: var(--ci-navy);
+	text-decoration: none;
+}
+
+.ci-contact-social:hover,
+.ci-contact-social:focus-visible {
+	border-color: var(--ci-navy);
+}
+
+/* ── Formulario ── */
+
+.ci-contact-form {
+	position: relative;
+	background: #fff;
+	border: 1px solid var(--ci-line);
+	border-radius: 8px;
+	padding: clamp(24px, 3.5vw, 48px);
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+/* Quote / inquiry selector */
+.ci-contact-types {
+	margin: 0;
+	padding: 4px;
+	border: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background: #f2f3f7;
+	border-radius: 999px;
+}
+
+.ci-contact-type {
+	position: relative;
+	display: flex;
+}
+
+.ci-contact-type-input {
+	position: absolute;
+	opacity: 0;
+	inset: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+.ci-contact-type-label {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 44px;
+	padding: 0 14px;
+	padding-bottom: var(--ci-optical);
+	border-radius: 999px;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 1.2;
+	white-space: nowrap;
+	text-align: center;
+	color: var(--ci-navy);
+	cursor: pointer;
+}
+
+/* On phones, short labels so both request types fit on one line. */
+.ci-contact-type-short {
+	display: none;
+}
+
+@media (max-width: 479px) {
+
+	/* Hidden visually only: screen readers keep reading the long version. */
+	.ci-contact-type-long {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip-path: inset(50%);
+		white-space: nowrap;
+	}
+
+	.ci-contact-type-short {
+		display: inline;
+	}
+}
+
+.ci-contact-type-input:checked + .ci-contact-type-label {
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(28, 37, 69, 0.2);
+}
+
+.ci-contact-type-input:focus-visible + .ci-contact-type-label {
+	outline: 2px solid var(--ci-red-bright);
+	outline-offset: 2px;
+}
+
+.ci-contact-form-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+	gap: 20px;
+}
+
+.ci-contact-field {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.ci-contact-input {
+	height: 52px;
+	padding: 0 16px;
+	border: 1.5px solid #c3c7d3;
+	border-radius: 8px;
+	background: #fff;
+	font: inherit;
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--ci-navy);
+}
+
+select.ci-contact-input {
+	padding: 0 14px;
+}
+
+.ci-contact-input:hover {
+	border-color: #8c94b3;
+}
+
+.ci-contact-input:focus-visible {
+	outline: none;
+	border-color: var(--ci-navy);
+	box-shadow: 0 0 0 3px rgba(28, 37, 69, 0.18);
+}
+
+.ci-contact-input[aria-invalid="true"] {
+	border-color: var(--ci-red);
+}
+
+.ci-contact-textarea {
+	height: auto;
+	padding: 14px 16px;
+	line-height: 1.5;
+	resize: vertical;
+}
+
+.ci-contact-error {
+	font-weight: 500;
+	font-size: 14px;
+	color: var(--ci-red);
+}
+
+.ci-contact-status {
+	margin: 0;
+	font-size: 15px;
+	color: var(--ci-red);
+}
+
+/* When empty it takes no space but stays in the accessibility tree to announce errors. */
+.ci-contact-status:empty {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip-path: inset(50%);
+}
+
+.ci-contact-foot {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+}
+
+.ci-contact-note {
+	font-size: 14px;
+	color: var(--ci-muted);
+}
+
+.ci-contact-trap {
+	position: absolute;
+	left: -9999px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+/* Success */
+.ci-contact-success {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 16px;
+	padding: 24px 0;
+}
+
+.ci-contact-success-dot {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	background: var(--ci-yellow);
+	border: 3px solid var(--ci-navy);
+}
+
+.ci-contact-success-title {
+	margin: 0;
+	font-weight: 500;
+	font-size: 30px;
+}
+
+.ci-contact-success-title:focus {
+	outline: none;
+}
+
+.ci-contact-success-text {
+	margin: 0;
+	font-size: 17px;
+	line-height: 1.6;
+	color: var(--ci-ink-2);
+}
+
+.ci-contact-missing {
+	color: var(--ci-muted);
+}

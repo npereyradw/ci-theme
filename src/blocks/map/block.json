@@ -1,0 +1,81 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/map",
+	"version": "0.1.0",
+	"title": "Location map",
+	"category": "ci-sections",
+	"icon": "location",
+	"description": "A light map image with a marker and a location card. The interactive map (MapLibre + OpenFreeMap) is downloaded only when the visitor taps \"Explore map\".",
+	"keywords": [
+		"map",
+		"location",
+		"directions",
+		"address"
+	],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"place": {
+			"type": "string",
+			"default": ""
+		},
+		"subtitle": {
+			"type": "string",
+			"default": "Visits by appointment"
+		},
+		"directionsLabel": {
+			"type": "string",
+			"default": "Get directions"
+		},
+		"exploreLabel": {
+			"type": "string",
+			"default": "Explore map"
+		},
+		"loadingLabel": {
+			"type": "string",
+			"default": "Loading map…"
+		},
+		"errorLabel": {
+			"type": "string",
+			"default": "The map could not be loaded"
+		},
+		"lat": {
+			"type": "number",
+			"default": 0
+		},
+		"lng": {
+			"type": "number",
+			"default": 0
+		},
+		"zoom": {
+			"type": "number",
+			"default": 12
+		},
+		"imageDesktop": {
+			"type": "integer",
+			"default": 0
+		},
+		"imageMobile": {
+			"type": "integer",
+			"default": 0
+		},
+		"spaceTop": {
+			"default": "none"
+		}
+	},
+	"supports": {
+		"ciSection": true,
+		"anchor": true,
+		"html": false
+	},
+	"example": {
+		"attributes": {}
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"viewScript": [
+		"ci-theme-motion",
+		"file:./view.js"
+	],
+	"render": "file:./render.php"
+}

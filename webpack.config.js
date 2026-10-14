@@ -8,6 +8,7 @@
  * - src/gsap: GSAP and its plugins, a single copy (handle "ci-theme-gsap", window.ciThemeGsap).
  *   Other scripts import 'gsap' and 'gsap/<Plugin>' and depend on that handle.
  * - src/motion: section animations, handle "ci-theme-motion".
+ * - src/forms: Contact Form 7 submissions, handle "ci-theme-forms".
  */
 
 const defaultConfig = require( '@wordpress/scripts/config/webpack.config' );
@@ -42,6 +43,7 @@ module.exports = {
 		...( typeof defaultConfig.entry === 'function' ? defaultConfig.entry() : defaultConfig.entry ),
 		'editor/index': './src/editor/index.js',
 		'gsap/index': './src/gsap/index.js',
+		'forms/index': './src/forms/index.js',
 		'motion/index': './src/motion/index.js',
 	} ),
 	plugins: [

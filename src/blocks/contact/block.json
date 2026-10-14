@@ -1,0 +1,177 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/contact",
+	"version": "0.1.0",
+	"title": "Contact form",
+	"category": "ci-sections",
+	"icon": "email-alt",
+	"description": "Quote or question form (sent through Contact Form 7) with WhatsApp, phone, email, hours, location and social profiles from the site settings beside it.",
+	"keywords": [
+		"contact",
+		"form",
+		"quote",
+		"question",
+		"whatsapp"
+	],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"formId": {
+			"type": "integer",
+			"default": 0
+		},
+		"types": {
+			"type": "array",
+			"default": [
+				{
+					"value": "Quote",
+					"label": "Request a quote",
+					"short": "Quote",
+					"cta": "Send quote request"
+				},
+				{
+					"value": "Question",
+					"label": "Ask a question",
+					"short": "Question",
+					"cta": "Send question"
+				}
+			]
+		},
+		"fields": {
+			"type": "object",
+			"default": {
+				"name": {
+					"label": "Full name",
+					"placeholder": "Your name"
+				},
+				"company": {
+					"label": "Company",
+					"placeholder": "Optional"
+				},
+				"email": {
+					"label": "Email",
+					"placeholder": "name@company.com"
+				},
+				"phone": {
+					"label": "Phone",
+					"placeholder": "+1 ..."
+				},
+				"service": {
+					"label": "Service",
+					"placeholder": "Choose a service"
+				},
+				"location": {
+					"label": "Project location",
+					"placeholder": "City, region"
+				},
+				"message": {
+					"label": "Message",
+					"placeholder": "Briefly describe the project, timing and anything useful."
+				}
+			}
+		},
+		"unsureOption": {
+			"type": "string",
+			"default": "I'm not sure"
+		},
+		"requiredNote": {
+			"type": "string",
+			"default": "* Required fields"
+		},
+		"privacyText": {
+			"type": "string",
+			"default": "By sending you accept the"
+		},
+		"privacyLabel": {
+			"type": "string",
+			"default": "Privacy policy"
+		},
+		"privacyUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"sendingLabel": {
+			"type": "string",
+			"default": "Sending…"
+		},
+		"msgRequired": {
+			"type": "string",
+			"default": "This field is required."
+		},
+		"msgEmail": {
+			"type": "string",
+			"default": "Enter a valid email address."
+		},
+		"msgError": {
+			"type": "string",
+			"default": "We could not send the form. Check your connection and try again."
+		},
+		"successTitle": {
+			"type": "string",
+			"default": "Thank you! We got your message."
+		},
+		"successText": {
+			"type": "string",
+			"default": "We reply on business days."
+		},
+		"successWhatsapp": {
+			"type": "string",
+			"default": "If it is urgent, message us on WhatsApp."
+		},
+		"againLabel": {
+			"type": "string",
+			"default": "Send another message"
+		},
+		"showWhatsapp": {
+			"type": "boolean",
+			"default": true
+		},
+		"whatsappTitle": {
+			"type": "string",
+			"default": "Message us on WhatsApp"
+		},
+		"whatsappText": {
+			"type": "string",
+			"default": "Replies during office hours"
+		},
+		"labelPhone": {
+			"type": "string",
+			"default": "Phone"
+		},
+		"labelEmail": {
+			"type": "string",
+			"default": "Email"
+		},
+		"labelHours": {
+			"type": "string",
+			"default": "Hours"
+		},
+		"labelLocation": {
+			"type": "string",
+			"default": "Location"
+		},
+		"showSocials": {
+			"type": "boolean",
+			"default": true
+		},
+		"spaceTop": {
+			"default": "none"
+		}
+	},
+	"supports": {
+		"ciSection": true,
+		"anchor": true,
+		"html": false,
+		"multiple": false
+	},
+	"example": {
+		"attributes": {}
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"viewScript": [
+		"ci-theme-motion",
+		"ci-theme-forms"
+	],
+	"render": "file:./render.php"
+}
