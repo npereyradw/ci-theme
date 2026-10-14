@@ -1,7 +1,7 @@
 <?php
 /**
  * Registers every block of the theme from build/blocks/<slug>/block.json, the "CI · …" inserter
- * categories, the blocks allowed per post type and the shared editor library.
+ * and pattern categories, the blocks allowed per post type and the shared editor library.
  *
  * Section blocks declare "supports": { "ciSection": true } and receive the common style
  * attributes (scheme, colors, spacing, animation) from section-attributes.json.
@@ -29,10 +29,13 @@ if ( ! class_exists( 'CI_Theme_Blocks' ) ) {
 			add_filter( 'block_type_metadata', array( __CLASS__, 'add_section_attributes' ) );
 			add_action( 'init', array( __CLASS__, 'register_editor_library' ), 5 );
 			add_action( 'init', array( __CLASS__, 'register_blocks' ) );
+			add_action( 'init', array( __CLASS__, 'register_pattern_categories' ) );
 			add_action( 'enqueue_block_editor_assets', array( __CLASS__, 'enqueue_editor_library' ) );
 			// The editor canvas is an iframe: its styles (previews, width) are enqueued here.
 			add_action( 'enqueue_block_assets', array( __CLASS__, 'enqueue_canvas_styles' ) );
 			add_filter( 'allowed_block_types_all', array( __CLASS__, 'allowed_blocks' ), 10, 2 );
+			// Only the theme patterns: none from the WordPress.org directory.
+			add_filter( 'should_load_remote_block_patterns', '__return_false' );
 		}
 
 		/**
@@ -89,6 +92,26 @@ if ( ! class_exists( 'CI_Theme_Blocks' ) ) {
 				);
 			}
 			return array_merge( $ours, $categories );
+		}
+
+		/**
+		 * Pattern categories: one section at a time, or a whole page.
+		 */
+		public static function register_pattern_categories() {
+			register_block_pattern_category(
+				'ci-sections',
+				array(
+					'label'       => __( 'CI · Sections', 'ci-theme' ),
+					'description' => __( 'Ready-made sections of the site.', 'ci-theme' ),
+				)
+			);
+			register_block_pattern_category(
+				'ci-pages',
+				array(
+					'label'       => __( 'CI · Pages', 'ci-theme' ),
+					'description' => __( 'Complete pages to start a new page from.', 'ci-theme' ),
+				)
+			);
 		}
 
 		/**
