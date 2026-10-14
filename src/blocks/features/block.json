@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/features",
+	"version": "0.1.0",
+	"title": "Numbered items",
+	"category": "ci-sections",
+	"icon": "editor-ol",
+	"description": "A title and a list of numbered items, each with a title and a text: with an accent dot or as cards.",
+	"keywords": [ "benefits", "why us", "approach", "features", "items" ],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"eyebrow": { "type": "string", "default": "Why choose us" },
+		"title": { "type": "string", "default": "One point of contact, a fixed price and a delivery date." },
+		"variant": { "type": "string", "enum": [ "dot", "cards" ], "default": "dot" },
+		"items": {
+			"type": "array",
+			"default": [
+				{ "title": "Fixed quote", "text": "We quote the whole project before starting, so you know the investment from day one." },
+				{ "title": "Project management", "text": "We coordinate professionals, suppliers and permits. You have a single point of contact throughout." },
+				{ "title": "Firm deadlines", "text": "We set a schedule at the start and every stage has a committed delivery date." }
+			]
+		},
+		"scheme": { "default": "muted" }
+	},
+	"supports": {
+		"ciSection": true,
+		"anchor": true,
+		"html": false
+	},
+	"example": { "attributes": {} },
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"viewScript": "ci-theme-motion",
+	"render": "file:./render.php"
+}

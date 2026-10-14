@@ -675,3 +675,11 @@ body .ci-main .ci-under-header {
 	border-radius: 50%;
 }
 
+/* Area icons (inc/graphics) */
+.ci-area-icon {
+	display: block;
+	width: 64px;
+	height: 64px;
+	overflow: visible;
+}
+

@@ -1,0 +1,78 @@
+/* ci/services — the grid and the cards come from base.css (.ci-cards) and cards.css. */
+
+.ci-services.ci-section--muted .ci-service-card:not(.ci-service-card-soon) {
+	background: #fff;
+}
+
+/* With a line above (under another white section). */
+.ci-services--divider {
+	border-top: 1px solid var(--ci-line);
+}
+
+/* Listing: it starts closer to the page header. */
+.ci-services--listing {
+	--ci-pt: clamp(48px, 6vw, 88px);
+}
+
+/* Inquiry card, at the end of the listing */
+.ci-services-inquiry {
+	position: relative;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 24px;
+	min-height: 280px;
+	padding: 28px;
+	background: var(--ci-navy);
+	color: #fff;
+	border-radius: 8px;
+	text-decoration: none;
+	transition: background 0.2s;
+}
+
+.ci-services-inquiry:hover,
+.ci-services-inquiry:focus-visible {
+	background: var(--ci-navy-2);
+	color: #fff;
+}
+
+.ci-services-inquiry-arc {
+	right: -50px;
+	bottom: -50px;
+	width: 170px;
+	height: 170px;
+	border-width: 26px;
+	border-color: rgba(255, 255, 255, 0.08);
+	border-right-color: transparent;
+}
+
+.ci-services-inquiry-dot {
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	background: var(--ci-yellow);
+}
+
+.ci-services-inquiry-body {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.ci-services-inquiry-title {
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 1.2;
+}
+
+.ci-services-inquiry-text {
+	font-size: 15px;
+	line-height: 1.6;
+	color: var(--ci-ink-on-dark);
+}
+
+.ci-services-inquiry-more {
+	color: var(--ci-yellow);
+	font-weight: 600;
+}

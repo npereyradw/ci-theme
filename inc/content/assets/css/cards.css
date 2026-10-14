@@ -1,0 +1,304 @@
+/* Service, project, news and testimonial cards.
+   Shared by several sections; loaded with the "ci-theme-cards" handle. */
+
+/* ── ServiceCard ── */
+
+.ci-service-card {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	height: 100%;
+	min-height: 280px;
+	padding: 28px;
+	background: #fff;
+	border: 1px solid var(--ci-line);
+	border-radius: 8px;
+	color: var(--ci-navy);
+	text-decoration: none;
+	transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.ci-service-card:hover,
+.ci-service-card:focus-visible {
+	color: var(--ci-navy);
+	border-color: var(--ci-navy);
+	box-shadow: 0 18px 40px -24px rgba(28, 37, 69, 0.45);
+	transform: translateY(-2px);
+}
+
+.ci-service-card-soon {
+	background: var(--ci-bg);
+}
+
+.ci-service-card-soon:hover,
+.ci-service-card-soon:focus-visible {
+	box-shadow: none;
+	transform: none;
+}
+
+.ci-service-card-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.ci-service-card-meta {
+	font-size: 13px;
+	letter-spacing: 0.01em;
+	color: var(--ci-muted);
+}
+
+.ci-service-card-badge {
+	font-size: 11px;
+	font-weight: 500;
+	letter-spacing: 0.01em;
+	background: var(--ci-yellow);
+	color: var(--ci-navy);
+	padding: 5px 9px;
+	border-radius: 999px;
+}
+
+.ci-service-card-title {
+	margin: 8px 0 0;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: -0.02em;
+	text-wrap: balance;
+}
+
+.ci-service-card-text {
+	margin: 0;
+	font-size: 15px;
+	line-height: 1.6;
+	color: var(--ci-muted);
+	text-wrap: pretty;
+}
+
+.ci-service-card-foot {
+	margin-top: auto;
+	padding-top: 12px;
+	border-top: 1px solid #eceef2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.ci-service-card-soon .ci-service-card-foot {
+	border-top-color: var(--ci-line);
+}
+
+.ci-service-card-arrow {
+	color: var(--ci-red);
+}
+
+/* ── ProjectCard ── */
+
+.ci-project-card {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	height: 100%;
+	color: var(--ci-navy);
+	text-decoration: none;
+}
+
+.ci-project-card:hover,
+.ci-project-card:focus-visible {
+	color: var(--ci-navy-2);
+}
+
+.ci-project-card-media {
+	position: relative;
+}
+
+.ci-project-card-flag {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	font-size: 11px;
+	letter-spacing: 0.01em;
+	background: var(--ci-navy);
+	color: #fff;
+	padding: 5px 9px;
+}
+
+.ci-project-card-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.ci-project-card-area,
+.ci-project-card-service {
+	font-size: 12px;
+	letter-spacing: 0.01em;
+	border-radius: 2px;
+}
+
+.ci-project-card-area {
+	color: var(--ci-navy);
+	background: #e6e8f0;
+	padding: 4px 8px;
+}
+
+.ci-project-card-service {
+	color: var(--ci-muted);
+	border: 1px solid var(--ci-line);
+	padding: 3px 8px;
+}
+
+.ci-project-card-title {
+	margin: 0;
+	font-weight: 500;
+	font-size: 19px;
+	line-height: 1.25;
+	letter-spacing: -0.02em;
+	text-wrap: balance;
+}
+
+.ci-project-card-info {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	font-size: 15px;
+	color: var(--ci-muted);
+}
+
+.ci-project-card-location {
+	font-size: 13px;
+}
+
+/* ── NewsCard ── */
+
+.ci-news-card {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	height: 100%;
+	color: var(--ci-navy);
+	text-decoration: none;
+}
+
+.ci-news-card:hover,
+.ci-news-card:focus-visible {
+	color: var(--ci-navy-2);
+}
+
+.ci-news-card-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px 14px;
+	font-size: 12px;
+	letter-spacing: 0.01em;
+	color: var(--ci-muted);
+}
+
+.ci-news-card-category {
+	color: var(--ci-red);
+	font-weight: 500;
+}
+
+.ci-news-card-title {
+	margin: 0;
+	font-weight: 500;
+	font-size: 19px;
+	line-height: 1.25;
+	letter-spacing: -0.02em;
+	text-wrap: balance;
+}
+
+.ci-news-card-text {
+	margin: 0;
+	font-size: 15px;
+	line-height: 1.6;
+	color: var(--ci-muted);
+	text-wrap: pretty;
+}
+
+.ci-news-card-more {
+	margin-top: auto;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.ci-news-card-arrow {
+	color: var(--ci-red);
+}
+
+/* ── TestimonialCard ── */
+
+.ci-testimonial-card {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	height: 100%;
+	padding: 32px;
+	background: #fff;
+	border: 1px solid var(--ci-line);
+	border-radius: 8px;
+	color: var(--ci-navy);
+}
+
+.ci-testimonial-card-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.ci-testimonial-card-quote {
+	font-weight: 500;
+	font-size: 56px;
+	line-height: 0.6;
+	color: var(--ci-red);
+}
+
+.ci-testimonial-card-flag {
+	font-size: 11px;
+	letter-spacing: 0.01em;
+	color: var(--ci-muted);
+	border: 1px solid var(--ci-line);
+	padding: 4px 8px;
+}
+
+.ci-testimonial-card-text {
+	margin: 0;
+	font-size: 17px;
+	line-height: 1.6;
+	text-wrap: pretty;
+}
+
+.ci-testimonial-card-author {
+	margin-top: auto;
+	display: flex;
+	align-items: center;
+	gap: 14px;
+}
+
+.ci-testimonial-card-avatar {
+	width: 44px;
+	height: 44px;
+	flex: none;
+	border-radius: 50%;
+	background: #eceef2;
+	border: 1px solid var(--ci-line);
+}
+
+.ci-testimonial-card-who {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.ci-testimonial-card-name {
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.ci-testimonial-card-role {
+	font-size: 14px;
+	color: var(--ci-muted);
+}

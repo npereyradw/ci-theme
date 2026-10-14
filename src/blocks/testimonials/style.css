@@ -1,0 +1,5 @@
+/* ci/testimonials — the grid and the cards come from base.css (.ci-cards) and cards.css. */
+
+.ci-testimonials.ci-section--dark .ci-testimonial-card {
+	border-color: transparent;
+}

@@ -1,0 +1,52 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/cta",
+	"version": "0.1.0",
+	"title": "Call to action",
+	"category": "ci-sections",
+	"icon": "megaphone",
+	"description": "Dark box with a title, text and buttons to request a quote. By default it uses the text of the site settings; each page can replace it.",
+	"keywords": [ "cta", "quote", "contact", "whatsapp", "call to action" ],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"useGlobal": {
+			"type": "boolean",
+			"default": true
+		},
+		"eyebrow": {
+			"type": "string",
+			"default": ""
+		},
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"text": {
+			"type": "string",
+			"default": ""
+		},
+		"buttons": {
+			"type": "array",
+			"default": [
+				{ "label": "Request a quote →", "kind": "link", "url": "/contact/", "style": "primary", "newTab": false },
+				{ "label": "Message us on WhatsApp", "kind": "whatsapp", "url": "", "style": "on-dark", "newTab": true }
+			]
+		},
+		"scheme": {
+			"enum": [ "light", "muted" ]
+		}
+	},
+	"supports": {
+		"ciSection": true,
+		"anchor": true,
+		"html": false
+	},
+	"example": {
+		"attributes": {}
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"viewScript": "ci-theme-motion",
+	"render": "file:./render.php"
+}

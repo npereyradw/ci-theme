@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/institutions",
+	"version": "0.1.0",
+	"title": "Institutions",
+	"category": "ci-dynamic",
+	"icon": "awards",
+	"description": "Logos of professional boards and associations, from the Institutions section, with a statement or a label.",
+	"keywords": [ "institutions", "associations", "memberships", "logos" ],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"variant": { "type": "string", "enum": [ "statement", "label" ], "default": "statement" },
+		"text": {
+			"type": "string",
+			"default": "Registered with the professional boards of the regions where we work."
+		},
+		"label": { "type": "string", "default": "Registrations" }
+	},
+	"supports": {
+		"ciSection": true,
+		"anchor": true,
+		"html": false
+	},
+	"example": { "attributes": {} },
+	"editorScript": "file:./index.js",
+	"style": [ "file:./style-index.css", "ci-theme-institutions" ],
+	"viewScript": "ci-theme-motion",
+	"render": "file:./render.php"
+}

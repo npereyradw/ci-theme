@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/testimonials",
+	"version": "0.1.0",
+	"title": "Testimonials",
+	"category": "ci-dynamic",
+	"icon": "format-quote",
+	"description": "Client testimonials from the Testimonials section. The section stays hidden until at least one is published.",
+	"keywords": [ "testimonials", "clients", "quotes", "reviews" ],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"eyebrow": { "type": "string", "default": "Testimonials" },
+		"title": { "type": "string", "default": "What our clients say" }
+	},
+	"supports": {
+		"ciSection": true,
+		"anchor": true,
+		"html": false
+	},
+	"example": { "attributes": {} },
+	"editorScript": "file:./index.js",
+	"style": [ "file:./style-index.css", "ci-theme-cards" ],
+	"viewScript": "ci-theme-motion",
+	"render": "file:./render.php"
+}

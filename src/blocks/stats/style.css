@@ -1,0 +1,42 @@
+/* ci/stats — text with highlighted figures. */
+
+.ci-stats-split {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr));
+	gap: 48px;
+	align-items: start;
+}
+
+.ci-stats-list {
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+	gap: 16px;
+}
+
+.ci-stats-item {
+	padding: 24px 0 8px;
+	border-top: 2px solid currentcolor;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: flex-end;
+	gap: 8px;
+}
+
+.ci-stats-value {
+	margin: 0;
+	font-weight: 500;
+	font-size: clamp(40px, 4vw, 56px);
+	line-height: 1;
+	letter-spacing: -0.04em;
+}
+
+.ci-stats-label {
+	font-size: 15px;
+	line-height: 1.45;
+	color: var(--ci-muted);
+}
+
+.ci-section--dark .ci-stats-label {
+	color: var(--ci-ink-on-dark);
+}

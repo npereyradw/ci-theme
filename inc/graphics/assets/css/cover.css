@@ -1,0 +1,110 @@
+/* Generative graphic cover. */
+
+.ci-cover {
+	position: relative;
+	width: 100%;
+	aspect-ratio: var(--ci-cover-ratio, 4 / 3);
+	overflow: clip;
+	border-radius: 8px;
+	background: var(--ci-cover-bg, #1c2545);
+	isolation: isolate;
+}
+
+/* As a section background (home hero, reach section) */
+.ci-cover--fill {
+	position: absolute;
+	inset: 0;
+	width: auto;
+	aspect-ratio: auto;
+	border-radius: 0;
+	background: transparent;
+	overflow: visible;
+}
+
+.ci-cover--fill .ci-cover-svg {
+	overflow: visible;
+}
+
+.ci-cover-svg {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	overflow: hidden;
+}
+
+.ci-cover-image {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	transition: transform 0.9s var(--ci-ease-out);
+}
+
+.ci-cover-initials {
+	font-family: var(--wp--preset--font-family--geist);
+	font-weight: 500;
+	font-size: 44px;
+	letter-spacing: -0.06em;
+	fill: #1c2545;
+}
+
+.ci-cover-caption {
+	position: absolute;
+	left: 16px;
+	bottom: 14px;
+	font-size: 12px;
+	color: var(--ci-cover-cap, #5a6178);
+}
+
+/* Reaction when hovering the card that contains the cover.
+   Applied to <g> wrappers so it does not clash with the GSAP transforms. */
+.ci-cover-hover-arc,
+.ci-cover-hover-ring,
+.ci-cover-hover-disc,
+.ci-cover-hover-bar {
+	transform-box: fill-box;
+	transform-origin: center;
+	transition: transform 0.9s var(--ci-ease-out);
+}
+
+.ci-cover-hover-bar {
+	transform-origin: bottom;
+}
+
+@media (hover: hover) {
+
+	a:hover .ci-cover-hover-arc {
+		transform: rotate(14deg);
+	}
+
+	a:hover .ci-cover-hover-ring {
+		transform: scale(1.04);
+	}
+
+	a:hover .ci-cover-hover-disc {
+		transform: scale(1.12);
+	}
+
+	a:hover .ci-cover-hover-bar {
+		transform: scaleY(1.12);
+	}
+
+	a:hover .ci-cover-image {
+		transform: scale(1.04);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	.ci-cover-hover-arc,
+	.ci-cover-hover-ring,
+	.ci-cover-hover-disc,
+	.ci-cover-hover-bar,
+	.ci-cover-image {
+		transition: none;
+	}
+}

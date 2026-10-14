@@ -1,0 +1,84 @@
+/* ci/projects — project cards and the full listing with filters. */
+
+/* With a line: the section starts close to the previous one and the line separates the title. */
+.ci-projects--divider {
+	--ci-pt: 0px;
+}
+
+.ci-projects--divider .ci-projects-head {
+	padding-top: clamp(56px, 7vw, 96px);
+	border-top: 1px solid var(--ci-line);
+}
+
+/* ── Listing with filters ── */
+
+.ci-projects-listing-bar {
+	position: relative;
+	z-index: 2;
+	background: #fff;
+	border-top: 1px solid var(--ci-line);
+	border-bottom: 1px solid var(--ci-line);
+}
+
+.ci-projects-listing-bar-inner {
+	padding-block: 16px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 12px 24px;
+}
+
+.ci-projects-listing-select-wrap {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-left: auto;
+	flex: 1 1 260px;
+	min-width: 0;
+	max-width: min(100%, 360px);
+}
+
+.ci-projects-listing-select-label {
+	flex: none;
+	font-size: 12px;
+	letter-spacing: 0.01em;
+	color: var(--ci-muted);
+}
+
+.ci-projects-listing-select {
+	flex: 1;
+	width: 0;
+	min-width: 0;
+	height: 44px;
+	padding: 0 14px;
+	border: 1.5px solid #c3c7d3;
+	border-radius: 8px;
+	background: #fff;
+	font: inherit;
+	font-size: 15px;
+	color: var(--ci-navy);
+}
+
+.ci-projects-listing-select:focus-visible {
+	border-color: var(--ci-navy);
+}
+
+.ci-projects-listing-results {
+	padding-block: clamp(36px, 4.6vw, 58px) var(--ci-section-y);
+}
+
+.ci-projects-listing-stack {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.ci-projects-listing-count {
+	margin: 0;
+	font-size: 13px;
+	color: var(--ci-muted);
+}
+
+.ci-cards.ci-projects-listing-grid {
+	gap: 48px 24px;
+}

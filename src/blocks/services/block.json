@@ -1,0 +1,40 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/services",
+	"version": "0.2.0",
+	"title": "Services",
+	"category": "ci-dynamic",
+	"icon": "hammer",
+	"description": "Service cards from the Services section: all of them, those of an area or hand-picked. In the Listing layout it follows the area filter of the page header and adds an inquiry card.",
+	"keywords": [ "services", "cards", "listing" ],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"layout": { "type": "string", "enum": [ "grid", "listing" ], "default": "grid" },
+		"eyebrow": { "type": "string", "default": "Services" },
+		"title": { "type": "string", "default": "From feasibility studies to site supervision." },
+		"linkLabel": { "type": "string", "default": "All services →" },
+		"linkUrl": { "type": "string", "default": "/services/" },
+		"source": { "type": "string", "enum": [ "all", "area", "manual" ], "default": "all" },
+		"area": { "type": "string", "default": "" },
+		"ids": { "type": "array", "items": { "type": "integer" }, "default": [] },
+		"limit": { "type": "integer", "default": 0 },
+		"hideSoon": { "type": "boolean", "default": false },
+		"divider": { "type": "boolean", "default": false },
+		"showInquiry": { "type": "boolean", "default": true },
+		"inquiryTitle": { "type": "string", "default": "Not sure which service you need?" },
+		"inquiryText": { "type": "string", "default": "Tell us about your project and we will point you in the right direction." },
+		"inquiryLabel": { "type": "string", "default": "Ask us →" },
+		"inquiryUrl": { "type": "string", "default": "/contact/" }
+	},
+	"supports": {
+		"ciSection": true,
+		"anchor": true,
+		"html": false
+	},
+	"example": { "attributes": { "limit": 3 } },
+	"editorScript": "file:./index.js",
+	"style": [ "file:./style-index.css", "ci-theme-cards" ],
+	"viewScript": "ci-theme-motion",
+	"render": "file:./render.php"
+}

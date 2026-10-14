@@ -1,0 +1,89 @@
+/* ci/areas — areas of the firm, on a dark background by default. */
+
+.ci-areas-arc {
+	left: -200px;
+	bottom: -260px;
+	width: 560px;
+	height: 560px;
+	border-width: 72px;
+	border-color: rgba(255, 255, 255, 0.04);
+	border-right-color: transparent;
+}
+
+.ci-areas-inner {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: clamp(36px, 4.6vw, 58px);
+}
+
+.ci-areas-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+	border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.ci-areas-item {
+	padding: 36px 32px 36px 0;
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.ci-areas-num {
+	font-size: 13px;
+	color: #b9bfd3;
+}
+
+.ci-areas-title {
+	margin: 0;
+	font-weight: 500;
+	font-size: clamp(22px, 2vw, 26px);
+}
+
+.ci-areas-text {
+	margin: 0;
+	font-size: 16px;
+	line-height: 1.6;
+	color: var(--ci-ink-on-dark);
+	text-wrap: pretty;
+}
+
+.ci-areas-link {
+	margin-top: auto;
+	display: inline-flex;
+	min-height: 44px;
+	align-items: center;
+	color: var(--ci-yellow);
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.ci-areas-link:hover,
+.ci-areas-link:focus-visible {
+	color: #fff;
+}
+
+/* Outside the dark background, lines and texts switch to the light palette. */
+.ci-areas:not(.ci-section--dark) .ci-areas-list,
+.ci-areas:not(.ci-section--dark) .ci-areas-item {
+	border-color: var(--ci-line);
+}
+
+.ci-areas:not(.ci-section--dark) .ci-areas-num,
+.ci-areas:not(.ci-section--dark) .ci-areas-text {
+	color: var(--ci-muted);
+}
+
+.ci-areas:not(.ci-section--dark) .ci-areas-link {
+	color: var(--ci-red);
+}
+
+.ci-areas:not(.ci-section--dark) .ci-area-icon [fill="#FFFFFF"] {
+	fill: var(--ci-navy);
+}
+
+.ci-areas:not(.ci-section--dark) .ci-area-icon [stroke="#FFFFFF"] {
+	stroke: var(--ci-navy);
+}

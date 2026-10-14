@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/stats",
+	"version": "0.1.0",
+	"title": "Stats",
+	"category": "ci-sections",
+	"icon": "chart-bar",
+	"description": "Text with a link on one side and highlighted figures on the other. Numbers count up from 0 when they appear.",
+	"keywords": [ "stats", "figures", "numbers", "track record" ],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"eyebrow": { "type": "string", "default": "Track record" },
+		"title": { "type": "string", "default": "Experience you can measure." },
+		"text": {
+			"type": "string",
+			"default": "We work with industrial plants, architecture studios, builders and private clients. One team designs, calculates and supervises every project."
+		},
+		"linkLabel": { "type": "string", "default": "About us →" },
+		"linkUrl": { "type": "string", "default": "/about/" },
+		"stats": {
+			"type": "array",
+			"default": [
+				{ "value": "+30", "label": "years of experience in projects and works" },
+				{ "value": "3", "label": "service areas under one team" },
+				{ "value": "+200", "label": "completed projects" },
+				{ "value": "100%", "label": "of projects with a direct lead" }
+			]
+		}
+	},
+	"supports": {
+		"ciSection": true,
+		"anchor": true,
+		"html": false
+	},
+	"example": { "attributes": {} },
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"viewScript": "ci-theme-motion",
+	"render": "file:./render.php"
+}

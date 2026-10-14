@@ -1,0 +1,40 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/news",
+	"version": "0.1.0",
+	"title": "News",
+	"category": "ci-dynamic",
+	"icon": "megaphone",
+	"description": "Published posts. As a section: the latest ones (hidden while there are none). As a listing (posts page): featured post, category filter and pagination.",
+	"keywords": [ "news", "blog", "posts", "listing" ],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"layout": { "type": "string", "enum": [ "cards", "listing" ], "default": "cards" },
+		"eyebrow": { "type": "string", "default": "News" },
+		"title": { "type": "string", "default": "Latest news" },
+		"linkLabel": { "type": "string", "default": "View all →" },
+		"linkUrl": { "type": "string", "default": "/news/" },
+		"limit": { "type": "integer", "default": 3 },
+		"category": { "type": "string", "default": "" },
+		"scheme": { "default": "muted" },
+		"featuredBadge": { "type": "string", "default": "Featured" },
+		"readMore": { "type": "string", "default": "Read more" },
+		"filterLabel": { "type": "string", "default": "Filter by category" },
+		"allLabel": { "type": "string", "default": "All" },
+		"nextLabel": { "type": "string", "default": "Next →" },
+		"emptyTitle": { "type": "string", "default": "The first posts are coming soon." },
+		"emptyButtonLabel": { "type": "string", "default": "View projects" },
+		"emptyButtonUrl": { "type": "string", "default": "/projects/" }
+	},
+	"supports": {
+		"ciSection": true,
+		"anchor": true,
+		"html": false
+	},
+	"example": { "attributes": {} },
+	"editorScript": "file:./index.js",
+	"style": [ "file:./style-index.css", "ci-theme-cards", "ci-theme-cover" ],
+	"viewScript": "ci-theme-motion",
+	"render": "file:./render.php"
+}

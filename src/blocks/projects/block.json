@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/projects",
+	"version": "0.1.0",
+	"title": "Projects",
+	"category": "ci-dynamic",
+	"icon": "building",
+	"description": "Project cards with their image or cover. They come from the Projects section: the latest, those of an area or a service, hand-picked, those of the service being viewed or related to the project being viewed. Also as a full listing with filters by area and service.",
+	"keywords": [ "projects", "works", "cards", "portfolio", "listing", "related" ],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"layout": { "type": "string", "enum": [ "cards", "listing" ], "default": "cards" },
+		"eyebrow": { "type": "string", "default": "Projects" },
+		"title": { "type": "string", "default": "Latest projects" },
+		"linkLabel": { "type": "string", "default": "View all projects →" },
+		"linkUrl": { "type": "string", "default": "/projects/" },
+		"source": { "type": "string", "enum": [ "all", "area", "service", "manual", "current-service", "related" ], "default": "all" },
+		"area": { "type": "string", "default": "" },
+		"service": { "type": "string", "default": "" },
+		"ids": { "type": "array", "items": { "type": "integer" }, "default": [] },
+		"limit": { "type": "integer", "default": 3 },
+		"divider": { "type": "boolean", "default": true },
+		"filterLabel": { "type": "string", "default": "Filter by area" },
+		"allAreasLabel": { "type": "string", "default": "All" },
+		"serviceLabel": { "type": "string", "default": "Service" },
+		"allServicesLabel": { "type": "string", "default": "All services" },
+		"emptyTitle": { "type": "string", "default": "There are no projects with this filter yet." },
+		"emptyButton": { "type": "string", "default": "View all" }
+	},
+	"supports": {
+		"ciSection": true,
+		"anchor": true,
+		"html": false
+	},
+	"example": { "attributes": {} },
+	"editorScript": "file:./index.js",
+	"style": [ "file:./style-index.css", "ci-theme-cards", "ci-theme-cover" ],
+	"viewScript": "ci-theme-motion",
+	"render": "file:./render.php"
+}

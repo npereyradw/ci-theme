@@ -1,0 +1,37 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/process",
+	"version": "0.1.0",
+	"title": "Process",
+	"category": "ci-sections",
+	"icon": "editor-ol",
+	"description": "Numbered work steps: as a timeline (colored number, a line that draws itself and an arrow) or as a list next to an illustration.",
+	"keywords": [ "process", "steps", "stages", "how we work" ],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"layout": { "type": "string", "default": "timeline", "enum": [ "timeline", "cover" ] },
+		"image": { "type": "integer", "default": 0 },
+		"coverSeed": { "type": "string", "default": "0" },
+		"eyebrow": { "type": "string", "default": "Process" },
+		"title": { "type": "string", "default": "Planning, design and construction." },
+		"steps": {
+			"type": "array",
+			"default": [
+				{ "title": "Planning", "text": "We survey the need, the site and the regulations, and define scope, budget and schedule." },
+				{ "title": "Design", "text": "We develop the design, calculations and technical documents needed to approve and build." },
+				{ "title": "Construction", "text": "We supervise the works until handover, with progress reports at every stage." }
+			]
+		}
+	},
+	"supports": {
+		"ciSection": true,
+		"anchor": true,
+		"html": false
+	},
+	"example": { "attributes": {} },
+	"editorScript": "file:./index.js",
+	"style": [ "file:./style-index.css", "ci-theme-cover" ],
+	"viewScript": "ci-theme-motion",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,84 @@
+/* ci/cta — closing call to action: dark box with a title, text and buttons. */
+
+.ci-cta {
+
+	/* Spacing of the design; the Spacing panel can change it. */
+	--ci-section-y: clamp(48px, 7vw, 96px);
+	background: #fff;
+}
+
+.ci-cta.ci-section--muted {
+	background: var(--ci-bg);
+}
+
+.ci-cta-box {
+	position: relative;
+	overflow: clip;
+	background: var(--ci-navy);
+	color: #fff;
+	border-radius: 8px;
+	padding: clamp(36px, 6vw, 80px);
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
+	gap: 40px;
+	align-items: end;
+}
+
+.ci-cta-arc {
+	right: -120px;
+	top: -120px;
+	width: 360px;
+	height: 360px;
+	border-width: 48px;
+	border-color: rgba(255, 255, 255, 0.06);
+	border-right-color: transparent;
+}
+
+.ci-cta-dot {
+	position: absolute;
+	right: 60px;
+	top: 60px;
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	background: var(--ci-yellow);
+}
+
+.ci-cta-text {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.ci-cta-title {
+	margin: 0;
+	font-weight: 500;
+	font-size: clamp(26px, 2.9vw, 36px);
+	line-height: 1.08;
+	letter-spacing: -0.03em;
+	text-wrap: balance;
+}
+
+.ci-cta-body {
+	margin: 0;
+	max-width: 520px;
+	font-size: 17px;
+	line-height: 1.6;
+	color: var(--ci-ink-on-dark);
+	text-wrap: pretty;
+}
+
+.ci-cta-actions {
+	position: relative;
+}
+
+@media (max-width: 600px) {
+
+	.ci-cta-dot {
+		right: 24px;
+		top: 24px;
+		width: 32px;
+		height: 32px;
+	}
+}

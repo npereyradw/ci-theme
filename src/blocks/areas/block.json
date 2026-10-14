@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/areas",
+	"version": "0.1.0",
+	"title": "Areas",
+	"category": "ci-dynamic",
+	"icon": "networking",
+	"description": "The areas of the firm with their animated icon, their text and a link to their services. They come from Services → Areas (the text is the description of each area).",
+	"keywords": [ "areas", "disciplines", "practice" ],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"eyebrow": { "type": "string", "default": "Areas" },
+		"title": { "type": "string", "default": "Three disciplines in one team." },
+		"linkPattern": { "type": "string", "default": "{area} services →" },
+		"scheme": { "default": "dark" }
+	},
+	"supports": {
+		"ciSection": true,
+		"anchor": true,
+		"html": false
+	},
+	"example": { "attributes": {} },
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"viewScript": "ci-theme-motion",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,91 @@
+/* ci/features — numbered items: with an accent dot or as cards. */
+
+/* With an accent dot */
+.ci-features--dot .ci-features-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+	gap: clamp(24px, 3vw, 48px);
+}
+
+.ci-features--dot .ci-features-item {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding-top: 28px;
+	border-top: 1px solid #c3c7d3;
+}
+
+.ci-features-head {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.ci-features-dot {
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background: var(--ci-yellow);
+	border: 2px solid var(--ci-navy);
+}
+
+.ci-features--dot .ci-features-num {
+	font-size: 13px;
+	color: var(--ci-muted);
+}
+
+.ci-features--dot .ci-features-text {
+	margin: 0;
+	font-size: 16px;
+	line-height: 1.6;
+	color: var(--ci-ink-2);
+	text-wrap: pretty;
+}
+
+/* Tarjetas (Enfoque) */
+.ci-features--cards .ci-features-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+	gap: 20px;
+}
+
+.ci-features--cards .ci-features-item {
+	background: #fff;
+	border: 1px solid var(--ci-line);
+	border-radius: 8px;
+	padding: 28px;
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	color: var(--ci-navy);
+}
+
+.ci-features--cards .ci-features-num {
+	font-size: 13px;
+	color: var(--ci-red);
+}
+
+.ci-features-title {
+	margin: 0;
+	font-weight: 500;
+	font-size: 20px;
+	letter-spacing: -0.02em;
+}
+
+.ci-features--cards .ci-features-text {
+	margin: 0;
+	font-size: 15px;
+	line-height: 1.6;
+	color: var(--ci-muted);
+	text-wrap: pretty;
+}
+
+/* On a dark background, the dot variant switches to light texts. */
+.ci-section--dark.ci-features--dot .ci-features-item {
+	border-color: rgba(255, 255, 255, 0.22);
+}
+
+.ci-section--dark.ci-features--dot .ci-features-num,
+.ci-section--dark.ci-features--dot .ci-features-text {
+	color: var(--ci-ink-on-dark);
+}

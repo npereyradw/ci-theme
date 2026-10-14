@@ -13,10 +13,17 @@ defined( 'ABSPATH' ) || exit;
 
 require_once __DIR__ . '/includes/class-ci-theme-content.php';
 require_once __DIR__ . '/includes/class-ci-theme-institutions.php';
+require_once __DIR__ . '/includes/class-ci-theme-cards.php';
 
 add_action(
 	'init',
 	static function () {
+		wp_register_style(
+			'ci-theme-cards',
+			CI_THEME_URI . 'inc/content/assets/css/cards.css',
+			array(),
+			ci_theme_asset_version( 'inc/content/assets/css/cards.css' )
+		);
 		wp_register_style(
 			'ci-theme-institutions',
 			CI_THEME_URI . 'inc/content/assets/css/institutions.css',

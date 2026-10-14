@@ -1,0 +1,33 @@
+/* ci/institutions — logos of professional boards with a statement or a label. */
+
+/* Statement: close to the previous section, with a line above. */
+.ci-institutions-band--statement {
+	--ci-section-y: clamp(24px, 3vw, 40px);
+	--ci-pt: 0px;
+}
+
+.ci-institutions-band--statement .ci-institutions-band-inner {
+	padding-top: clamp(40px, 5vw, 56px);
+	border-top: 1px solid var(--ci-line);
+}
+
+.ci-institutions-band-inner {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.ci-institutions-band-text {
+	margin: 0;
+	max-width: 760px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.35;
+	text-wrap: balance;
+}
+
+/* Label: space above only. */
+.ci-institutions-band--label {
+	--ci-section-y: clamp(56px, 7vw, 96px);
+	--ci-pb: 0px;
+}

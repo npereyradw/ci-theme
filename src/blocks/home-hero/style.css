@@ -1,0 +1,113 @@
+/* ci/home-hero — first screen of the home page. */
+
+.ci-home-hero {
+	position: relative;
+	overflow: clip;
+	isolation: isolate;
+}
+
+.ci-home-hero-art {
+	position: absolute;
+	z-index: -2;
+	top: 50%;
+	right: max(var(--ci-gutter), calc((100% - var(--ci-max)) / 2 + var(--ci-gutter)));
+	height: 78%;
+	aspect-ratio: 4 / 5;
+	transform: translateY(-50%);
+}
+
+/* Gradient that keeps the text readable over the illustration */
+.ci-home-hero-shade {
+	position: absolute;
+	z-index: -1;
+	inset: 0;
+	background: linear-gradient(90deg, var(--ci-navy) 38%, rgba(28, 37, 69, 0) 49%);
+	pointer-events: none;
+}
+
+.ci-home-hero-inner {
+	min-height: min(760px, calc(100svh - var(--ci-header-h)));
+	padding-block: clamp(48px, 6vw, 88px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 40px;
+}
+
+.ci-home-hero-text {
+	max-width: 600px;
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+}
+
+.ci-home-hero-text .ci-lead {
+	max-width: 540px;
+}
+
+.ci-home-hero-badge {
+	align-self: flex-start;
+	margin: 0;
+	background: #fff;
+	color: var(--ci-navy);
+	border-radius: 8px;
+	padding: 20px 26px;
+	box-shadow: 0 24px 48px -24px rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	gap: 18px;
+}
+
+.ci-home-hero-badge-num {
+	font-weight: 500;
+	font-size: 52px;
+	line-height: 1;
+	letter-spacing: -0.02em;
+	font-variant-numeric: tabular-nums;
+}
+
+.ci-home-hero-badge-text {
+	font-size: 15px;
+	line-height: 1.4;
+	color: var(--ci-ink-2);
+}
+
+/* Phones and tablets: the illustration fills the lower part, behind the text; the disc sits
+   under the buttons and the counter card rests on it. */
+@media (max-width: 899px) {
+
+	/* The bar stays 16px from the edge: it ends at 99% of the drawing width. */
+	.ci-home-hero-art {
+		top: auto;
+		right: calc(16px - 0.01 * min(72vw, 300px));
+		bottom: -32px;
+		height: auto;
+		width: min(72vw, 300px);
+		transform: none;
+	}
+
+	.ci-home-hero-shade {
+		background: linear-gradient(180deg, var(--ci-navy) 40%, rgba(28, 37, 69, 0) 52%);
+	}
+
+	.ci-home-hero-inner {
+		min-height: calc(100svh - var(--ci-header-h));
+		justify-content: flex-start;
+		gap: 32px;
+	}
+
+	/* Over the yellow disc, the secondary button needs its own background. */
+	.ci-home-hero-text .ci-btn--on-dark {
+		background: #fff;
+		border-color: #fff;
+		color: var(--ci-navy);
+	}
+
+	.ci-home-hero-badge {
+		padding: 16px 20px;
+	}
+
+	.ci-home-hero-badge-num {
+		font-size: 40px;
+	}
+}

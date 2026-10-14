@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ci/home-hero",
+	"version": "0.1.0",
+	"title": "Home hero",
+	"category": "ci-sections",
+	"icon": "cover-image",
+	"description": "First screen of the home page: background illustration, main title (H1), text, buttons and a card with a counter.",
+	"keywords": [ "hero", "home", "cover", "h1" ],
+	"textdomain": "ci-theme",
+	"attributes": {
+		"eyebrow": { "type": "string", "default": "Engineering · Architecture · Design" },
+		"title": { "type": "string", "default": "Engineering projects with fixed quotes and firm deadlines." },
+		"lead": {
+			"type": "string",
+			"default": "A multidisciplinary team for industry, firms, builders and homeowners. We design, calculate and supervise projects from start to finish."
+		},
+		"buttons": {
+			"type": "array",
+			"default": [
+				{ "label": "Request a quote →", "kind": "link", "url": "/contact/", "style": "primary", "newTab": false },
+				{ "label": "View projects", "kind": "link", "url": "/projects/", "style": "on-dark", "newTab": false }
+			]
+		},
+		"badgeNumber": { "type": "string", "default": "+30" },
+		"badgeText": { "type": "string", "default": "years of experience\nacross the country" },
+		"showArt": { "type": "boolean", "default": true },
+		"scheme": { "default": "dark", "enum": [ "dark" ] }
+	},
+	"supports": {
+		"ciSection": true,
+		"anchor": true,
+		"html": false
+	},
+	"example": { "attributes": {} },
+	"editorScript": "file:./index.js",
+	"style": [ "file:./style-index.css", "ci-theme-cover" ],
+	"viewScript": "ci-theme-motion",
+	"render": "file:./render.php"
+}
