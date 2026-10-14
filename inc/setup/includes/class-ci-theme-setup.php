@@ -34,6 +34,13 @@ if ( ! class_exists( 'CI_Theme_Setup' ) ) {
 			add_theme_support( 'editor-styles' );
 			add_theme_support( 'responsive-embeds' );
 			add_theme_support( 'html5', array( 'script', 'style', 'navigation-widgets' ) );
+			add_theme_support(
+				'custom-logo',
+				array(
+					'flex-width'  => true,
+					'flex-height' => true,
+				)
+			);
 			remove_theme_support( 'core-block-patterns' );
 			add_editor_style( 'assets/css/base.css' );
 		}

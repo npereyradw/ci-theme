@@ -643,3 +643,35 @@ body .ci-main .ci-under-header {
 	font-size: 22px;
 }
 
+/* ── Logo (inc/graphics) ─────────────────────────────────────── */
+.ci-logo {
+	display: inline-flex;
+	align-items: center;
+	height: var(--ci-logo-height, 40px);
+	line-height: 1;
+}
+
+.ci-logo-image {
+	display: block;
+	width: auto;
+	height: 100%;
+}
+
+/* Without a logo image: the site title. */
+.ci-logo--text {
+	font-weight: 600;
+	font-size: calc(var(--ci-logo-height, 40px) * 0.44);
+	letter-spacing: -0.03em;
+	white-space: nowrap;
+	color: var(--ci-navy);
+}
+
+.ci-logo--dark {
+	color: #fff;
+}
+
+.ci-logo-icon {
+	display: block;
+	border-radius: 50%;
+}
+
