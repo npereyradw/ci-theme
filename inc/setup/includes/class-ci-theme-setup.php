@@ -44,6 +44,9 @@ if ( ! class_exists( 'CI_Theme_Setup' ) ) {
 
 			// Comments are not used: no comments feed link in the head.
 			add_filter( 'feed_links_show_comments_feed', '__return_false' );
+
+			// Readable names in Appearance → Editor → Templates.
+			add_filter( 'default_template_types', array( __CLASS__, 'template_types' ) );
 		}
 
 		/**
@@ -108,6 +111,28 @@ if ( ! class_exists( 'CI_Theme_Setup' ) ) {
 		 */
 		public static function inline_size_limit() {
 			return 80000;
+		}
+
+		/**
+		 * Titles and descriptions for the templates WordPress does not name by itself.
+		 *
+		 * @param array $types Template types.
+		 * @return array
+		 */
+		public static function template_types( $types ) {
+			$types[ 'single-' . CI_Theme_Content::SERVICE ]  = array(
+				'title'       => __( 'Service', 'ci-theme' ),
+				'description' => __( 'A single service: header with what it includes, how we work, its projects and other services.', 'ci-theme' ),
+			);
+			$types[ 'single-' . CI_Theme_Content::PROJECT ]  = array(
+				'title'       => __( 'Project', 'ci-theme' ),
+				'description' => __( 'A single project: fact sheet, image, description and related projects.', 'ci-theme' ),
+			);
+			$types[ 'archive-' . CI_Theme_Content::PROJECT ] = array(
+				'title'       => __( 'Projects', 'ci-theme' ),
+				'description' => __( 'All projects, with filters by area and service.', 'ci-theme' ),
+			);
+			return $types;
 		}
 
 		/**
