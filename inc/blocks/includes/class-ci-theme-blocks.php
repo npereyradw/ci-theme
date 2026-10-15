@@ -4,7 +4,9 @@
  * and pattern categories, the blocks allowed per post type and the shared editor library.
  *
  * Section blocks declare "supports": { "ciSection": true } and receive the common style
- * attributes (scheme, colors, spacing, animation) from section-attributes.json.
+ * attributes (scheme, colors, spacing, animation) from section-attributes.json. The default
+ * texts of every block are written in English in block.json and translated here, so the
+ * editor and the front end show them in the site language.
  *
  * @package CI_Theme
  */
@@ -39,6 +41,7 @@ if ( ! class_exists( 'CI_Theme_Blocks' ) ) {
 		public static function init() {
 			add_filter( 'block_categories_all', array( __CLASS__, 'add_categories' ) );
 			add_filter( 'block_type_metadata', array( __CLASS__, 'add_section_attributes' ) );
+			add_filter( 'block_type_metadata', array( __CLASS__, 'translate_defaults' ) );
 			add_action( 'init', array( __CLASS__, 'register_editor_library' ), 5 );
 			add_action( 'init', array( __CLASS__, 'register_blocks' ) );
 			add_action( 'init', array( __CLASS__, 'register_pattern_categories' ) );
@@ -160,6 +163,46 @@ if ( ! class_exists( 'CI_Theme_Blocks' ) ) {
 		}
 
 		/**
+		 * Translates the default texts of the theme blocks (strings and the string fields of
+		 * array defaults). Attributes with an "enum" hold option values, and lowercase slugs
+		 * ("primary", "on-dark") are option values inside arrays, so neither is translated.
+		 *
+		 * @param array $metadata block.json contents.
+		 * @return array
+		 */
+		public static function translate_defaults( $metadata ) {
+			if ( ! self::is_ours( $metadata ) || empty( $metadata['attributes'] ) ) {
+				return $metadata;
+			}
+			foreach ( $metadata['attributes'] as $key => $definition ) {
+				if ( isset( $definition['default'] ) && ! isset( $definition['enum'] ) ) {
+					$metadata['attributes'][ $key ]['default'] = self::translate_value( $definition['default'] );
+				}
+			}
+			return $metadata;
+		}
+
+		/**
+		 * Translates a default value recursively.
+		 *
+		 * @param mixed $value Default value.
+		 * @return mixed
+		 */
+		private static function translate_value( $value ) {
+			if ( is_string( $value ) ) {
+				if ( '' === trim( $value ) || preg_match( '/^[a-z0-9-]+$/', $value ) ) {
+					return $value;
+				}
+				// phpcs:ignore WordPress.WP.I18n.LowLevelTranslationFunction,WordPress.WP.I18n.NonSingularStringLiteralText -- block.json defaults, listed in the POT file.
+				return translate( $value, 'ci-theme' );
+			}
+			if ( is_array( $value ) ) {
+				return array_map( array( __CLASS__, 'translate_value' ), $value );
+			}
+			return $value;
+		}
+
+		/**
 		 * Section attribute definitions.
 		 *
 		 * @return array
@@ -191,7 +234,7 @@ if ( ! class_exists( 'CI_Theme_Blocks' ) ) {
 				$asset['version'],
 				true
 			);
-			wp_set_script_translations( self::EDITOR_HANDLE, 'ci-theme' );
+			wp_set_script_translations( self::EDITOR_HANDLE, 'ci-theme', CI_THEME_DIR . 'languages' );
 			if ( file_exists( $dir . 'index.css' ) ) {
 				wp_register_style( self::EDITOR_HANDLE, CI_THEME_URI . 'build/editor/index.css', array(), $asset['version'] );
 			}
@@ -218,7 +261,12 @@ if ( ! class_exists( 'CI_Theme_Blocks' ) ) {
 		 */
 		public static function register_blocks() {
 			foreach ( glob( CI_THEME_DIR . 'build/blocks/*/block.json' ) as $file ) {
-				register_block_type( dirname( $file ) );
+				$type = register_block_type( dirname( $file ) );
+				if ( $type && ! empty( $type->editor_script_handles ) ) {
+					foreach ( $type->editor_script_handles as $handle ) {
+						wp_set_script_translations( $handle, 'ci-theme', CI_THEME_DIR . 'languages' );
+					}
+				}
 			}
 		}
 

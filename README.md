@@ -5,6 +5,7 @@ the design is a native block with a dynamic PHP render, a live preview in the ed
 assets, styled only with the values of `theme.json`.
 
 - WordPress 6.6+ and PHP 8.0+
+- English source strings, Spanish (Argentina) translation included
 - No page builder and no jQuery: blocks built with `@wordpress/scripts`, motion with GSAP
 
 ## Getting started
@@ -29,6 +30,7 @@ ci-theme/
 ├── theme.json           ← palette, typography (Geist), font sizes and spacing
 ├── templates/, parts/   ← templates and parts (header and footer are blocks)
 ├── patterns/            ← ready-made sections, full pages and the template contents
+├── languages/           ← POT file and the es_AR translation (PHP and JavaScript)
 ├── assets/              ← base CSS, font and the map worker
 ├── inc/<module>/        ← one module per folder (entry file, classes and assets)
 └── src/

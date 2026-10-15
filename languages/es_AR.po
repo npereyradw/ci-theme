@@ -1,0 +1,3476 @@
+# Copyright (C) 2026 Nicolás Pereyra
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: CI Theme 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/npereyradw/ci-theme/issues\n"
+"Last-Translator: Nicolás Pereyra\n"
+"Language-Team: Spanish (Argentina)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-15T02:04:37+00:00\n"
+"PO-Revision-Date: 2026-10-15T02:04:37+00:00\n"
+"Language: es_AR\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: ci-theme\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "CI Theme"
+msgstr "CI Theme"
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://github.com/npereyradw/ci-theme"
+msgstr "https://github.com/npereyradw/ci-theme"
+
+#. Description of the theme
+#: style.css
+msgid "Block theme for professional services firms. Every section of the design is a native block with a dynamic render, a live preview in the editor and its own assets."
+msgstr "Tema de bloques para estudios y consultoras de servicios profesionales. Cada sección del diseño es un bloque nativo con render dinámico, vista previa en vivo en el editor y sus propios recursos."
+
+#. Author of the theme
+#: style.css
+msgid "Nicolás Pereyra"
+msgstr "Nicolás Pereyra"
+
+#. Author URI of the theme
+#: style.css
+msgid "https://github.com/npereyradw"
+msgstr "https://github.com/npereyradw"
+
+#: inc/blocks/includes/class-ci-theme-blocks.php:64
+#: inc/blocks/includes/class-ci-theme-blocks.php:120
+msgid "CI · Sections"
+msgstr "CI · Secciones"
+
+#: inc/blocks/includes/class-ci-theme-blocks.php:65
+msgid "CI · Dynamic content"
+msgstr "CI · Contenido dinámico"
+
+#: inc/blocks/includes/class-ci-theme-blocks.php:66
+msgid "CI · Templates"
+msgstr "CI · Plantillas"
+
+#: inc/blocks/includes/class-ci-theme-blocks.php:121
+msgid "Ready-made sections of the site."
+msgstr "Secciones del sitio ya armadas."
+
+#: inc/blocks/includes/class-ci-theme-blocks.php:127
+msgid "CI · Pages"
+msgstr "CI · Páginas"
+
+#: inc/blocks/includes/class-ci-theme-blocks.php:128
+msgid "Complete pages to start a new page from."
+msgstr "Páginas completas para empezar una página nueva."
+
+#: inc/breadcrumbs/includes/class-ci-theme-breadcrumbs.php:27
+msgid "Home"
+msgstr "Inicio"
+
+#: inc/breadcrumbs/includes/class-ci-theme-breadcrumbs.php:139
+#: src/blocks/page-hero/edit.js:147
+msgid "Breadcrumbs"
+msgstr "Migas de pan"
+
+#: inc/content/includes/class-ci-theme-cards.php:46
+#: src/blocks/site-header/render.php:140
+msgid "Coming soon"
+msgstr "Próximamente"
+
+#: inc/content/includes/class-ci-theme-cards.php:50
+msgid "Notify me when available"
+msgstr "Avisarme cuando esté disponible"
+
+#: inc/content/includes/class-ci-theme-cards.php:50
+msgid "View service"
+msgstr "Ver servicio"
+
+#: inc/content/includes/class-ci-theme-cards.php:122
+msgid "Read more"
+msgstr "Leer nota"
+
+#. translators: %d: minutes.
+#: inc/content/includes/class-ci-theme-content.php:371
+#, php-format
+msgid "%d min"
+msgstr "%d min"
+
+#: inc/content/includes/class-ci-theme-content.php:414
+#: patterns/template-news.php:14
+msgid "News"
+msgstr "Novedades"
+
+#: inc/content/includes/class-ci-theme-content.php:472
+msgid "Registration"
+msgstr "Matrícula"
+
+#: inc/content/includes/class-ci-theme-content.php:473
+msgid "Member"
+msgstr "Miembro"
+
+#: inc/content/includes/class-ci-theme-institutions.php:55
+#: inc/section/includes/class-ci-theme-section.php:225
+msgid "(opens in a new tab)"
+msgstr "(se abre en una pestaña nueva)"
+
+#: inc/content/includes/class-ci-theme-institutions.php:73
+#: src/blocks/site-header/edit.js:77
+msgid "Logo"
+msgstr "Logo"
+
+#: inc/graphics/includes/class-ci-theme-area-icon.php:31
+msgid "Beam"
+msgstr "Viga"
+
+#: inc/graphics/includes/class-ci-theme-area-icon.php:32
+msgid "Arch"
+msgstr "Arco"
+
+#: inc/graphics/includes/class-ci-theme-area-icon.php:33
+msgid "Antenna"
+msgstr "Antena"
+
+#. translators: %s: site title.
+#: inc/graphics/includes/class-ci-theme-logo.php:41
+#, php-format
+msgid "%s — Home"
+msgstr "%s — Inicio"
+
+#: inc/privacy/includes/class-ci-theme-privacy.php:78
+msgid "Cookie notice"
+msgstr "Aviso de cookies"
+
+#: inc/routes/includes/class-ci-theme-routes.php:57
+msgctxt "URL segment of the services filtered by area"
+msgid "area"
+msgstr "area"
+
+#: inc/routes/includes/class-ci-theme-routes.php:66
+msgctxt "URL segment of the projects filtered by service"
+msgid "service"
+msgstr "servicio"
+
+#: inc/section/includes/class-ci-theme-section.php:158
+#: patterns/section-cta-custom.php:17
+#: src/blocks/cta/edit.js:46
+msgid "Free quote"
+msgstr "Presupuesto sin cargo"
+
+#: inc/section/includes/class-ci-theme-section.php:159
+msgid "Tell us about your project and get a fixed quote."
+msgstr "Contanos tu proyecto y te enviamos un presupuesto cerrado."
+
+#: inc/section/includes/class-ci-theme-section.php:160
+msgid "We reply on business days."
+msgstr "Te respondemos en días hábiles."
+
+#: inc/section/includes/class-ci-theme-section.php:165
+msgid "We use Google Analytics cookies to understand how the site is used. Learn more in our"
+msgstr "Usamos cookies de Google Analytics para saber cómo se usa el sitio. Más información en la"
+
+#: inc/section/includes/class-ci-theme-section.php:166
+msgid "Privacy policy"
+msgstr "Política de privacidad"
+
+#: inc/section/includes/class-ci-theme-section.php:167
+msgid "Got it"
+msgstr "Entendido"
+
+#: inc/setup/includes/class-ci-theme-setup.php:124
+#: src/blocks/contact/edit.js:31
+#: src/blocks/project-header/edit.js:36
+#: src/editor/query.js:132
+msgid "Service"
+msgstr "Servicio"
+
+#: inc/setup/includes/class-ci-theme-setup.php:125
+msgid "A single service: header with what it includes, how we work, its projects and other services."
+msgstr "Cada servicio: encabezado con lo que incluye, cómo trabajamos, sus proyectos y otros servicios."
+
+#: inc/setup/includes/class-ci-theme-setup.php:128
+msgid "Project"
+msgstr "Proyecto"
+
+#: inc/setup/includes/class-ci-theme-setup.php:129
+msgid "A single project: fact sheet, image, description and related projects."
+msgstr "Cada proyecto: ficha, imagen, descripción y proyectos relacionados."
+
+#: inc/setup/includes/class-ci-theme-setup.php:132
+#: patterns/template-projects-archive.php:14
+msgid "Projects"
+msgstr "Proyectos"
+
+#: inc/setup/includes/class-ci-theme-setup.php:133
+msgid "All projects, with filters by area and service."
+msgstr "Todos los proyectos, con filtros por área y servicio."
+
+#: patterns/page-about.php
+msgctxt "Pattern title"
+msgid "Page · About"
+msgstr "Página · Nosotros"
+
+#: patterns/page-about.php
+msgctxt "Pattern description"
+msgid "An about page: story, approach, team and reach."
+msgstr "Página Nosotros: historia, enfoque, equipo y alcance."
+
+#: patterns/page-about.php:16
+msgid "Engineering applied to real projects."
+msgstr "Ingeniería aplicada a obras reales."
+
+#: patterns/page-about.php:16
+msgid "We design, calculate and supervise projects of every scale, with one team from the first sketch to the handover."
+msgstr "Proyectamos, calculamos y dirigimos obras de todas las escalas, con un mismo equipo desde el primer boceto hasta la entrega."
+
+#: patterns/page-basic.php
+msgctxt "Pattern title"
+msgid "Page · Basic"
+msgstr "Página · Básica"
+
+#: patterns/page-basic.php
+msgctxt "Pattern description"
+msgid "A starting point for a new page: heading, text with media and call to action."
+msgstr "Punto de partida para una página nueva: encabezado, texto con ilustración y llamado a la acción."
+
+#: patterns/page-basic.php:16
+#: src/blocks/page-hero/render.php:24
+msgid "Page title"
+msgstr "Título de la página"
+
+#: patterns/page-basic.php:16
+msgid "One or two sentences about what this page is about."
+msgstr "Una o dos oraciones que expliquen de qué trata la página."
+
+#: patterns/page-contact.php
+msgctxt "Pattern title"
+msgid "Page · Contact"
+msgstr "Página · Contacto"
+
+#: patterns/page-contact.php
+msgctxt "Pattern description"
+msgid "Contact form, contact details and map."
+msgstr "Formulario, datos de contacto y mapa."
+
+#: patterns/page-contact.php:16
+msgid "Request a quote or send us your question."
+msgstr "Pedí tu presupuesto o hacé tu consulta."
+
+#: patterns/page-contact.php:16
+msgid "Tell us what you need and where the project is. We reply on business days with a proposal of scope and cost."
+msgstr "Contanos qué necesitás y dónde está la obra. Te respondemos en días hábiles con una propuesta de alcance y costo."
+
+#: patterns/page-home.php
+msgctxt "Pattern title"
+msgid "Page · Home"
+msgstr "Página · Inicio"
+
+#: patterns/page-home.php
+msgctxt "Pattern description"
+msgid "A complete home page."
+msgstr "Una página de inicio completa."
+
+#: patterns/page-services.php
+msgctxt "Pattern title"
+msgid "Page · Services"
+msgstr "Página · Servicios"
+
+#: patterns/page-services.php
+msgctxt "Pattern description"
+msgid "The list of services with a filter by area."
+msgstr "El listado de servicios con filtro por área."
+
+#: patterns/page-services.php:16
+msgid "Services for every stage of your project."
+msgstr "Servicios para cada etapa de tu proyecto."
+
+#: patterns/page-services.php:16
+msgid "Hire a single service, such as a structural calculation, or the complete management of your project."
+msgstr "Podés contratar un servicio puntual, como un cálculo estructural, o la gestión completa de tu proyecto."
+
+#: patterns/section-approach.php
+msgctxt "Pattern title"
+msgid "Section · Approach"
+msgstr "Sección · Enfoque"
+
+#: patterns/section-approach.php
+msgctxt "Pattern description"
+msgid "Three cards that explain how the firm works."
+msgstr "Tres tarjetas que explican cómo trabaja la consultora."
+
+#: patterns/section-approach.php:16
+msgid "Approach"
+msgstr "Enfoque"
+
+#: patterns/section-approach.php:17
+msgid "Comprehensive advice, with clear rules from the start."
+msgstr "Asesoría integral, con reglas claras desde el inicio."
+
+#: patterns/section-approach.php:21
+msgid "Comprehensive"
+msgstr "Integral"
+
+#: patterns/section-approach.php:22
+msgid "We cover the whole cycle: assessment, design, permits and supervision."
+msgstr "Acompañamos todo el ciclo: evaluación, proyecto, trámites y dirección."
+
+#: patterns/section-approach.php:25
+msgid "Transparent"
+msgstr "Transparente"
+
+#: patterns/section-approach.php:26
+msgid "A detailed quote and schedule before any work begins."
+msgstr "Presupuesto detallado y cronograma antes de empezar cualquier trabajo."
+
+#: patterns/section-approach.php:29
+msgid "Accountable"
+msgstr "Responsable"
+
+#: patterns/section-approach.php:30
+msgid "One lead for each project, available from start to finish."
+msgstr "Un responsable por proyecto, disponible de principio a fin."
+
+#: patterns/section-cta-custom.php
+msgctxt "Pattern title"
+msgid "Section · Call to action with its own text"
+msgstr "Sección · Llamado a la acción con texto propio"
+
+#: patterns/section-cta-custom.php
+msgctxt "Pattern description"
+msgid "A call to action with its own eyebrow, title and text instead of the site-wide ones."
+msgstr "Llamado a la acción con etiqueta, título y texto propios en lugar de los generales del sitio."
+
+#: patterns/section-cta-custom.php:18
+msgid "Is your project in another region? We can help too."
+msgstr "¿Tenés una obra en otra provincia? También podemos ayudarte."
+
+#: patterns/section-cta-custom.php:19
+msgid "We reply on business days and work with industries, studios, builders and private clients across the country."
+msgstr "Respondemos en días hábiles y trabajamos con industrias, estudios, constructoras y particulares en todo el país."
+
+#: patterns/template-news.php
+msgctxt "Pattern title"
+msgid "Template · News"
+msgstr "Plantilla · Novedades"
+
+#: patterns/template-news.php
+msgctxt "Pattern description"
+msgid "Content of the posts page and category templates."
+msgstr "Contenido de las plantillas de la página de entradas y de categorías."
+
+#: patterns/template-news.php:15
+msgid "Company news, ongoing works and technical guides to plan your project."
+msgstr "Noticias de la consultora, obras en curso y guías técnicas para planificar tu proyecto."
+
+#: patterns/template-projects-archive.php
+msgctxt "Pattern title"
+msgid "Template · Projects archive"
+msgstr "Plantilla · Archivo de proyectos"
+
+#: patterns/template-projects-archive.php
+msgctxt "Pattern description"
+msgid "Content of the projects archive template."
+msgstr "Contenido de la plantilla del archivo de proyectos."
+
+#: patterns/template-projects-archive.php:15
+msgid "Industrial works, structural calculations, architecture and telecommunication sites in different regions."
+msgstr "Obras industriales, cálculos estructurales, arquitectura y sitios de telecomunicaciones en distintas provincias."
+
+#: patterns/template-projects-archive.php:19
+msgid "Have a similar project? Request your quote."
+msgstr "¿Tenés un proyecto parecido? Pedí tu presupuesto."
+
+#: patterns/template-single-post.php
+msgctxt "Pattern title"
+msgid "Template · Single post"
+msgstr "Plantilla · Entrada"
+
+#: patterns/template-single-post.php
+msgctxt "Pattern description"
+msgid "Content of the single post template."
+msgstr "Contenido de la plantilla de entrada individual."
+
+#: patterns/template-single-post.php:15
+msgid "Keep reading"
+msgstr "Seguí leyendo"
+
+#: patterns/template-single-project.php
+msgctxt "Pattern title"
+msgid "Template · Single project"
+msgstr "Plantilla · Proyecto"
+
+#: patterns/template-single-project.php
+msgctxt "Pattern description"
+msgid "Content of the single project template."
+msgstr "Contenido de la plantilla de proyecto individual."
+
+#: patterns/template-single-project.php:17
+msgid "Related projects"
+msgstr "Proyectos relacionados"
+
+#: patterns/template-single-project.php:18
+#: patterns/template-single-service.php:35
+msgid "View all →"
+msgstr "Ver todas →"
+
+#: patterns/template-single-service.php
+msgctxt "Pattern title"
+msgid "Template · Single service"
+msgstr "Plantilla · Servicio"
+
+#: patterns/template-single-service.php
+msgctxt "Pattern description"
+msgid "Content of the single service template."
+msgstr "Contenido de la plantilla de servicio individual."
+
+#: patterns/template-single-service.php:15
+msgid "How we work"
+msgstr "Cómo trabajamos"
+
+#: patterns/template-single-service.php:18
+msgid "Planning"
+msgstr "Planificación"
+
+#: patterns/template-single-service.php:19
+msgid "We survey the need and the site, and send you the scope, a fixed quote and a schedule."
+msgstr "Relevamos la necesidad y el sitio. Te enviamos alcance, presupuesto fijo y cronograma."
+
+#: patterns/template-single-service.php:22
+msgid "Design"
+msgstr "Diseño"
+
+#: patterns/template-single-service.php:23
+msgid "We develop the calculations, drawings and technical documents to approve and build."
+msgstr "Desarrollamos cálculos, planos y documentación técnica para aprobar y construir."
+
+#: patterns/template-single-service.php:26
+msgid "Construction"
+msgstr "Construcción"
+
+#: patterns/template-single-service.php:27
+msgid "We follow the works with supervision and inspections until the handover."
+msgstr "Acompañamos la ejecución con dirección e inspecciones hasta la entrega."
+
+#: patterns/template-single-service.php:34
+msgid "Projects of this service"
+msgstr "Proyectos de este servicio"
+
+#: patterns/template-single-service.php:42
+msgid "Other services"
+msgstr "Otros servicios"
+
+#: src/blocks/contact/render.php:70
+msgid "Send"
+msgstr "Enviar"
+
+#: src/blocks/contact/render.php:78
+msgid "Choose a Contact Form 7 form in the block settings (only editors see this message)."
+msgstr "Elegí un formulario de Contact Form 7 en los ajustes del bloque (este mensaje solo lo ven los editores)."
+
+#: src/blocks/contact/render.php:84
+#: src/blocks/contact/edit.js:100
+msgid "Request type"
+msgstr "Tipo de pedido"
+
+#: src/blocks/contact/render.php:117
+#: src/blocks/service-hero/render.php:71
+msgid "Leave empty"
+msgstr "No completar"
+
+#: src/blocks/contact/render.php:152
+msgid "Other ways to reach us"
+msgstr "Otros medios de contacto"
+
+#: src/blocks/institutions/render.php:24
+msgid "Registrations"
+msgstr "Matriculaciones"
+
+#: src/blocks/map/render.php:28
+msgid "Set the place or the coordinates of the map in the block settings."
+msgstr "Completá el lugar o las coordenadas del mapa en los ajustes del bloque."
+
+#: src/blocks/map/render.php:40
+msgid "Use Ctrl + scroll to zoom the map"
+msgstr "Usá Ctrl + scroll para hacer zoom"
+
+#: src/blocks/map/render.php:41
+msgid "Use ⌘ + scroll to zoom the map"
+msgstr "Usá ⌘ + scroll para hacer zoom"
+
+#: src/blocks/map/render.php:42
+msgid "Use two fingers to move the map"
+msgstr "Usá dos dedos para mover el mapa"
+
+#: src/blocks/map/render.php:43
+msgid "Zoom in"
+msgstr "Acercar"
+
+#: src/blocks/map/render.php:44
+msgid "Zoom out"
+msgstr "Alejar"
+
+#: src/blocks/map/render.php:45
+msgid "Toggle attribution"
+msgstr "Ver atribución"
+
+#: src/blocks/map/render.php:56
+#: src/blocks/contact/edit.js:32
+#: src/blocks/project-header/edit.js:31
+msgid "Location"
+msgstr "Ubicación"
+
+#. translators: %s: place.
+#: src/blocks/map/render.php:71
+#, php-format
+msgid "Interactive map of %s"
+msgstr "Mapa interactivo de %s"
+
+#: src/blocks/map/render.php:91
+msgid "(opens Google Maps in a new tab)"
+msgstr "(abre Google Maps en una pestaña nueva)"
+
+#: src/blocks/map/render.php:100
+msgid "Map credits"
+msgstr "Créditos del mapa"
+
+#: src/blocks/map/render.php:106
+msgid "Data ©"
+msgstr "Datos ©"
+
+#: src/blocks/map/render.php:107
+msgid "OpenStreetMap contributors"
+msgstr "colaboradores de OpenStreetMap"
+
+#: src/blocks/news/render.php:45
+msgid "Posts"
+msgstr "Notas"
+
+#: src/blocks/news/render.php:104
+msgid "Pagination"
+msgstr "Paginación"
+
+#. translators: %d: page number.
+#: src/blocks/news/render.php:106
+#, php-format
+msgid "Page %d"
+msgstr "Página %d"
+
+#: src/blocks/page-hero/render.php:79
+msgid "Filter by area"
+msgstr "Filtrar por área"
+
+#. translators: %d: number of projects shown.
+#: src/blocks/projects/render.php:38
+#, php-format
+msgid "%d project"
+msgid_plural "%d projects"
+msgstr[0] "%d proyecto"
+msgstr[1] "%d proyectos"
+
+#: src/blocks/projects/render.php:60
+msgid "Results"
+msgstr "Resultados"
+
+#: src/blocks/projects/render.php:62
+msgid "project"
+msgstr "proyecto"
+
+#: src/blocks/projects/render.php:62
+msgid "projects"
+msgstr "proyectos"
+
+#: src/blocks/services/render.php:75
+msgid "Services"
+msgstr "Servicios"
+
+#: src/blocks/services/render.php:77
+msgid "service"
+msgstr "servicio"
+
+#: src/blocks/services/render.php:77
+msgid "services"
+msgstr "servicios"
+
+#. translators: %d: number of services shown.
+#: src/blocks/services/render.php:80
+#, php-format
+msgid "%d service"
+msgid_plural "%d services"
+msgstr[0] "%d servicio"
+msgstr[1] "%d servicios"
+
+#: src/blocks/site-footer/render.php:111
+#: src/blocks/site-header/render.php:222
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: src/blocks/site-header/render.php:56
+msgid "Skip to content"
+msgstr "Saltar al contenido"
+
+#: src/blocks/site-header/render.php:63
+#: src/blocks/site-header/render.php:177
+msgid "Main"
+msgstr "Principal"
+
+#: src/blocks/site-header/render.php:85
+msgid "Show services"
+msgstr "Mostrar servicios"
+
+#: src/blocks/site-header/render.php:120
+msgid "Open menu"
+msgstr "Abrir menú"
+
+#: src/blocks/site-header/render.php:120
+msgid "Close menu"
+msgstr "Cerrar menú"
+
+#: src/blocks/site-header/render.php:129
+#: src/blocks/site-header/render.php:157
+#: src/blocks/site-header/edit.js:26
+msgid "Menu"
+msgstr "Menú"
+
+#: src/blocks/site-header/render.php:130
+msgid "Close"
+msgstr "Cerrar"
+
+#: src/blocks/site-header/render.php:195
+#: src/blocks/site-header/render.php:212
+msgid "Soon"
+msgstr "Próximamente"
+
+#: src/blocks/team/render.php:53
+msgid "LinkedIn profile"
+msgstr "Perfil en LinkedIn"
+
+#. translators: %s: person name.
+#: src/blocks/team/render.php:57
+#, php-format
+msgid "of %s (opens in a new tab)"
+msgstr "de %s (se abre en una pestaña nueva)"
+
+#: src/blocks/areas/edit.js:24
+msgid "Link text of each area"
+msgstr "Texto del link de cada área"
+
+#: src/blocks/areas/edit.js:25
+msgid "{area} is replaced with the name of the area. Empty = no link."
+msgstr "{area} se reemplaza por el nombre del área. Vacío = sin link."
+
+#: src/blocks/areas/edit.js:35
+msgid "The name, text and icon of each area are edited in Services → Areas."
+msgstr "El nombre, el texto y el ícono de cada área se editan en Servicios → Áreas."
+
+#: src/blocks/audiences/edit.js:26
+msgid "Audiences"
+msgstr "Públicos"
+
+#: src/blocks/audiences/edit.js:31
+msgid "Add audience"
+msgstr "Agregar público"
+
+#: src/blocks/audiences/edit.js:37
+#: src/blocks/contact/edit.js:236
+#: src/blocks/cta/edit.js:57
+#: src/blocks/features/edit.js:59
+#: src/blocks/not-found/edit.js:30
+#: src/blocks/process/edit.js:110
+#: src/blocks/project-body/edit.js:26
+#: src/blocks/project-body/edit.js:35
+#: src/blocks/services/edit.js:115
+#: src/editor/fields.js:73
+msgid "Title"
+msgstr "Título"
+
+#: src/blocks/audiences/edit.js:44
+#: src/blocks/contact/edit.js:120
+#: src/blocks/contact/edit.js:241
+#: src/blocks/cta/edit.js:24
+#: src/blocks/cta/edit.js:66
+#: src/blocks/features/edit.js:63
+#: src/blocks/home-hero/edit.js:22
+#: src/blocks/home-hero/edit.js:41
+#: src/blocks/home-hero/edit.js:71
+#: src/blocks/map/edit.js:49
+#: src/blocks/not-found/edit.js:37
+#: src/blocks/not-found/edit.js:72
+#: src/blocks/page-hero/edit.js:18
+#: src/blocks/page-hero/edit.js:44
+#: src/blocks/process/edit.js:114
+#: src/blocks/project-body/edit.js:40
+#: src/blocks/services/edit.js:120
+#: src/blocks/site-footer/edit.js:77
+#: src/blocks/site-header/edit.js:44
+#: src/blocks/site-header/edit.js:105
+#: src/editor/fields.js:82
+#: src/editor/links.js:99
+msgid "Text"
+msgstr "Texto"
+
+#: src/blocks/audiences/edit.js:51
+msgid "Linked services"
+msgstr "Servicios vinculados"
+
+#: src/blocks/audiences/edit.js:55
+msgid "Type to search; they are shown in this order."
+msgstr "Escribí para buscar; se muestran en este orden."
+
+#: src/blocks/contact/edit.js:27
+msgid "Name (required)"
+msgstr "Nombre (obligatorio)"
+
+#: src/blocks/contact/edit.js:28
+msgid "Company"
+msgstr "Empresa"
+
+#: src/blocks/contact/edit.js:29
+msgid "Email (required)"
+msgstr "Email (obligatorio)"
+
+#: src/blocks/contact/edit.js:30
+#: src/blocks/map/edit.js:120
+msgid "Phone"
+msgstr "Celular"
+
+#: src/blocks/contact/edit.js:33
+msgid "Message (required)"
+msgstr "Mensaje (obligatorio)"
+
+#: src/blocks/contact/edit.js:62
+msgid "Form"
+msgstr "Formulario"
+
+#: src/blocks/contact/edit.js:65
+msgid "Contact Form 7 form"
+msgstr "Formulario de Contact Form 7"
+
+#: src/blocks/contact/edit.js:70
+msgid "The one in the site settings"
+msgstr "El de Datos del sitio"
+
+#: src/blocks/contact/edit.js:89
+msgid "Recipient, subject and mail texts are set in Contact → Contact Forms."
+msgstr "Destinatario, asunto y textos del mail se configuran en Contacto → Formularios."
+
+#: src/blocks/contact/edit.js:95
+msgid "Open Contact Form 7"
+msgstr "Abrir Contact Form 7"
+
+#: src/blocks/contact/edit.js:108
+msgid "Add type"
+msgstr "Agregar tipo"
+
+#: src/blocks/contact/edit.js:113
+msgid "Value (sent in the mail subject)"
+msgstr "Valor (llega en el asunto del mail)"
+
+#: src/blocks/contact/edit.js:124
+#: src/blocks/site-header/edit.js:110
+msgid "Short text (phones)"
+msgstr "Texto corto (celular)"
+
+#: src/blocks/contact/edit.js:128
+msgid "Send button text"
+msgstr "Texto del botón Enviar"
+
+#: src/blocks/contact/edit.js:134
+msgid "Fields"
+msgstr "Campos"
+
+#: src/blocks/contact/edit.js:145
+#: src/blocks/institutions/edit.js:40
+#: src/blocks/not-found/edit.js:25
+#: src/blocks/post-body/edit.js:35
+msgid "Label"
+msgstr "Etiqueta"
+
+#: src/blocks/contact/edit.js:154
+msgid "First option"
+msgstr "Primera opción"
+
+#: src/blocks/contact/edit.js:155
+msgid "Placeholder"
+msgstr "Texto de ayuda dentro del campo"
+
+#: src/blocks/contact/edit.js:165
+msgid "Last service option"
+msgstr "Última opción de servicio"
+
+#: src/blocks/contact/edit.js:166
+msgid "Empty = no such option."
+msgstr "Vacío = sin esa opción."
+
+#: src/blocks/contact/edit.js:173
+msgid "Messages and note"
+msgstr "Mensajes y nota"
+
+#: src/blocks/contact/edit.js:178
+msgid "Required field"
+msgstr "Campo obligatorio"
+
+#: src/blocks/contact/edit.js:183
+msgid "Invalid email"
+msgstr "Email inválido"
+
+#: src/blocks/contact/edit.js:188
+msgid "Sending error"
+msgstr "Error de envío"
+
+#: src/blocks/contact/edit.js:195
+msgid "Button while sending"
+msgstr "Botón mientras envía"
+
+#: src/blocks/contact/edit.js:200
+msgid "Required fields note"
+msgstr "Nota de campos obligatorios"
+
+#: src/blocks/contact/edit.js:205
+#: src/blocks/service-hero/edit.js:92
+msgid "Text before the privacy link"
+msgstr "Texto antes del link de privacidad"
+
+#: src/blocks/contact/edit.js:213
+#: src/blocks/site-footer/edit.js:155
+msgid "Privacy link: text"
+msgstr "Link de privacidad: texto"
+
+#: src/blocks/contact/edit.js:218
+#: src/blocks/site-footer/edit.js:160
+msgid "Privacy link: destination (empty = the privacy page)"
+msgstr "Link de privacidad: destino (vacío = la página de privacidad)"
+
+#: src/blocks/contact/edit.js:231
+msgid "Success message"
+msgstr "Mensaje de envío correcto"
+
+#: src/blocks/contact/edit.js:248
+msgid "Link to WhatsApp"
+msgstr "Link a WhatsApp"
+
+#: src/blocks/contact/edit.js:253
+msgid "Button to send another one"
+msgstr "Botón para enviar otra"
+
+#: src/blocks/contact/edit.js:263
+msgid "Side column"
+msgstr "Costado"
+
+#: src/blocks/contact/edit.js:268
+msgid "WhatsApp card"
+msgstr "Tarjeta de WhatsApp"
+
+#: src/blocks/contact/edit.js:274
+msgid "WhatsApp: title"
+msgstr "WhatsApp: título"
+
+#: src/blocks/contact/edit.js:279
+msgid "WhatsApp: text"
+msgstr "WhatsApp: texto"
+
+#: src/blocks/contact/edit.js:284
+msgid "Phone label"
+msgstr "Etiqueta del teléfono"
+
+#: src/blocks/contact/edit.js:289
+msgid "Email label"
+msgstr "Etiqueta del email"
+
+#: src/blocks/contact/edit.js:294
+msgid "Hours label"
+msgstr "Etiqueta del horario"
+
+#: src/blocks/contact/edit.js:299
+msgid "Location label"
+msgstr "Etiqueta de la ubicación"
+
+#: src/blocks/contact/edit.js:304
+msgid "Social profiles"
+msgstr "Redes sociales"
+
+#: src/blocks/contact/edit.js:310
+msgid "Contact details and social profiles come from the site settings."
+msgstr "Los datos y las redes salen de Datos del sitio."
+
+#: src/blocks/cta/edit.js:27
+msgid "Use the text of the site settings"
+msgstr "Usar el texto de Datos del sitio"
+
+#: src/blocks/cta/edit.js:31
+msgid "Change it once for every page. Turn it off to write a text for this page only (empty fields keep using the site settings)."
+msgstr "Así se cambia en un solo lugar para todas las páginas. Apagalo para escribir un texto solo para esta página (lo que dejes vacío sigue saliendo de Datos del sitio)."
+
+#: src/blocks/cta/edit.js:44
+#: src/blocks/home-hero/edit.js:25
+#: src/editor/fields.js:63
+msgid "Eyebrow"
+msgstr "Etiqueta"
+
+#: src/blocks/cta/edit.js:78
+#: src/blocks/home-hero/edit.js:49
+#: src/blocks/not-found/edit.js:45
+msgid "Buttons"
+msgstr "Botones"
+
+#: src/blocks/features/edit.js:24
+msgid "Items"
+msgstr "Ítems"
+
+#: src/blocks/features/edit.js:27
+#: src/blocks/institutions/edit.js:19
+#: src/blocks/news/edit.js:40
+#: src/blocks/news/edit.js:42
+#: src/blocks/page-hero/edit.js:75
+#: src/blocks/process/edit.js:28
+#: src/blocks/process/edit.js:31
+#: src/blocks/projects/edit.js:26
+#: src/blocks/projects/edit.js:28
+#: src/blocks/services/edit.js:27
+msgid "Layout"
+msgstr "Diseño"
+
+#: src/blocks/features/edit.js:32
+msgid "With an accent dot"
+msgstr "Con punto amarillo (Por qué elegirnos)"
+
+#: src/blocks/features/edit.js:39
+msgid "Cards"
+msgstr "Tarjetas"
+
+#: src/blocks/features/edit.js:49
+msgid "The numbering is automatic."
+msgstr "La numeración es automática."
+
+#: src/blocks/features/edit.js:55
+msgid "Add item"
+msgstr "Agregar ítem"
+
+#: src/blocks/home-hero/edit.js:30
+#: src/blocks/page-hero/edit.js:32
+msgid "Main title (H1)"
+msgstr "Título principal (H1)"
+
+#: src/blocks/home-hero/edit.js:31
+#: src/blocks/page-hero/edit.js:33
+msgid "It is the only H1 of the page."
+msgstr "Es el único H1 de la página."
+
+#: src/blocks/home-hero/edit.js:57
+msgid "Counter card"
+msgstr "Tarjeta de años"
+
+#: src/blocks/home-hero/edit.js:62
+msgid "Number"
+msgstr "Número"
+
+#: src/blocks/home-hero/edit.js:63
+msgid "A number (e.g. +30) counts up from 0 when it appears. Empty = no card."
+msgstr "Si es un número (ej. +30) cuenta desde 0 al aparecer. Vacío = sin tarjeta."
+
+#: src/blocks/home-hero/edit.js:72
+msgid "Each line goes on its own row."
+msgstr "Cada línea va en un renglón."
+
+#: src/blocks/home-hero/edit.js:84
+#: src/blocks/process/edit.js:72
+#: src/blocks/text-media/edit.js:40
+msgid "Illustration"
+msgstr "Ilustración"
+
+#: src/blocks/home-hero/edit.js:88
+msgid "Show the large background illustration"
+msgstr "Mostrar la ilustración grande de fondo"
+
+#: src/blocks/institutions/edit.js:16
+msgid "Content"
+msgstr "Contenido"
+
+#: src/blocks/institutions/edit.js:24
+msgid "Statement and logos, with a line above"
+msgstr "Frase y logos, con línea arriba"
+
+#: src/blocks/institutions/edit.js:31
+msgid "Label and logos"
+msgstr "Etiqueta y logos"
+
+#: src/blocks/institutions/edit.js:46
+msgid "Statement"
+msgstr "Frase"
+
+#: src/blocks/institutions/edit.js:54
+msgid "Logos, names and links come from the Institutions section."
+msgstr "Los logos, nombres y links salen de la sección Instituciones."
+
+#: src/blocks/institutions/edit.js:60
+msgid "View the institutions"
+msgstr "Ver las instituciones"
+
+#: src/blocks/map/edit.js:37
+msgid "Location card"
+msgstr "Tarjeta de ubicación"
+
+#: src/blocks/map/edit.js:40
+msgid "Place"
+msgstr "Lugar"
+
+#: src/blocks/map/edit.js:41
+msgid "Empty = the location of the site settings."
+msgstr "Vacío = la ubicación de Datos del sitio."
+
+#: src/blocks/map/edit.js:54
+msgid "Directions link"
+msgstr "Link \"Cómo llegar\""
+
+#: src/blocks/map/edit.js:55
+#: src/editor/fields.js:93
+msgid "Empty = no link."
+msgstr "Vacío = sin link."
+
+#: src/blocks/map/edit.js:62
+msgid "Interactive map"
+msgstr "Mapa interactivo"
+
+#: src/blocks/map/edit.js:67
+#: src/blocks/project-body/edit.js:47
+msgid "Button"
+msgstr "Botón"
+
+#: src/blocks/map/edit.js:72
+msgid "While loading"
+msgstr "Mientras carga"
+
+#: src/blocks/map/edit.js:77
+msgid "If it fails"
+msgstr "Si no carga"
+
+#: src/blocks/map/edit.js:82
+msgid "Latitude"
+msgstr "Latitud"
+
+#: src/blocks/map/edit.js:87
+msgid "Longitude"
+msgstr "Longitud"
+
+#: src/blocks/map/edit.js:92
+msgid "Initial zoom"
+msgstr "Zoom inicial"
+
+#: src/blocks/map/edit.js:93
+msgid "4 = country, 15 = street."
+msgstr "4 = país, 15 = calle."
+
+#: src/blocks/map/edit.js:104
+msgid "Preview image"
+msgstr "Imagen de vista previa"
+
+#: src/blocks/map/edit.js:109
+msgid "Shown before the map loads, centered on the location. Without coordinates there is no interactive map; without images the card sits on a plain background."
+msgstr "Se muestra antes de cargar el mapa, centrada en la ubicación. Sin coordenadas no hay mapa interactivo; sin imágenes, la tarjeta va sobre un fondo liso."
+
+#: src/blocks/map/edit.js:115
+msgid "Desktop"
+msgstr "Escritorio"
+
+#: src/blocks/news/edit.js:47
+msgid "Section with the latest posts"
+msgstr "Sección con las últimas notas"
+
+#: src/blocks/news/edit.js:54
+msgid "Full listing (posts page)"
+msgstr "Listado completo (página Novedades)"
+
+#: src/blocks/news/edit.js:66
+msgid "Listing"
+msgstr "Listado"
+
+#: src/blocks/news/edit.js:69
+msgid "Shows every published post; the first one of each page is featured. Posts per page are set in Settings → Reading."
+msgstr "Muestra todas las notas publicadas: la primera de cada página va destacada. Las notas por página se cambian en Ajustes → Lectura."
+
+#: src/blocks/news/edit.js:75
+msgid "Featured badge"
+msgstr "Etiqueta de la destacada"
+
+#: src/blocks/news/edit.js:80
+msgid "Featured post link"
+msgstr "Link de la destacada"
+
+#: src/blocks/news/edit.js:85
+msgid "Filter name (screen readers)"
+msgstr "Nombre del filtro (lectores de pantalla)"
+
+#: src/blocks/news/edit.js:93
+msgid "All categories button"
+msgstr "Botón de todas las categorías"
+
+#: src/blocks/news/edit.js:101
+msgid "Next page button"
+msgstr "Botón de página siguiente"
+
+#: src/blocks/news/edit.js:106
+msgid "No posts: text"
+msgstr "Sin notas: texto"
+
+#: src/blocks/news/edit.js:113
+msgid "No posts: button (empty = no button)"
+msgstr "Sin notas: botón (vacío = sin botón)"
+
+#: src/blocks/news/edit.js:121
+msgid "No posts: button destination"
+msgstr "Sin notas: destino del botón"
+
+#: src/blocks/news/edit.js:140
+msgid "Posts to show"
+msgstr "Qué notas mostrar"
+
+#: src/blocks/news/edit.js:143
+msgid "Category"
+msgstr "Categoría"
+
+#: src/blocks/news/edit.js:148
+msgid "All"
+msgstr "Todos"
+
+#: src/blocks/news/edit.js:162
+msgid "Number of posts"
+msgstr "Cantidad"
+
+#: src/blocks/news/edit.js:176
+msgid "The section is hidden while there are no published posts."
+msgstr "La sección no se muestra mientras no haya notas publicadas."
+
+#: src/blocks/not-found/edit.js:22
+msgid "Message"
+msgstr "Mensaje"
+
+#: src/blocks/not-found/edit.js:52
+msgid "Links to sections"
+msgstr "Links a secciones"
+
+#: src/blocks/not-found/edit.js:55
+msgid "List name (screen readers)"
+msgstr "Nombre de la lista (lectores de pantalla)"
+
+#: src/blocks/not-found/edit.js:66
+#: src/blocks/site-footer/edit.js:71
+#: src/blocks/site-header/edit.js:38
+msgid "Add link"
+msgstr "Agregar link"
+
+#: src/blocks/not-found/edit.js:79
+#: src/blocks/site-footer/edit.js:84
+#: src/blocks/site-header/edit.js:51
+#: src/blocks/site-header/edit.js:115
+#: src/editor/links.js:127
+msgid "Link"
+msgstr "Link"
+
+#: src/blocks/page-hero/edit.js:21
+msgid "Use the page title"
+msgstr "Usar el título de la página"
+
+#: src/blocks/page-hero/edit.js:22
+msgid "For templates: shows the title of each page."
+msgstr "Para plantillas: muestra el título de cada página."
+
+#: src/blocks/page-hero/edit.js:51
+msgid "Show the last updated date"
+msgstr "Mostrar la fecha de actualización"
+
+#: src/blocks/page-hero/edit.js:55
+msgid "The date the page was last modified."
+msgstr "La fecha en que se modificó la página por última vez."
+
+#: src/blocks/page-hero/edit.js:65
+msgid "Text before the date"
+msgstr "Texto antes de la fecha"
+
+#: src/blocks/page-hero/edit.js:78
+msgid "Background"
+msgstr "Fondo"
+
+#: src/blocks/page-hero/edit.js:83
+#: src/editor/section-style.js:24
+msgid "Light"
+msgstr "Claro"
+
+#: src/blocks/page-hero/edit.js:87
+msgid "Dark, with an arc and a dot"
+msgstr "Oscuro, con arco y punto"
+
+#: src/blocks/page-hero/edit.js:94
+msgid "Light and compact (legal texts)"
+msgstr "Claro y compacto (textos legales)"
+
+#: src/blocks/page-hero/edit.js:106
+msgid "Arc and accent dot"
+msgstr "Arco y punto amarillo"
+
+#: src/blocks/page-hero/edit.js:114
+msgid "Line below"
+msgstr "Línea debajo"
+
+#: src/blocks/page-hero/edit.js:120
+msgid "Area filter (services page)"
+msgstr "Filtro por área (página Servicios)"
+
+#: src/blocks/page-hero/edit.js:124
+msgid "Chips with the areas; they filter the Services block in its Listing layout."
+msgstr "Chips con las áreas; filtran el bloque Servicios en variante Listado."
+
+#: src/blocks/page-hero/edit.js:134
+msgid "Text of the \"all\" chip"
+msgstr "Texto del chip \"todos\""
+
+#: src/blocks/page-hero/edit.js:152
+msgid "Show the breadcrumbs (Home / page)"
+msgstr "Mostrar las migas (Inicio / página)"
+
+#: src/blocks/page-hero/edit.js:161
+msgid "Name of this page in the breadcrumbs"
+msgstr "Nombre de esta página en las migas"
+
+#: src/blocks/page-hero/edit.js:165
+msgid "Empty = the page title."
+msgstr "Vacío = el título de la página."
+
+#: src/blocks/post-body/edit.js:32
+msgid "Share"
+msgstr "Compartir"
+
+#: src/blocks/post-body/edit.js:51
+msgid "Without any network checked, the share row is hidden."
+msgstr "Sin redes marcadas no se muestra \"Compartir\"."
+
+#: src/blocks/post-header/edit.js:17
+#: src/blocks/project-body/edit.js:17
+#: src/editor/section-style.js:75
+msgid "Texts"
+msgstr "Textos"
+
+#: src/blocks/post-header/edit.js:20
+msgid "The lead is the excerpt of each post (or the start of the text when it is empty)."
+msgstr "La bajada es el Extracto de cada nota (o el comienzo del texto si está vacío)."
+
+#: src/blocks/post-header/edit.js:26
+msgid "After the reading time"
+msgstr "Después del tiempo de lectura"
+
+#: src/blocks/post-header/edit.js:31
+msgid "Author (by default, the site title)"
+msgstr "Autor (por defecto, el nombre del sitio)"
+
+#: src/blocks/post-header/edit.js:39
+msgid "Author description"
+msgstr "Descripción del autor"
+
+#. translators: %d: illustration number.
+#: src/blocks/process/edit.js:20
+#, js-format
+msgid "Illustration %d"
+msgstr "Ilustración %d"
+
+#: src/blocks/process/edit.js:36
+msgid "Timeline"
+msgstr "Línea de tiempo"
+
+#: src/blocks/process/edit.js:40
+msgid "List with an illustration"
+msgstr "Lista con ilustración (servicios)"
+
+#: src/blocks/process/edit.js:55
+msgid "In the service template each service uses its own cover. On a page, choose an image or an illustration."
+msgstr "En la plantilla de servicios se usa la portada de cada servicio. En una página, elegí una imagen o una ilustración."
+
+#: src/blocks/process/edit.js:61
+msgid "Image (optional)"
+msgstr "Imagen (opcional)"
+
+#: src/blocks/process/edit.js:94
+msgid "Steps"
+msgstr "Pasos"
+
+#: src/blocks/process/edit.js:97
+msgid "The numbering and the colors (white, yellow, blue) are automatic."
+msgstr "La numeración y los colores (blanco, amarillo, azul) son automáticos."
+
+#: src/blocks/process/edit.js:106
+msgid "Add step"
+msgstr "Agregar paso"
+
+#: src/blocks/project-body/edit.js:20
+msgid "The summary (excerpt) and the description are written in each project."
+msgstr "El resumen (Extracto) y la descripción se escriben en cada proyecto."
+
+#: src/blocks/project-body/edit.js:32
+msgid "Box"
+msgstr "Recuadro"
+
+#: src/blocks/project-body/edit.js:52
+#: src/blocks/service-hero/edit.js:41
+msgid "Button destination (the service is added)"
+msgstr "Destino del botón (se agrega el servicio)"
+
+#: src/blocks/project-body/edit.js:63
+msgid "Link to the service (empty = no link)"
+msgstr "Link al servicio (vacío = sin link)"
+
+#: src/blocks/project-body/edit.js:67
+msgid "It is followed by the name of the service."
+msgstr "Se completa con el nombre del servicio."
+
+#: src/blocks/project-header/edit.js:17
+msgid "Fact sheet"
+msgstr "Ficha"
+
+#: src/blocks/project-header/edit.js:20
+msgid "Title, area, image and details come from each project. Empty details are not shown."
+msgstr "Título, área, imagen y datos salen de cada proyecto. Un dato vacío no se muestra."
+
+#: src/blocks/project-header/edit.js:26
+msgid "Client"
+msgstr "Cliente"
+
+#: src/blocks/project-header/edit.js:41
+msgid "Year"
+msgstr "Año"
+
+#: src/blocks/projects/edit.js:33
+msgid "Section with some projects"
+msgstr "Sección con algunos proyectos"
+
+#: src/blocks/projects/edit.js:40
+msgid "Full listing with filters (projects page)"
+msgstr "Listado completo con filtros (página Proyectos)"
+
+#: src/blocks/projects/edit.js:52
+msgid "Filters"
+msgstr "Filtros"
+
+#: src/blocks/projects/edit.js:55
+msgid "Every published project is shown. The areas and services of the filter come from their sections."
+msgstr "Se muestran todos los proyectos publicados. Las áreas y los servicios del filtro salen de cada sección."
+
+#: src/blocks/projects/edit.js:61
+msgid "Name of the area group (screen readers)"
+msgstr "Nombre del grupo de áreas (lectores de pantalla)"
+
+#: src/blocks/projects/edit.js:69
+msgid "All areas button"
+msgstr "Botón de todas las áreas"
+
+#: src/blocks/projects/edit.js:74
+msgid "Service selector label"
+msgstr "Etiqueta del selector de servicio"
+
+#: src/blocks/projects/edit.js:82
+msgid "All services option"
+msgstr "Opción de todos los servicios"
+
+#: src/blocks/projects/edit.js:90
+msgid "No results: text"
+msgstr "Sin resultados: texto"
+
+#: src/blocks/projects/edit.js:97
+msgid "No results: button (empty = no button)"
+msgstr "Sin resultados: botón (vacío = sin botón)"
+
+#: src/blocks/projects/edit.js:115
+msgid "The link goes to the projects of the service being viewed."
+msgstr "El link va solo a los proyectos del servicio que se está viendo."
+
+#: src/blocks/projects/edit.js:122
+msgid "Line above the title"
+msgstr "Línea arriba del título"
+
+#: src/blocks/projects/edit.js:126
+msgid "Separates the section from the previous one when both are white."
+msgstr "Separa la sección de la anterior cuando las dos son blancas."
+
+#: src/blocks/projects/edit.js:136
+msgid "Projects to show"
+msgstr "Qué proyectos mostrar"
+
+#: src/blocks/reach/edit.js:21
+msgid "List of registrations"
+msgstr "Lista de matrículas"
+
+#: src/blocks/reach/edit.js:22
+msgid "It comes from the Institutions section (full name and relation)."
+msgstr "Sale de la sección Instituciones (nombre completo y relación)."
+
+#: src/blocks/reach/edit.js:33
+msgid "Large background illustration"
+msgstr "Logo grande de fondo"
+
+#: src/blocks/service-hero/edit.js:28
+msgid "Active service"
+msgstr "Servicio activo"
+
+#: src/blocks/service-hero/edit.js:31
+msgid "Title, number, area, description and \"What it includes\" come from each service. These texts are the same for all of them."
+msgstr "Título, número, área, descripción y \"Qué incluye\" salen de cada servicio. Estos textos son iguales para todos."
+
+#: src/blocks/service-hero/edit.js:38
+#: src/blocks/site-header/edit.js:100
+msgid "Quote button"
+msgstr "Botón de presupuesto"
+
+#: src/blocks/service-hero/edit.js:53
+msgid "WhatsApp button (empty = no button)"
+msgstr "Botón de WhatsApp (vacío = sin botón)"
+
+#: src/blocks/service-hero/edit.js:60
+#: src/blocks/service-hero/edit.js:72
+msgid "Box title"
+msgstr "Título del recuadro"
+
+#: src/blocks/service-hero/edit.js:65
+msgid "Service \"coming soon\""
+msgstr "Servicio \"Próximamente\""
+
+#: src/blocks/service-hero/edit.js:69
+msgid "Badge"
+msgstr "Etiqueta"
+
+#: src/blocks/service-hero/edit.js:76
+msgid "Form: title"
+msgstr "Formulario: título"
+
+#: src/blocks/service-hero/edit.js:80
+msgid "Form: email placeholder"
+msgstr "Formulario: ayuda del email"
+
+#: src/blocks/service-hero/edit.js:84
+msgid "Form: button"
+msgstr "Formulario: botón"
+
+#: src/blocks/service-hero/edit.js:88
+msgid "Form: button while sending"
+msgstr "Formulario: botón mientras envía"
+
+#: src/blocks/service-hero/edit.js:96
+msgid "Privacy link"
+msgstr "Link de privacidad"
+
+#: src/blocks/service-hero/edit.js:100
+msgid "Contact link (empty = no link)"
+msgstr "Link de contacto (vacío = sin link)"
+
+#: src/blocks/service-hero/edit.js:103
+msgid "Contact link destination"
+msgstr "Destino del link de contacto"
+
+#: src/blocks/service-hero/edit.js:115
+msgid "Message: empty email"
+msgstr "Mensaje: email vacío"
+
+#: src/blocks/service-hero/edit.js:119
+msgid "Message: invalid email"
+msgstr "Mensaje: email inválido"
+
+#: src/blocks/service-hero/edit.js:123
+msgid "Message: sending error"
+msgstr "Mensaje: error de envío"
+
+#: src/blocks/service-hero/edit.js:127
+msgid "The form is the \"notify me\" form of the site settings; the confirmation message is edited in Contact Form 7."
+msgstr "El formulario es el \"avísenme\" elegido en Datos del sitio; el mensaje de confirmación se edita en Contact Form 7."
+
+#: src/blocks/services/edit.js:25
+msgid "Variant"
+msgstr "Variante"
+
+#: src/blocks/services/edit.js:30
+msgid "For the services page: it follows the area filter of the page header and has no title of its own."
+msgstr "Para la página Servicios: responde al filtro por área del encabezado y no lleva título propio."
+
+#: src/blocks/services/edit.js:40
+msgid "With a title"
+msgstr "Con título"
+
+#: src/blocks/services/edit.js:44
+msgid "Listing (services page)"
+msgstr "Listado (página Servicios)"
+
+#: src/blocks/services/edit.js:62
+msgid "Services to show"
+msgstr "Qué servicios mostrar"
+
+#: src/blocks/services/edit.js:68
+msgid "All of them, in the order of the Services section"
+msgstr "Todos, en el orden de la sección Servicios"
+
+#: src/blocks/services/edit.js:74
+msgid "Hide those \"coming soon\""
+msgstr "Ocultar los \"Próximamente\""
+
+#: src/blocks/services/edit.js:84
+msgid "Line above the section"
+msgstr "Línea arriba de la sección"
+
+#: src/blocks/services/edit.js:88
+msgid "Separates the section from the previous one when both are white. In the service template, the service being viewed is not repeated."
+msgstr "Separa la sección de la anterior cuando las dos son blancas. En la plantilla de servicios no se repite el servicio que se está viendo."
+
+#: src/blocks/services/edit.js:101
+msgid "Inquiry card"
+msgstr "Tarjeta de consulta"
+
+#: src/blocks/services/edit.js:106
+msgid "Show at the end of the listing"
+msgstr "Mostrar al final del listado"
+
+#: src/blocks/services/edit.js:127
+#: src/editor/fields.js:92
+msgid "Link: text"
+msgstr "Link: texto"
+
+#: src/blocks/services/edit.js:132
+#: src/editor/fields.js:98
+msgid "Link: destination"
+msgstr "Link: destino"
+
+#: src/blocks/site-footer/edit.js:26
+msgid "Brand"
+msgstr "Marca"
+
+#: src/blocks/site-footer/edit.js:29
+#: src/blocks/site-header/edit.js:88
+msgid "Logo for dark backgrounds"
+msgstr "Logo para fondos oscuros"
+
+#: src/blocks/site-footer/edit.js:33
+msgid "Without it, the logo of Site Identity is used."
+msgstr "Si no se elige, se usa el logo de Identidad del sitio."
+
+#: src/blocks/site-footer/edit.js:43
+msgid "Text under the logo"
+msgstr "Texto debajo del logo"
+
+#: src/blocks/site-footer/edit.js:50
+msgid "Social profiles come from the site settings."
+msgstr "Las redes sociales salen de los datos del sitio."
+
+#: src/blocks/site-footer/edit.js:58
+msgid "Site links"
+msgstr "Links del sitio"
+
+#: src/blocks/site-footer/edit.js:63
+msgid "Column title"
+msgstr "Título de la columna"
+
+#: src/blocks/site-footer/edit.js:95
+msgid "Services and contact"
+msgstr "Servicios y contacto"
+
+#: src/blocks/site-footer/edit.js:100
+msgid "Show the services column"
+msgstr "Mostrar la columna de servicios"
+
+#: src/blocks/site-footer/edit.js:109
+msgid "Services title"
+msgstr "Título de servicios"
+
+#: src/blocks/site-footer/edit.js:114
+msgid "Contact title"
+msgstr "Título de contacto"
+
+#: src/blocks/site-footer/edit.js:119
+msgid "Phone, email, hours and location come from the site settings."
+msgstr "Teléfono, email, horario y ubicación salen de los datos del sitio."
+
+#: src/blocks/site-footer/edit.js:127
+msgid "Institutions and legal notice"
+msgstr "Instituciones y aviso legal"
+
+#: src/blocks/site-footer/edit.js:132
+msgid "Show the institution logos"
+msgstr "Mostrar los logos de las instituciones"
+
+#: src/blocks/site-footer/edit.js:141
+msgid "Logos label"
+msgstr "Etiqueta de los logos"
+
+#: src/blocks/site-footer/edit.js:146
+msgid "Legal notice"
+msgstr "Aviso legal"
+
+#: src/blocks/site-footer/edit.js:147
+msgid "{year} is replaced with the current year and {site} with the site title."
+msgstr "{year} se reemplaza por el año actual y {site} por el título del sitio."
+
+#: src/blocks/site-header/edit.js:29
+msgid "The same links are used in the bar and in the full-screen menu."
+msgstr "Los mismos links se usan en la barra y en el menú a pantalla completa."
+
+#: src/blocks/site-header/edit.js:57
+msgid "Show the services submenu"
+msgstr "Mostrar el submenú de servicios"
+
+#: src/blocks/site-header/edit.js:61
+msgid "Only one link can have it."
+msgstr "Solo un link puede tenerlo."
+
+#: src/blocks/site-header/edit.js:82
+msgid "The logo is the one set in Site Identity. Add a light version for the dark backgrounds (top of dark pages and the full-screen menu)."
+msgstr "El logo es el de Identidad del sitio. Agregá una versión clara para los fondos oscuros (arriba de las páginas oscuras y en el menú a pantalla completa)."
+
+#: src/blocks/site-header/edit.js:125
+msgid "Services submenu"
+msgstr "Submenú de servicios"
+
+#: src/blocks/site-header/edit.js:130
+msgid "Link to all services"
+msgstr "Link a todos los servicios"
+
+#: src/blocks/site-header/edit.js:135
+msgid "Services page"
+msgstr "Página de servicios"
+
+#: src/blocks/site-header/edit.js:143
+msgid "Box: title"
+msgstr "Recuadro: título"
+
+#: src/blocks/site-header/edit.js:148
+msgid "Box: text"
+msgstr "Recuadro: texto"
+
+#: src/blocks/site-header/edit.js:155
+msgid "Box: link"
+msgstr "Recuadro: link"
+
+#: src/blocks/site-header/edit.js:160
+msgid "Box: destination"
+msgstr "Recuadro: destino"
+
+#: src/blocks/site-header/edit.js:170
+msgid "Full-screen menu"
+msgstr "Menú a pantalla completa"
+
+#: src/blocks/site-header/edit.js:175
+msgid "Title of the services column"
+msgstr "Título de la columna de servicios"
+
+#: src/blocks/site-header/edit.js:183
+msgid "Phone, email, hours and WhatsApp come from the site settings; the services, from the Services section."
+msgstr "Teléfono, email, horario y WhatsApp salen de los datos del sitio; los servicios, de la sección Servicios."
+
+#: src/blocks/stats/edit.js:26
+msgid "Figures"
+msgstr "Cifras"
+
+#: src/blocks/stats/edit.js:31
+msgid "Add figure"
+msgstr "Agregar cifra"
+
+#: src/blocks/stats/edit.js:35
+msgid "Value"
+msgstr "Valor"
+
+#: src/blocks/stats/edit.js:36
+msgid "Numbers (e.g. +30) count up from 0 when they appear."
+msgstr "Si es un número (ej. +30) cuenta desde 0 al aparecer."
+
+#: src/blocks/stats/edit.js:43
+msgid "Description"
+msgstr "Descripción"
+
+#: src/blocks/team/edit.js:26
+msgid "Caption when there is no photo"
+msgstr "Leyenda cuando no hay foto"
+
+#: src/blocks/team/edit.js:30
+msgid "Empty = no caption."
+msgstr "Vacío = sin leyenda."
+
+#: src/blocks/team/edit.js:37
+msgid "People, their photos (featured image), roles and profiles are managed in the Team section."
+msgstr "Las personas, sus fotos (imagen destacada), cargos y perfiles se cargan en la sección Equipo."
+
+#: src/blocks/team/edit.js:43
+msgid "View the team"
+msgstr "Ver el equipo"
+
+#: src/blocks/testimonials/edit.js:20
+msgid "Testimonials are managed in the Testimonials section. This section stays hidden until at least one is published."
+msgstr "Los testimonios se cargan en la sección Testimonios. Esta sección no se muestra mientras no haya ninguno publicado."
+
+#: src/blocks/testimonials/edit.js:26
+msgid "View the testimonials"
+msgstr "Ver los testimonios"
+
+#: src/blocks/text-media/edit.js:17
+msgid "Blue with arc"
+msgstr "Azul con arco"
+
+#: src/blocks/text-media/edit.js:18
+msgid "Gray with yellow sun"
+msgstr "Gris con sol amarillo"
+
+#: src/blocks/text-media/edit.js:19
+msgid "Gray with rings"
+msgstr "Gris con anillos"
+
+#: src/blocks/text-media/edit.js:20
+msgid "Blue with red bar"
+msgstr "Azul con barra roja"
+
+#: src/blocks/text-media/edit.js:21
+msgid "Cream with logo"
+msgstr "Crema con logo"
+
+#: src/blocks/text-media/edit.js:22
+msgid "Dark blue"
+msgstr "Azul oscuro"
+
+#: src/blocks/text-media/edit.js:35
+msgid "Text (a blank line separates paragraphs)"
+msgstr "Texto (una línea en blanco separa los párrafos)"
+
+#: src/blocks/text-media/edit.js:43
+#: src/editor/query.js:100
+msgid "Show"
+msgstr "Qué mostrar"
+
+#: src/blocks/text-media/edit.js:48
+msgid "Graphic cover"
+msgstr "Portada gráfica del logo"
+
+#: src/blocks/text-media/edit.js:52
+msgid "An image"
+msgstr "Una imagen"
+
+#: src/blocks/text-media/edit.js:61
+msgid "Image"
+msgstr "Imagen"
+
+#: src/blocks/text-media/edit.js:62
+msgid "Without an image, the graphic cover is shown."
+msgstr "Si no hay imagen, se muestra la portada gráfica."
+
+#: src/blocks/text-media/edit.js:71
+msgid "Cover"
+msgstr "Portada"
+
+#: src/blocks/text-media/edit.js:82
+msgid "Aspect ratio"
+msgstr "Proporción"
+
+#: src/blocks/text-media/edit.js:98
+msgid "Side"
+msgstr "Lado"
+
+#: src/blocks/text-media/edit.js:103
+msgid "Right"
+msgstr "Derecha"
+
+#: src/blocks/text-media/edit.js:107
+msgid "Left"
+msgstr "Izquierda"
+
+#: src/editor/fields.js:60
+msgid "Heading"
+msgstr "Encabezado"
+
+#: src/editor/fields.js:64
+msgid "Small text with the accent bar, above the title."
+msgstr "Texto chico con la barra de acento, arriba del título."
+
+#: src/editor/links.js:35
+msgid "Search for a page of the site or paste an address."
+msgstr "Buscá una página del sitio o pegá una dirección."
+
+#: src/editor/links.js:52
+msgid "Open in a new tab"
+msgstr "Abrir en una pestaña nueva"
+
+#: src/editor/links.js:63
+msgid "Red (primary)"
+msgstr "Rojo (principal)"
+
+#: src/editor/links.js:64
+msgid "Blue"
+msgstr "Azul"
+
+#: src/editor/links.js:65
+msgid "Blue outline"
+msgstr "Borde azul"
+
+#: src/editor/links.js:66
+msgid "White outline (on dark backgrounds)"
+msgstr "Borde blanco (sobre fondo oscuro)"
+
+#: src/editor/links.js:87
+msgid "Add button"
+msgstr "Agregar botón"
+
+#: src/editor/links.js:106
+msgid "Destination"
+msgstr "Destino"
+
+#: src/editor/links.js:111
+msgid "A link"
+msgstr "Un link"
+
+#: src/editor/links.js:115
+msgid "WhatsApp (from the site settings)"
+msgstr "WhatsApp (de Datos del sitio)"
+
+#: src/editor/links.js:134
+msgid "Style"
+msgstr "Estilo"
+
+#: src/editor/media.js:58
+msgid "Replace image"
+msgstr "Cambiar imagen"
+
+#: src/editor/media.js:59
+msgid "Choose image"
+msgstr "Elegir imagen"
+
+#: src/editor/media.js:68
+#: src/editor/repeater.js:110
+msgid "Remove"
+msgstr "Quitar"
+
+#: src/editor/query.js:78
+msgid "All, newest first"
+msgstr "Todos, los más recientes primero"
+
+#: src/editor/query.js:79
+msgid "From one area"
+msgstr "Los de un área"
+
+#: src/editor/query.js:80
+msgid "From one service"
+msgstr "Los de un servicio"
+
+#: src/editor/query.js:81
+msgid "Picked by hand"
+msgstr "Elegidos a mano"
+
+#: src/editor/query.js:82
+msgid "From the service being viewed (service template)"
+msgstr "Los del servicio que se está viendo (plantilla de servicios)"
+
+#: src/editor/query.js:86
+msgid "Related to the one being viewed (template)"
+msgstr "Relacionados con el que se está viendo (plantilla)"
+
+#: src/editor/query.js:113
+msgid "Area"
+msgstr "Área"
+
+#: src/editor/query.js:118
+msgid "Choose an area"
+msgstr "Elegí un área"
+
+#: src/editor/query.js:137
+msgid "Choose a service"
+msgstr "Elegí un servicio"
+
+#: src/editor/query.js:153
+msgid "Choose and sort the items"
+msgstr "Elegí y ordená los ítems"
+
+#: src/editor/query.js:172
+msgid "Amount"
+msgstr "Cantidad"
+
+#: src/editor/query.js:173
+msgid "0 = all."
+msgstr "0 = todos."
+
+#. translators: %d: item number in the list.
+#: src/editor/repeater.js:62
+#, js-format
+msgid "Item %d"
+msgstr "Ítem %d"
+
+#: src/editor/repeater.js:94
+msgid "Move up"
+msgstr "Subir"
+
+#: src/editor/repeater.js:102
+msgid "Move down"
+msgstr "Bajar"
+
+#: src/editor/repeater.js:138
+msgid "Add"
+msgstr "Agregar"
+
+#: src/editor/section-preview.js:28
+msgid "This section has no content to show yet. Fill it in from the sidebar."
+msgstr "Esta sección no tiene contenido para mostrar todavía. Completala desde el lateral."
+
+#: src/editor/section-style.js:25
+msgid "Gray"
+msgstr "Gris"
+
+#: src/editor/section-style.js:26
+msgid "Dark"
+msgstr "Oscuro"
+
+#: src/editor/section-style.js:30
+msgid "None"
+msgstr "Sin"
+
+#: src/editor/section-style.js:31
+msgid "Small"
+msgstr "Chico"
+
+#: src/editor/section-style.js:32
+msgid "Normal"
+msgstr "Normal"
+
+#: src/editor/section-style.js:33
+msgid "Large"
+msgstr "Grande"
+
+#: src/editor/section-style.js:74
+msgid "Titles"
+msgstr "Títulos"
+
+#: src/editor/section-style.js:76
+msgid "Accent (eyebrow bar)"
+msgstr "Acento (barra de la etiqueta)"
+
+#: src/editor/section-style.js:83
+msgid "Scheme"
+msgstr "Esquema"
+
+#: src/editor/section-style.js:85
+msgid "Section background"
+msgstr "Fondo de la sección"
+
+#: src/editor/section-style.js:98
+msgid "Colors"
+msgstr "Colores"
+
+#: src/editor/section-style.js:103
+msgid "Empty = the scheme color. Only colors from the site palette can be chosen."
+msgstr "Vacío = el color del esquema. Solo se puede elegir de la paleta del sitio."
+
+#: src/editor/section-style.js:127
+msgid "Spacing"
+msgstr "Espaciado"
+
+#: src/editor/section-style.js:132
+msgid "Top"
+msgstr "Arriba"
+
+#: src/editor/section-style.js:140
+msgid "Bottom"
+msgstr "Abajo"
+
+#: src/editor/section-style.js:153
+msgid "Animations"
+msgstr "Animaciones"
+
+#: src/editor/section-style.js:154
+msgid "When off, the section appears without motion."
+msgstr "Si se apaga, la sección aparece sin movimiento."
+
+#: src/blocks/areas/block.json
+msgctxt "block title"
+msgid "Areas"
+msgstr "Áreas"
+
+#: src/blocks/areas/block.json
+msgctxt "block description"
+msgid "The areas of the firm with their animated icon, their text and a link to their services. They come from Services → Areas (the text is the description of each area)."
+msgstr "Las áreas de la consultora con su ícono animado, su texto y el link a sus servicios. Salen de Servicios → Áreas (el texto es la descripción de cada área)."
+
+#: src/blocks/areas/block.json
+msgctxt "block keyword"
+msgid "areas"
+msgstr "áreas"
+
+#: src/blocks/areas/block.json
+msgctxt "block keyword"
+msgid "disciplines"
+msgstr "disciplinas"
+
+#: src/blocks/areas/block.json
+msgctxt "block keyword"
+msgid "practice"
+msgstr "especialidad"
+
+#: src/blocks/audiences/block.json
+msgctxt "block title"
+msgid "Who we work for"
+msgstr "Para quién trabajamos"
+
+#: src/blocks/audiences/block.json
+msgctxt "block description"
+msgid "Cards by type of client, each with links to the services that suit them."
+msgstr "Tarjetas por tipo de cliente, cada una con links a los servicios que le corresponden."
+
+#: src/blocks/audiences/block.json
+msgctxt "block keyword"
+msgid "audiences"
+msgstr "destinatarios"
+
+#: src/blocks/audiences/block.json
+#: src/blocks/testimonials/block.json
+msgctxt "block keyword"
+msgid "clients"
+msgstr "clientes"
+
+#: src/blocks/audiences/block.json
+msgctxt "block keyword"
+msgid "who we serve"
+msgstr "para quién"
+
+#: src/blocks/audiences/block.json
+#: src/blocks/services/block.json
+msgctxt "block keyword"
+msgid "services"
+msgstr "servicios"
+
+#: src/blocks/contact/block.json
+msgctxt "block title"
+msgid "Contact form"
+msgstr "Formulario de contacto"
+
+#: src/blocks/contact/block.json
+msgctxt "block description"
+msgid "Quote or question form (sent through Contact Form 7) with WhatsApp, phone, email, hours, location and social profiles from the site settings beside it."
+msgstr "Formulario de presupuesto o consulta (enviado con Contact Form 7) con WhatsApp, teléfono, email, horario, ubicación y redes de los ajustes del sitio al costado."
+
+#: src/blocks/contact/block.json
+#: src/blocks/cta/block.json
+#: src/blocks/site-footer/block.json
+msgctxt "block keyword"
+msgid "contact"
+msgstr "contacto"
+
+#: src/blocks/contact/block.json
+msgctxt "block keyword"
+msgid "form"
+msgstr "formulario"
+
+#: src/blocks/contact/block.json
+#: src/blocks/cta/block.json
+#: src/blocks/project-body/block.json
+msgctxt "block keyword"
+msgid "quote"
+msgstr "presupuesto"
+
+#: src/blocks/contact/block.json
+msgctxt "block keyword"
+msgid "question"
+msgstr "consulta"
+
+#: src/blocks/contact/block.json
+#: src/blocks/cta/block.json
+msgctxt "block keyword"
+msgid "whatsapp"
+msgstr "whatsapp"
+
+#: src/blocks/cta/block.json
+msgctxt "block title"
+msgid "Call to action"
+msgstr "Llamado a la acción"
+
+#: src/blocks/cta/block.json
+msgctxt "block description"
+msgid "Dark box with a title, text and buttons to request a quote. By default it uses the text of the site settings; each page can replace it."
+msgstr "Recuadro oscuro con título, texto y botones para pedir presupuesto. Por defecto usa el texto de los datos del sitio; cada página puede reemplazarlo."
+
+#: src/blocks/cta/block.json
+msgctxt "block keyword"
+msgid "cta"
+msgstr "cta"
+
+#: src/blocks/cta/block.json
+msgctxt "block keyword"
+msgid "call to action"
+msgstr "llamado a la acción"
+
+#: src/blocks/features/block.json
+msgctxt "block title"
+msgid "Numbered items"
+msgstr "Ítems numerados"
+
+#: src/blocks/features/block.json
+msgctxt "block description"
+msgid "A title and a list of numbered items, each with a title and a text: with an accent dot or as cards."
+msgstr "Un título y una lista de ítems numerados, cada uno con título y texto: con un punto de acento o en tarjetas."
+
+#: src/blocks/features/block.json
+msgctxt "block keyword"
+msgid "benefits"
+msgstr "beneficios"
+
+#: src/blocks/features/block.json
+msgctxt "block keyword"
+msgid "why us"
+msgstr "por qué elegirnos"
+
+#: src/blocks/features/block.json
+msgctxt "block keyword"
+msgid "approach"
+msgstr "enfoque"
+
+#: src/blocks/features/block.json
+msgctxt "block keyword"
+msgid "features"
+msgstr "características"
+
+#: src/blocks/features/block.json
+msgctxt "block keyword"
+msgid "items"
+msgstr "ítems"
+
+#: src/blocks/home-hero/block.json
+msgctxt "block title"
+msgid "Home hero"
+msgstr "Portada de inicio"
+
+#: src/blocks/home-hero/block.json
+msgctxt "block description"
+msgid "First screen of the home page: background illustration, main title (H1), text, buttons and a card with a counter."
+msgstr "Primera pantalla de la página de inicio: ilustración de fondo, título principal (H1), texto, botones y una tarjeta con un contador."
+
+#: src/blocks/home-hero/block.json
+#: src/blocks/page-hero/block.json
+msgctxt "block keyword"
+msgid "hero"
+msgstr "portada"
+
+#: src/blocks/home-hero/block.json
+msgctxt "block keyword"
+msgid "home"
+msgstr "inicio"
+
+#: src/blocks/home-hero/block.json
+msgctxt "block keyword"
+msgid "cover"
+msgstr "portada"
+
+#: src/blocks/home-hero/block.json
+#: src/blocks/page-hero/block.json
+msgctxt "block keyword"
+msgid "h1"
+msgstr "h1"
+
+#: src/blocks/institutions/block.json
+msgctxt "block title"
+msgid "Institutions"
+msgstr "Instituciones"
+
+#: src/blocks/institutions/block.json
+msgctxt "block description"
+msgid "Logos of professional boards and associations, from the Institutions section, with a statement or a label."
+msgstr "Logos de los colegios profesionales y cámaras, de la sección Instituciones, con una frase o una etiqueta."
+
+#: src/blocks/institutions/block.json
+#: src/blocks/reach/block.json
+#: src/blocks/site-footer/block.json
+msgctxt "block keyword"
+msgid "institutions"
+msgstr "instituciones"
+
+#: src/blocks/institutions/block.json
+msgctxt "block keyword"
+msgid "associations"
+msgstr "colegios"
+
+#: src/blocks/institutions/block.json
+msgctxt "block keyword"
+msgid "memberships"
+msgstr "membresías"
+
+#: src/blocks/institutions/block.json
+msgctxt "block keyword"
+msgid "logos"
+msgstr "logos"
+
+#: src/blocks/map/block.json
+msgctxt "block title"
+msgid "Location map"
+msgstr "Mapa de ubicación"
+
+#: src/blocks/map/block.json
+msgctxt "block description"
+msgid "A light map image with a marker and a location card. The interactive map (MapLibre + OpenFreeMap) is downloaded only when the visitor taps \"Explore map\"."
+msgstr "Imagen liviana del mapa con un marcador y la tarjeta de ubicación. El mapa interactivo (MapLibre + OpenFreeMap) se descarga solo si el visitante toca \"Explorar mapa\"."
+
+#: src/blocks/map/block.json
+msgctxt "block keyword"
+msgid "map"
+msgstr "mapa"
+
+#: src/blocks/map/block.json
+msgctxt "block keyword"
+msgid "location"
+msgstr "ubicación"
+
+#: src/blocks/map/block.json
+msgctxt "block keyword"
+msgid "directions"
+msgstr "cómo llegar"
+
+#: src/blocks/map/block.json
+msgctxt "block keyword"
+msgid "address"
+msgstr "dirección"
+
+#: src/blocks/news/block.json
+msgctxt "block title"
+msgid "News"
+msgstr "Novedades"
+
+#: src/blocks/news/block.json
+msgctxt "block description"
+msgid "Published posts. As a section: the latest ones (hidden while there are none). As a listing (posts page): featured post, category filter and pagination."
+msgstr "Entradas publicadas. Como sección: las últimas (no se muestra mientras no haya ninguna). Como listado (página de entradas): entrada destacada, filtro por categoría y paginación."
+
+#: src/blocks/news/block.json
+#: src/blocks/post-body/block.json
+#: src/blocks/post-header/block.json
+msgctxt "block keyword"
+msgid "news"
+msgstr "novedades"
+
+#: src/blocks/news/block.json
+msgctxt "block keyword"
+msgid "blog"
+msgstr "blog"
+
+#: src/blocks/news/block.json
+msgctxt "block keyword"
+msgid "posts"
+msgstr "entradas"
+
+#: src/blocks/news/block.json
+#: src/blocks/projects/block.json
+#: src/blocks/services/block.json
+msgctxt "block keyword"
+msgid "listing"
+msgstr "listado"
+
+#: src/blocks/not-found/block.json
+msgctxt "block title"
+msgid "Page not found"
+msgstr "Página no encontrada"
+
+#: src/blocks/not-found/block.json
+msgctxt "block description"
+msgid "For the 404 template: the large \"404\", the message, buttons and links to the main sections."
+msgstr "Para la plantilla 404: el \"404\" grande, el mensaje, los botones y links a las secciones principales."
+
+#: src/blocks/not-found/block.json
+msgctxt "block keyword"
+msgid "404"
+msgstr "404"
+
+#: src/blocks/not-found/block.json
+msgctxt "block keyword"
+msgid "error"
+msgstr "error"
+
+#: src/blocks/not-found/block.json
+msgctxt "block keyword"
+msgid "not found"
+msgstr "no encontrada"
+
+#: src/blocks/page-hero/block.json
+msgctxt "block title"
+msgid "Page header"
+msgstr "Encabezado de página"
+
+#: src/blocks/page-hero/block.json
+msgctxt "block description"
+msgid "First section of an inner page: breadcrumbs, main title (H1) and text. Dark with an arc and a dot, light, or compact for legal texts. It can show the area filter of the services page."
+msgstr "Primera sección de una página interior: migas, título principal (H1) y texto. Oscuro con arco y punto, claro o compacto para textos legales. Puede mostrar el filtro por área de la página de servicios."
+
+#: src/blocks/page-hero/block.json
+#: src/blocks/post-header/block.json
+#: src/blocks/project-header/block.json
+#: src/blocks/service-hero/block.json
+#: src/blocks/site-header/block.json
+msgctxt "block keyword"
+msgid "header"
+msgstr "encabezado"
+
+#: src/blocks/page-hero/block.json
+msgctxt "block keyword"
+msgid "title"
+msgstr "título"
+
+#: src/blocks/page-hero/block.json
+msgctxt "block keyword"
+msgid "breadcrumbs"
+msgstr "migas"
+
+#: src/blocks/post-body/block.json
+msgctxt "block title"
+msgid "Post body"
+msgstr "Texto de nota"
+
+#: src/blocks/post-body/block.json
+msgctxt "block description"
+msgid "For the single post template: the post text in a reading column and the buttons to share it on LinkedIn, Facebook, WhatsApp or X."
+msgstr "Para la plantilla de cada entrada: el texto en una columna de lectura y los botones para compartirlo en LinkedIn, Facebook, WhatsApp o X."
+
+#: src/blocks/post-body/block.json
+#: src/blocks/post-header/block.json
+msgctxt "block keyword"
+msgid "post"
+msgstr "nota"
+
+#: src/blocks/post-body/block.json
+#: src/blocks/project-body/block.json
+msgctxt "block keyword"
+msgid "content"
+msgstr "contenido"
+
+#: src/blocks/post-body/block.json
+msgctxt "block keyword"
+msgid "share"
+msgstr "compartir"
+
+#: src/blocks/post-header/block.json
+msgctxt "block title"
+msgid "Post header"
+msgstr "Encabezado de nota"
+
+#: src/blocks/post-header/block.json
+msgctxt "block description"
+msgid "For the single post template: breadcrumbs, category, date and reading time, title (H1), lead (the excerpt), author and the image or cover. The data comes from the post."
+msgstr "Para la plantilla de cada nota: migas, categoría, fecha y tiempo de lectura, título (H1), bajada (el extracto), autor y la imagen o portada. Los datos salen de la nota."
+
+#: src/blocks/post-header/block.json
+msgctxt "block keyword"
+msgid "article"
+msgstr "artículo"
+
+#: src/blocks/process/block.json
+msgctxt "block title"
+msgid "Process"
+msgstr "Proceso"
+
+#: src/blocks/process/block.json
+msgctxt "block description"
+msgid "Numbered work steps: as a timeline (colored number, a line that draws itself and an arrow) or as a list next to an illustration."
+msgstr "Pasos de trabajo numerados: en línea de tiempo (número de color, línea que se dibuja y flecha) o en lista junto a una ilustración."
+
+#: src/blocks/process/block.json
+msgctxt "block keyword"
+msgid "process"
+msgstr "proceso"
+
+#: src/blocks/process/block.json
+msgctxt "block keyword"
+msgid "steps"
+msgstr "pasos"
+
+#: src/blocks/process/block.json
+msgctxt "block keyword"
+msgid "stages"
+msgstr "etapas"
+
+#: src/blocks/process/block.json
+msgctxt "block keyword"
+msgid "how we work"
+msgstr "cómo trabajamos"
+
+#: src/blocks/project-body/block.json
+msgctxt "block title"
+msgid "Project description"
+msgstr "Descripción de proyecto"
+
+#: src/blocks/project-body/block.json
+msgctxt "block description"
+msgid "For the single project template: the summary and content of the project, and a box to request a quote (with the project service preselected in the form)."
+msgstr "Para la plantilla de cada proyecto: el resumen y el contenido del proyecto, y un recuadro para pedir presupuesto (con el servicio del proyecto ya elegido en el formulario)."
+
+#: src/blocks/project-body/block.json
+#: src/blocks/project-header/block.json
+msgctxt "block keyword"
+msgid "project"
+msgstr "proyecto"
+
+#: src/blocks/project-body/block.json
+msgctxt "block keyword"
+msgid "description"
+msgstr "descripción"
+
+#: src/blocks/project-header/block.json
+msgctxt "block title"
+msgid "Project header"
+msgstr "Encabezado de proyecto"
+
+#: src/blocks/project-header/block.json
+msgctxt "block description"
+msgid "For the single project template: breadcrumbs, area, title (H1), fact sheet (client, location, service and year) and the image or cover. The data comes from the project."
+msgstr "Para la plantilla de cada proyecto: migas, área, título (H1), ficha (cliente, ubicación, servicio y año) y la imagen o portada. Los datos salen del proyecto."
+
+#: src/blocks/project-header/block.json
+msgctxt "block keyword"
+msgid "details"
+msgstr "ficha"
+
+#: src/blocks/project-header/block.json
+#: src/blocks/projects/block.json
+msgctxt "block keyword"
+msgid "works"
+msgstr "obras"
+
+#: src/blocks/projects/block.json
+msgctxt "block title"
+msgid "Projects"
+msgstr "Proyectos"
+
+#: src/blocks/projects/block.json
+msgctxt "block description"
+msgid "Project cards with their image or cover. They come from the Projects section: the latest, those of an area or a service, hand-picked, those of the service being viewed or related to the project being viewed. Also as a full listing with filters by area and service."
+msgstr "Tarjetas de proyectos con su imagen o portada. Salen de la sección Proyectos: los últimos, los de un área o un servicio, elegidos a mano, los del servicio que se está viendo o los relacionados con el proyecto. También como listado completo con filtros por área y servicio."
+
+#: src/blocks/projects/block.json
+msgctxt "block keyword"
+msgid "projects"
+msgstr "proyectos"
+
+#: src/blocks/projects/block.json
+#: src/blocks/services/block.json
+msgctxt "block keyword"
+msgid "cards"
+msgstr "tarjetas"
+
+#: src/blocks/projects/block.json
+msgctxt "block keyword"
+msgid "portfolio"
+msgstr "portfolio"
+
+#: src/blocks/projects/block.json
+msgctxt "block keyword"
+msgid "related"
+msgstr "relacionados"
+
+#: src/blocks/reach/block.json
+msgctxt "block title"
+msgid "Reach and registrations"
+msgstr "Alcance y matrículas"
+
+#: src/blocks/reach/block.json
+msgctxt "block description"
+msgid "Dark section with a large animated arc in the background, a text and the list of registrations and memberships (from the Institutions section)."
+msgstr "Sección oscura con un gran arco animado de fondo, un texto y la lista de matrículas y membresías (de la sección Instituciones)."
+
+#: src/blocks/reach/block.json
+msgctxt "block keyword"
+msgid "reach"
+msgstr "alcance"
+
+#: src/blocks/reach/block.json
+msgctxt "block keyword"
+msgid "nationwide"
+msgstr "todo el país"
+
+#: src/blocks/reach/block.json
+msgctxt "block keyword"
+msgid "registrations"
+msgstr "matrículas"
+
+#: src/blocks/reach/block.json
+#: src/blocks/team/block.json
+#: src/blocks/text-media/block.json
+msgctxt "block keyword"
+msgid "about"
+msgstr "nosotros"
+
+#: src/blocks/service-hero/block.json
+msgctxt "block title"
+msgid "Service header"
+msgstr "Encabezado de servicio"
+
+#: src/blocks/service-hero/block.json
+msgctxt "block description"
+msgid "For the single service template: breadcrumbs, number and area, title (H1), description, quote and WhatsApp buttons (or the \"notify me\" form when the service is coming soon) and the \"What it includes\" box. The data comes from the service."
+msgstr "Para la plantilla de servicio: migas, número y área, título (H1), descripción, botones de presupuesto y WhatsApp (o el formulario \"avisarme\" si el servicio está próximamente) y el recuadro \"Qué incluye\". Los datos salen del servicio."
+
+#: src/blocks/service-hero/block.json
+msgctxt "block keyword"
+msgid "service"
+msgstr "servicio"
+
+#: src/blocks/service-hero/block.json
+msgctxt "block keyword"
+msgid "coming soon"
+msgstr "próximamente"
+
+#: src/blocks/service-hero/block.json
+msgctxt "block keyword"
+msgid "includes"
+msgstr "incluye"
+
+#: src/blocks/services/block.json
+msgctxt "block title"
+msgid "Services"
+msgstr "Servicios"
+
+#: src/blocks/services/block.json
+msgctxt "block description"
+msgid "Service cards from the Services section: all of them, those of an area or hand-picked. In the Listing layout it follows the area filter of the page header and adds an inquiry card."
+msgstr "Tarjetas de servicios de la sección Servicios: todos, los de un área o elegidos a mano. En la variante Listado responde al filtro por área del encabezado y suma la tarjeta de consulta."
+
+#: src/blocks/site-footer/block.json
+msgctxt "block title"
+msgid "Site footer"
+msgstr "Pie del sitio"
+
+#: src/blocks/site-footer/block.json
+msgctxt "block description"
+msgid "Footer with the logo, site links, services, contact details, institutions and the legal notice. Services, contact details, social profiles and institutions are loaded automatically."
+msgstr "Pie con el logo, los links del sitio, los servicios, el contacto, las instituciones y el aviso legal. Servicios, contacto, redes e instituciones se cargan solos."
+
+#: src/blocks/site-footer/block.json
+msgctxt "block keyword"
+msgid "footer"
+msgstr "pie"
+
+#: src/blocks/site-header/block.json
+msgctxt "block title"
+msgid "Site header"
+msgstr "Encabezado del sitio"
+
+#: src/blocks/site-header/block.json
+msgctxt "block description"
+msgid "Floating bar with the menu, the services submenu and the full-screen menu. Services and contact details are loaded automatically."
+msgstr "Barra flotante con el menú, el submenú de servicios y el menú a pantalla completa. Los servicios y los datos de contacto se cargan solos."
+
+#: src/blocks/site-header/block.json
+msgctxt "block keyword"
+msgid "menu"
+msgstr "menú"
+
+#: src/blocks/site-header/block.json
+msgctxt "block keyword"
+msgid "navigation"
+msgstr "navegación"
+
+#: src/blocks/stats/block.json
+msgctxt "block title"
+msgid "Stats"
+msgstr "Cifras"
+
+#: src/blocks/stats/block.json
+msgctxt "block description"
+msgid "Text with a link on one side and highlighted figures on the other. Numbers count up from 0 when they appear."
+msgstr "Texto con link de un lado y cifras destacadas del otro. Los números cuentan desde 0 al aparecer."
+
+#: src/blocks/stats/block.json
+msgctxt "block keyword"
+msgid "stats"
+msgstr "cifras"
+
+#: src/blocks/stats/block.json
+msgctxt "block keyword"
+msgid "figures"
+msgstr "números"
+
+#: src/blocks/stats/block.json
+msgctxt "block keyword"
+msgid "numbers"
+msgstr "números"
+
+#: src/blocks/stats/block.json
+msgctxt "block keyword"
+msgid "track record"
+msgstr "trayectoria"
+
+#: src/blocks/team/block.json
+msgctxt "block title"
+msgid "Team"
+msgstr "Equipo"
+
+#: src/blocks/team/block.json
+msgctxt "block description"
+msgid "Text and cards for the team members (photo or initials, role, education and LinkedIn), taken from the Team section."
+msgstr "Texto y tarjetas de las personas del equipo (foto o iniciales, cargo, formación y LinkedIn), de la sección Equipo."
+
+#: src/blocks/team/block.json
+msgctxt "block keyword"
+msgid "team"
+msgstr "equipo"
+
+#: src/blocks/team/block.json
+msgctxt "block keyword"
+msgid "people"
+msgstr "personas"
+
+#: src/blocks/team/block.json
+msgctxt "block keyword"
+msgid "members"
+msgstr "integrantes"
+
+#: src/blocks/testimonials/block.json
+msgctxt "block title"
+msgid "Testimonials"
+msgstr "Testimonios"
+
+#: src/blocks/testimonials/block.json
+msgctxt "block description"
+msgid "Client testimonials from the Testimonials section. The section stays hidden until at least one is published."
+msgstr "Testimonios de clientes, de la sección Testimonios. La sección no se muestra mientras no haya ninguno publicado."
+
+#: src/blocks/testimonials/block.json
+msgctxt "block keyword"
+msgid "testimonials"
+msgstr "testimonios"
+
+#: src/blocks/testimonials/block.json
+msgctxt "block keyword"
+msgid "quotes"
+msgstr "citas"
+
+#: src/blocks/testimonials/block.json
+msgctxt "block keyword"
+msgid "reviews"
+msgstr "reseñas"
+
+#: src/blocks/text-media/block.json
+msgctxt "block title"
+msgid "Text and media"
+msgstr "Texto con ilustración"
+
+#: src/blocks/text-media/block.json
+msgctxt "block description"
+msgid "Eyebrow, title and paragraphs with a graphic cover or an image beside them."
+msgstr "Etiqueta, título y párrafos con una portada gráfica o una imagen al costado."
+
+#: src/blocks/text-media/block.json
+msgctxt "block keyword"
+msgid "story"
+msgstr "historia"
+
+#: src/blocks/text-media/block.json
+msgctxt "block keyword"
+msgid "text"
+msgstr "texto"
+
+#: src/blocks/text-media/block.json
+msgctxt "block keyword"
+msgid "image"
+msgstr "imagen"
+
+#: src/blocks/text-media/block.json
+msgctxt "block keyword"
+msgid "illustration"
+msgstr "ilustración"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Navy"
+msgstr "Azul marino"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Navy light"
+msgstr "Azul marino claro"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Navy dark"
+msgstr "Azul marino oscuro"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Yellow"
+msgstr "Amarillo"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Red"
+msgstr "Rojo"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Red dark"
+msgstr "Rojo oscuro"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Red bright"
+msgstr "Rojo vivo"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Text"
+msgstr "Texto"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Muted text"
+msgstr "Texto secundario"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Text on dark"
+msgstr "Texto sobre oscuro"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Line"
+msgstr "Línea"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Gray background"
+msgstr "Fondo gris"
+
+#: theme.json
+msgctxt "Color name"
+msgid "White"
+msgstr "Blanco"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Geist Sans"
+msgstr "Geist Sans"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr "Chico"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Text"
+msgstr "Texto"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Lead"
+msgstr "Destacado"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 3"
+msgstr "Título 3"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 2"
+msgstr "Título 2"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 1"
+msgstr "Título 1"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "1"
+msgstr "1"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2"
+msgstr "2"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "3"
+msgstr "3"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "4"
+msgstr "4"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "5"
+msgstr "5"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Section small"
+msgstr "Sección chica"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Section"
+msgstr "Sección"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Section large"
+msgstr "Sección grande"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr "Encabezado"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr "Pie"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Text page"
+msgstr "Página de texto"
+
+#. Default text of a block attribute.
+#: src/blocks/areas/block.json
+msgid "Areas"
+msgstr "Áreas"
+
+#. Default text of a block attribute.
+#: src/blocks/areas/block.json
+msgid "Three disciplines in one team."
+msgstr "Tres disciplinas integradas en un solo equipo."
+
+#. Default text of a block attribute.
+#: src/blocks/areas/block.json
+msgid "{area} services →"
+msgstr "Servicios de {area} →"
+
+#. Default text of a block attribute.
+#: src/blocks/audiences/block.json
+msgid "Who we work for"
+msgstr "Para quién trabajamos"
+
+#. Default text of a block attribute.
+#: src/blocks/audiences/block.json
+msgid "Find the right service for your project."
+msgstr "Encontrá el servicio indicado para tu proyecto."
+
+#. Default text of a block attribute.
+#: src/blocks/audiences/block.json
+msgid "Industry"
+msgstr "Industrias"
+
+#. Default text of a block attribute.
+#: src/blocks/audiences/block.json
+msgid "Plants, machinery foundations, warehouses and facilities."
+msgstr "Plantas, fundaciones de maquinaria, naves e instalaciones."
+
+#. Default text of a block attribute.
+#: src/blocks/audiences/block.json
+msgid "Firms and builders"
+msgstr "Estudios y constructoras"
+
+#. Default text of a block attribute.
+#: src/blocks/audiences/block.json
+msgid "Calculations, technical documents and site supervision for their projects."
+msgstr "Cálculo, documentación técnica y dirección para sus obras."
+
+#. Default text of a block attribute.
+#: src/blocks/audiences/block.json
+msgid "Homeowners"
+msgstr "Particulares"
+
+#. Default text of a block attribute.
+#: src/blocks/audiences/block.json
+msgid "Homes, extensions and structural design with a fixed quote."
+msgstr "Viviendas, ampliaciones y cálculo estructural con presupuesto cerrado."
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json src/blocks/site-header/block.json
+msgid "Quote"
+msgstr "Presupuesto"
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json src/blocks/project-body/block.json src/blocks/site-header/block.json
+msgid "Request a quote"
+msgstr "Pedir presupuesto"
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Send quote request"
+msgstr "Enviar pedido de presupuesto"
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Question"
+msgstr "Consulta"
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Ask a question"
+msgstr "Hacer una consulta"
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Send question"
+msgstr "Enviar consulta"
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Full name"
+msgstr "Nombre y apellido"
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Your name"
+msgstr "Tu nombre"
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Optional"
+msgstr "Opcional"
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Email"
+msgstr "Email"
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "name@company.com"
+msgstr "nombre@empresa.com"
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Project location"
+msgstr "Ubicación de la obra"
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "City, region"
+msgstr "Ciudad, provincia"
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Briefly describe the project, timing and anything useful."
+msgstr "Describí brevemente la obra, plazos y cualquier dato útil."
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "I'm not sure"
+msgstr "No estoy seguro"
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "* Required fields"
+msgstr "* Campos obligatorios"
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json src/blocks/service-hero/block.json
+msgid "By sending you accept the"
+msgstr "Al enviar aceptás la"
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json src/blocks/service-hero/block.json
+msgid "Sending…"
+msgstr "Enviando…"
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json src/blocks/service-hero/block.json
+msgid "This field is required."
+msgstr "Este campo es obligatorio."
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json src/blocks/service-hero/block.json
+msgid "Enter a valid email address."
+msgstr "Ingresá un email válido."
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "We could not send the form. Check your connection and try again."
+msgstr "No pudimos enviar el formulario. Revisá tu conexión e intentá de nuevo."
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Thank you! We got your message."
+msgstr "¡Gracias! Recibimos tu mensaje."
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "If it is urgent, message us on WhatsApp."
+msgstr "Si es urgente, escribinos por WhatsApp."
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Send another message"
+msgstr "Enviar otra consulta"
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json src/blocks/cta/block.json
+msgid "Message us on WhatsApp"
+msgstr "Escribir por WhatsApp"
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Replies during office hours"
+msgstr "Respuesta en horario de oficina"
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Hours"
+msgstr "Horario"
+
+#. Default text of a block attribute.
+#: src/blocks/cta/block.json src/blocks/home-hero/block.json src/blocks/service-hero/block.json
+msgid "Request a quote →"
+msgstr "Pedir presupuesto →"
+
+#. Default text of a block attribute.
+#: src/blocks/cta/block.json src/blocks/home-hero/block.json src/blocks/not-found/block.json src/blocks/project-body/block.json src/blocks/service-hero/block.json src/blocks/services/block.json src/blocks/site-footer/block.json src/blocks/site-header/block.json
+msgid "/contact/"
+msgstr "/contacto/"
+
+#. Default text of a block attribute.
+#: src/blocks/features/block.json
+msgid "Why choose us"
+msgstr "Por qué elegirnos"
+
+#. Default text of a block attribute.
+#: src/blocks/features/block.json
+msgid "One point of contact, a fixed price and a delivery date."
+msgstr "Un solo interlocutor, un precio cerrado y una fecha de entrega."
+
+#. Default text of a block attribute.
+#: src/blocks/features/block.json
+msgid "Fixed quote"
+msgstr "Presupuesto fijo"
+
+#. Default text of a block attribute.
+#: src/blocks/features/block.json
+msgid "We quote the whole project before starting, so you know the investment from day one."
+msgstr "Cotizamos el proyecto completo antes de empezar. Sabés desde el primer día cuánto vas a invertir."
+
+#. Default text of a block attribute.
+#: src/blocks/features/block.json
+msgid "Project management"
+msgstr "Administración del proyecto"
+
+#. Default text of a block attribute.
+#: src/blocks/features/block.json
+msgid "We coordinate professionals, suppliers and permits. You have a single point of contact throughout."
+msgstr "Coordinamos profesionales, proveedores y trámites. Tenés un único interlocutor durante toda la obra."
+
+#. Default text of a block attribute.
+#: src/blocks/features/block.json
+msgid "Firm deadlines"
+msgstr "Plazos firmes"
+
+#. Default text of a block attribute.
+#: src/blocks/features/block.json
+msgid "We set a schedule at the start and every stage has a committed delivery date."
+msgstr "Definimos un cronograma al inicio y cada etapa tiene fecha de entrega comprometida."
+
+#. Default text of a block attribute.
+#: src/blocks/home-hero/block.json
+msgid "Engineering · Architecture · Design"
+msgstr "Ingeniería · Arquitectura · Diseño"
+
+#. Default text of a block attribute.
+#: src/blocks/home-hero/block.json
+msgid "Engineering projects with fixed quotes and firm deadlines."
+msgstr "Proyectos de ingeniería con presupuesto fijo y plazos firmes."
+
+#. Default text of a block attribute.
+#: src/blocks/home-hero/block.json
+msgid "A multidisciplinary team for industry, firms, builders and homeowners. We design, calculate and supervise projects from start to finish."
+msgstr "Un equipo multidisciplinario para industrias, estudios, constructoras y particulares. Proyectamos, calculamos y dirigimos obras de principio a fin."
+
+#. Default text of a block attribute.
+#: src/blocks/home-hero/block.json src/blocks/news/block.json
+msgid "View projects"
+msgstr "Ver proyectos"
+
+#. Default text of a block attribute.
+#: src/blocks/home-hero/block.json src/blocks/news/block.json src/blocks/not-found/block.json src/blocks/projects/block.json src/blocks/site-footer/block.json src/blocks/site-header/block.json
+msgid "/projects/"
+msgstr "/proyectos/"
+
+#. Default text of a block attribute.
+#: src/blocks/home-hero/block.json
+msgid "years of experience\nacross the country"
+msgstr "años de experiencia\nen todo el país"
+
+#. Default text of a block attribute.
+#: src/blocks/institutions/block.json
+msgid "Registered with the professional boards of the regions where we work."
+msgstr "Matriculados en los colegios profesionales de las regiones donde trabajamos."
+
+#. Default text of a block attribute.
+#: src/blocks/map/block.json
+msgid "Visits by appointment"
+msgstr "Oficina con cita previa"
+
+#. Default text of a block attribute.
+#: src/blocks/map/block.json
+msgid "Get directions"
+msgstr "Cómo llegar"
+
+#. Default text of a block attribute.
+#: src/blocks/map/block.json
+msgid "Explore map"
+msgstr "Explorar mapa"
+
+#. Default text of a block attribute.
+#: src/blocks/map/block.json
+msgid "Loading map…"
+msgstr "Cargando mapa…"
+
+#. Default text of a block attribute.
+#: src/blocks/map/block.json
+msgid "The map could not be loaded"
+msgstr "No se pudo cargar el mapa"
+
+#. Default text of a block attribute.
+#: src/blocks/news/block.json
+msgid "Latest news"
+msgstr "Últimas novedades"
+
+#. Default text of a block attribute.
+#: src/blocks/news/block.json src/blocks/not-found/block.json src/blocks/site-footer/block.json src/blocks/site-header/block.json
+msgid "/news/"
+msgstr "/novedades/"
+
+#. Default text of a block attribute.
+#: src/blocks/news/block.json
+msgid "Featured"
+msgstr "Destacada"
+
+#. Default text of a block attribute.
+#: src/blocks/news/block.json
+msgid "Filter by category"
+msgstr "Filtrar por categoría"
+
+#. Default text of a block attribute.
+#: src/blocks/news/block.json
+msgid "Next →"
+msgstr "Siguiente →"
+
+#. Default text of a block attribute.
+#: src/blocks/news/block.json
+msgid "The first posts are coming soon."
+msgstr "Pronto vamos a publicar las primeras novedades."
+
+#. Default text of a block attribute.
+#: src/blocks/not-found/block.json
+msgid "Error 404 · Page not found"
+msgstr "Error 404 · Página no encontrada"
+
+#. Default text of a block attribute.
+#: src/blocks/not-found/block.json
+msgid "We couldn't find the page you are looking for."
+msgstr "No encontramos la página que buscás."
+
+#. Default text of a block attribute.
+#: src/blocks/not-found/block.json
+msgid "The link may be broken or the page may have moved. These sections can help."
+msgstr "Puede que el enlace esté roto o que la página haya cambiado de lugar. Estas secciones pueden ayudarte."
+
+#. Default text of a block attribute.
+#: src/blocks/not-found/block.json
+msgid "Back to home"
+msgstr "Volver al inicio"
+
+#. Default text of a block attribute.
+#: src/blocks/not-found/block.json
+msgid "Contact us"
+msgstr "Contactarnos"
+
+#. Default text of a block attribute.
+#: src/blocks/not-found/block.json
+msgid "Sections"
+msgstr "Secciones"
+
+#. Default text of a block attribute.
+#: src/blocks/not-found/block.json src/blocks/services/block.json src/blocks/site-footer/block.json src/blocks/site-header/block.json
+msgid "/services/"
+msgstr "/servicios/"
+
+#. Default text of a block attribute.
+#: src/blocks/not-found/block.json src/blocks/site-footer/block.json src/blocks/site-header/block.json
+msgid "About"
+msgstr "Nosotros"
+
+#. Default text of a block attribute.
+#: src/blocks/not-found/block.json src/blocks/site-footer/block.json src/blocks/site-header/block.json src/blocks/stats/block.json
+msgid "/about/"
+msgstr "/nosotros/"
+
+#. Default text of a block attribute.
+#: src/blocks/page-hero/block.json
+msgid "Last updated:"
+msgstr "Última actualización:"
+
+#. Default text of a block attribute.
+#: src/blocks/post-header/block.json
+msgid "Editorial team"
+msgstr "Equipo de ingeniería"
+
+#. Default text of a block attribute.
+#: src/blocks/process/block.json
+msgid "Process"
+msgstr "Proceso"
+
+#. Default text of a block attribute.
+#: src/blocks/process/block.json
+msgid "Planning, design and construction."
+msgstr "Planificación, diseño y construcción."
+
+#. Default text of a block attribute.
+#: src/blocks/process/block.json
+msgid "We survey the need, the site and the regulations, and define scope, budget and schedule."
+msgstr "Relevamos la necesidad, el sitio y la normativa. Definimos alcance, presupuesto y cronograma."
+
+#. Default text of a block attribute.
+#: src/blocks/process/block.json
+msgid "We develop the design, calculations and technical documents needed to approve and build."
+msgstr "Desarrollamos el proyecto, los cálculos y la documentación técnica para aprobar y construir."
+
+#. Default text of a block attribute.
+#: src/blocks/process/block.json
+msgid "We supervise the works until handover, with progress reports at every stage."
+msgstr "Dirigimos y controlamos la obra hasta la entrega, con informes de avance en cada etapa."
+
+#. Default text of a block attribute.
+#: src/blocks/project-body/block.json
+msgid "What we did"
+msgstr "Qué hicimos"
+
+#. Default text of a block attribute.
+#: src/blocks/project-body/block.json
+msgid "Have a similar project?"
+msgstr "¿Tenés un proyecto similar?"
+
+#. Default text of a block attribute.
+#: src/blocks/project-body/block.json
+msgid "Tell us what you need and we will send you a fixed quote."
+msgstr "Contanos qué necesitás y te enviamos un presupuesto cerrado."
+
+#. Default text of a block attribute.
+#: src/blocks/project-body/block.json
+msgid "View service:"
+msgstr "Ver servicio:"
+
+#. Default text of a block attribute.
+#: src/blocks/projects/block.json
+msgid "Latest projects"
+msgstr "Últimos proyectos"
+
+#. Default text of a block attribute.
+#: src/blocks/projects/block.json
+msgid "View all projects →"
+msgstr "Ver todos los proyectos →"
+
+#. Default text of a block attribute.
+#: src/blocks/projects/block.json
+msgid "All services"
+msgstr "Todos los servicios"
+
+#. Default text of a block attribute.
+#: src/blocks/projects/block.json
+msgid "There are no projects with this filter yet."
+msgstr "Todavía no cargamos proyectos con este filtro."
+
+#. Default text of a block attribute.
+#: src/blocks/projects/block.json
+msgid "View all"
+msgstr "Ver todos"
+
+#. Default text of a block attribute.
+#: src/blocks/reach/block.json
+msgid "Nationwide reach"
+msgstr "Alcance nacional"
+
+#. Default text of a block attribute.
+#: src/blocks/reach/block.json
+msgid "We design from our office for projects anywhere in the country."
+msgstr "Proyectamos desde nuestra oficina para obras en cualquier lugar del país."
+
+#. Default text of a block attribute.
+#: src/blocks/reach/block.json
+msgid "Our professional registrations allow us to work on projects across the country, with site visits and remote follow-up."
+msgstr "Nuestras matrículas profesionales nos permiten intervenir en obras de todo el país, con visitas a obra y seguimiento remoto."
+
+#. Default text of a block attribute.
+#: src/blocks/service-hero/block.json
+msgid "Ask on WhatsApp"
+msgstr "Consultar por WhatsApp"
+
+#. Default text of a block attribute.
+#: src/blocks/service-hero/block.json
+msgid "What it includes"
+msgstr "Qué incluye"
+
+#. Default text of a block attribute.
+#: src/blocks/service-hero/block.json
+msgid "In preparation"
+msgstr "En preparación"
+
+#. Default text of a block attribute.
+#: src/blocks/service-hero/block.json
+msgid "We will let you know when it is available"
+msgstr "Te avisamos cuando esté disponible"
+
+#. Default text of a block attribute.
+#: src/blocks/service-hero/block.json
+msgid "you@email.com"
+msgstr "tu@email.com"
+
+#. Default text of a block attribute.
+#: src/blocks/service-hero/block.json
+msgid "Notify me"
+msgstr "Avisarme"
+
+#. Default text of a block attribute.
+#: src/blocks/service-hero/block.json
+msgid "Need it now? Write to us and we will refer you."
+msgstr "¿Lo necesitás ahora? Escribinos y te derivamos."
+
+#. Default text of a block attribute.
+#: src/blocks/service-hero/block.json
+msgid "We could not save your request. Please try again."
+msgstr "No pudimos registrar el aviso. Intentá de nuevo."
+
+#. Default text of a block attribute.
+#: src/blocks/services/block.json
+msgid "From feasibility studies to site supervision."
+msgstr "Del estudio de inversión a la dirección de obra."
+
+#. Default text of a block attribute.
+#: src/blocks/services/block.json
+msgid "All services →"
+msgstr "Todos los servicios →"
+
+#. Default text of a block attribute.
+#: src/blocks/services/block.json src/blocks/site-header/block.json
+msgid "Not sure which service you need?"
+msgstr "¿No sabés qué servicio necesitás?"
+
+#. Default text of a block attribute.
+#: src/blocks/services/block.json src/blocks/site-header/block.json
+msgid "Tell us about your project and we will point you in the right direction."
+msgstr "Contanos tu proyecto y te orientamos sin compromiso."
+
+#. Default text of a block attribute.
+#: src/blocks/services/block.json src/blocks/site-header/block.json
+msgid "Ask us →"
+msgstr "Hacer una consulta →"
+
+#. Default text of a block attribute.
+#: src/blocks/site-footer/block.json
+msgid "A short description of the firm and what it does."
+msgstr "Una breve descripción de la empresa y lo que hace."
+
+#. Default text of a block attribute.
+#: src/blocks/site-footer/block.json
+msgid "Site"
+msgstr "Sitio"
+
+#. Default text of a block attribute.
+#: src/blocks/site-footer/block.json src/blocks/site-header/block.json
+msgid "Contact"
+msgstr "Contacto"
+
+#. Default text of a block attribute.
+#: src/blocks/site-footer/block.json
+msgid "Registered with"
+msgstr "Matriculados en"
+
+#. Default text of a block attribute.
+#: src/blocks/site-footer/block.json
+msgid "© {year} {site}"
+msgstr "© {year} {site}"
+
+#. Default text of a block attribute.
+#: src/blocks/site-footer/block.json
+msgid "Privacy and cookie policy"
+msgstr "Política de privacidad y cookies"
+
+#. Default text of a block attribute.
+#: src/blocks/site-header/block.json
+msgid "View all services →"
+msgstr "Ver todos los servicios →"
+
+#. Default text of a block attribute.
+#: src/blocks/stats/block.json
+msgid "Track record"
+msgstr "Trayectoria"
+
+#. Default text of a block attribute.
+#: src/blocks/stats/block.json
+msgid "Experience you can measure."
+msgstr "Una trayectoria que se puede medir."
+
+#. Default text of a block attribute.
+#: src/blocks/stats/block.json
+msgid "We work with industrial plants, architecture studios, builders and private clients. One team designs, calculates and supervises every project."
+msgstr "Trabajamos con plantas industriales, estudios de arquitectura, constructoras y particulares. Un mismo equipo proyecta, calcula y dirige cada obra."
+
+#. Default text of a block attribute.
+#: src/blocks/stats/block.json
+msgid "About us →"
+msgstr "Conocer la consultora →"
+
+#. Default text of a block attribute.
+#: src/blocks/stats/block.json
+msgid "years of experience in projects and works"
+msgstr "años de experiencia en proyectos y obras"
+
+#. Default text of a block attribute.
+#: src/blocks/stats/block.json
+msgid "service areas under one team"
+msgstr "áreas de servicio en un mismo equipo"
+
+#. Default text of a block attribute.
+#: src/blocks/stats/block.json
+msgid "completed projects"
+msgstr "proyectos realizados"
+
+#. Default text of a block attribute.
+#: src/blocks/stats/block.json
+msgid "of projects with a direct lead"
+msgstr "de los proyectos con un responsable directo"
+
+#. Default text of a block attribute.
+#: src/blocks/team/block.json
+msgid "Team"
+msgstr "Equipo"
+
+#. Default text of a block attribute.
+#: src/blocks/team/block.json
+msgid "The people behind every project"
+msgstr "Quiénes están detrás de cada proyecto"
+
+#. Default text of a block attribute.
+#: src/blocks/team/block.json
+msgid "Every project has a direct lead. We coordinate with licensed professionals of each specialty as each project requires."
+msgstr "Cada proyecto tiene un responsable directo. Coordinamos con profesionales matriculados de cada especialidad según la obra."
+
+#. Default text of a block attribute.
+#: src/blocks/team/block.json
+msgid "Portrait coming soon"
+msgstr "Retrato próximamente"
+
+#. Default text of a block attribute.
+#: src/blocks/testimonials/block.json
+msgid "Testimonials"
+msgstr "Testimonios"
+
+#. Default text of a block attribute.
+#: src/blocks/testimonials/block.json
+msgid "What our clients say"
+msgstr "Lo que dicen nuestros clientes"
+
+#. Default text of a block attribute.
+#: src/blocks/text-media/block.json
+msgid "Our story"
+msgstr "Historia"
+
+#. Default text of a block attribute.
+#: src/blocks/text-media/block.json
+msgid "A consultancy built on engineering experience, with a multidisciplinary team."
+msgstr "Una consultora construida sobre la experiencia en ingeniería, con un equipo multidisciplinario."
+
+#. Default text of a block attribute.
+#: src/blocks/text-media/block.json
+msgid "The firm grew out of years of experience in the design, calculation and supervision of building works. Over time it added architecture and telecommunications to support clients through every stage of a project.\n\nToday we work for industries, architecture studios, builders and private clients across the country."
+msgstr "La consultora nació de años de experiencia en proyecto, cálculo y dirección de obras. Con el tiempo sumó arquitectura y telecomunicaciones para acompañar a sus clientes en todas las etapas de una obra.\n\nHoy trabajamos para industrias, estudios de arquitectura, constructoras y particulares en todo el país."

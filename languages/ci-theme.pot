@@ -1,0 +1,3474 @@
+# Copyright (C) 2026 Nicolás Pereyra
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: CI Theme 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/npereyradw/ci-theme/issues\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-15T02:04:37+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: ci-theme\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "CI Theme"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://github.com/npereyradw/ci-theme"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Block theme for professional services firms. Every section of the design is a native block with a dynamic render, a live preview in the editor and its own assets."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Nicolás Pereyra"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://github.com/npereyradw"
+msgstr ""
+
+#: inc/blocks/includes/class-ci-theme-blocks.php:64
+#: inc/blocks/includes/class-ci-theme-blocks.php:120
+msgid "CI · Sections"
+msgstr ""
+
+#: inc/blocks/includes/class-ci-theme-blocks.php:65
+msgid "CI · Dynamic content"
+msgstr ""
+
+#: inc/blocks/includes/class-ci-theme-blocks.php:66
+msgid "CI · Templates"
+msgstr ""
+
+#: inc/blocks/includes/class-ci-theme-blocks.php:121
+msgid "Ready-made sections of the site."
+msgstr ""
+
+#: inc/blocks/includes/class-ci-theme-blocks.php:127
+msgid "CI · Pages"
+msgstr ""
+
+#: inc/blocks/includes/class-ci-theme-blocks.php:128
+msgid "Complete pages to start a new page from."
+msgstr ""
+
+#: inc/breadcrumbs/includes/class-ci-theme-breadcrumbs.php:27
+msgid "Home"
+msgstr ""
+
+#: inc/breadcrumbs/includes/class-ci-theme-breadcrumbs.php:139
+#: src/blocks/page-hero/edit.js:147
+msgid "Breadcrumbs"
+msgstr ""
+
+#: inc/content/includes/class-ci-theme-cards.php:46
+#: src/blocks/site-header/render.php:140
+msgid "Coming soon"
+msgstr ""
+
+#: inc/content/includes/class-ci-theme-cards.php:50
+msgid "Notify me when available"
+msgstr ""
+
+#: inc/content/includes/class-ci-theme-cards.php:50
+msgid "View service"
+msgstr ""
+
+#: inc/content/includes/class-ci-theme-cards.php:122
+msgid "Read more"
+msgstr ""
+
+#. translators: %d: minutes.
+#: inc/content/includes/class-ci-theme-content.php:371
+#, php-format
+msgid "%d min"
+msgstr ""
+
+#: inc/content/includes/class-ci-theme-content.php:414
+#: patterns/template-news.php:14
+msgid "News"
+msgstr ""
+
+#: inc/content/includes/class-ci-theme-content.php:472
+msgid "Registration"
+msgstr ""
+
+#: inc/content/includes/class-ci-theme-content.php:473
+msgid "Member"
+msgstr ""
+
+#: inc/content/includes/class-ci-theme-institutions.php:55
+#: inc/section/includes/class-ci-theme-section.php:225
+msgid "(opens in a new tab)"
+msgstr ""
+
+#: inc/content/includes/class-ci-theme-institutions.php:73
+#: src/blocks/site-header/edit.js:77
+msgid "Logo"
+msgstr ""
+
+#: inc/graphics/includes/class-ci-theme-area-icon.php:31
+msgid "Beam"
+msgstr ""
+
+#: inc/graphics/includes/class-ci-theme-area-icon.php:32
+msgid "Arch"
+msgstr ""
+
+#: inc/graphics/includes/class-ci-theme-area-icon.php:33
+msgid "Antenna"
+msgstr ""
+
+#. translators: %s: site title.
+#: inc/graphics/includes/class-ci-theme-logo.php:41
+#, php-format
+msgid "%s — Home"
+msgstr ""
+
+#: inc/privacy/includes/class-ci-theme-privacy.php:78
+msgid "Cookie notice"
+msgstr ""
+
+#: inc/routes/includes/class-ci-theme-routes.php:57
+msgctxt "URL segment of the services filtered by area"
+msgid "area"
+msgstr ""
+
+#: inc/routes/includes/class-ci-theme-routes.php:66
+msgctxt "URL segment of the projects filtered by service"
+msgid "service"
+msgstr ""
+
+#: inc/section/includes/class-ci-theme-section.php:158
+#: patterns/section-cta-custom.php:17
+#: src/blocks/cta/edit.js:46
+msgid "Free quote"
+msgstr ""
+
+#: inc/section/includes/class-ci-theme-section.php:159
+msgid "Tell us about your project and get a fixed quote."
+msgstr ""
+
+#: inc/section/includes/class-ci-theme-section.php:160
+msgid "We reply on business days."
+msgstr ""
+
+#: inc/section/includes/class-ci-theme-section.php:165
+msgid "We use Google Analytics cookies to understand how the site is used. Learn more in our"
+msgstr ""
+
+#: inc/section/includes/class-ci-theme-section.php:166
+msgid "Privacy policy"
+msgstr ""
+
+#: inc/section/includes/class-ci-theme-section.php:167
+msgid "Got it"
+msgstr ""
+
+#: inc/setup/includes/class-ci-theme-setup.php:124
+#: src/blocks/contact/edit.js:31
+#: src/blocks/project-header/edit.js:36
+#: src/editor/query.js:132
+msgid "Service"
+msgstr ""
+
+#: inc/setup/includes/class-ci-theme-setup.php:125
+msgid "A single service: header with what it includes, how we work, its projects and other services."
+msgstr ""
+
+#: inc/setup/includes/class-ci-theme-setup.php:128
+msgid "Project"
+msgstr ""
+
+#: inc/setup/includes/class-ci-theme-setup.php:129
+msgid "A single project: fact sheet, image, description and related projects."
+msgstr ""
+
+#: inc/setup/includes/class-ci-theme-setup.php:132
+#: patterns/template-projects-archive.php:14
+msgid "Projects"
+msgstr ""
+
+#: inc/setup/includes/class-ci-theme-setup.php:133
+msgid "All projects, with filters by area and service."
+msgstr ""
+
+#: patterns/page-about.php
+msgctxt "Pattern title"
+msgid "Page · About"
+msgstr ""
+
+#: patterns/page-about.php
+msgctxt "Pattern description"
+msgid "An about page: story, approach, team and reach."
+msgstr ""
+
+#: patterns/page-about.php:16
+msgid "Engineering applied to real projects."
+msgstr ""
+
+#: patterns/page-about.php:16
+msgid "We design, calculate and supervise projects of every scale, with one team from the first sketch to the handover."
+msgstr ""
+
+#: patterns/page-basic.php
+msgctxt "Pattern title"
+msgid "Page · Basic"
+msgstr ""
+
+#: patterns/page-basic.php
+msgctxt "Pattern description"
+msgid "A starting point for a new page: heading, text with media and call to action."
+msgstr ""
+
+#: patterns/page-basic.php:16
+#: src/blocks/page-hero/render.php:24
+msgid "Page title"
+msgstr ""
+
+#: patterns/page-basic.php:16
+msgid "One or two sentences about what this page is about."
+msgstr ""
+
+#: patterns/page-contact.php
+msgctxt "Pattern title"
+msgid "Page · Contact"
+msgstr ""
+
+#: patterns/page-contact.php
+msgctxt "Pattern description"
+msgid "Contact form, contact details and map."
+msgstr ""
+
+#: patterns/page-contact.php:16
+msgid "Request a quote or send us your question."
+msgstr ""
+
+#: patterns/page-contact.php:16
+msgid "Tell us what you need and where the project is. We reply on business days with a proposal of scope and cost."
+msgstr ""
+
+#: patterns/page-home.php
+msgctxt "Pattern title"
+msgid "Page · Home"
+msgstr ""
+
+#: patterns/page-home.php
+msgctxt "Pattern description"
+msgid "A complete home page."
+msgstr ""
+
+#: patterns/page-services.php
+msgctxt "Pattern title"
+msgid "Page · Services"
+msgstr ""
+
+#: patterns/page-services.php
+msgctxt "Pattern description"
+msgid "The list of services with a filter by area."
+msgstr ""
+
+#: patterns/page-services.php:16
+msgid "Services for every stage of your project."
+msgstr ""
+
+#: patterns/page-services.php:16
+msgid "Hire a single service, such as a structural calculation, or the complete management of your project."
+msgstr ""
+
+#: patterns/section-approach.php
+msgctxt "Pattern title"
+msgid "Section · Approach"
+msgstr ""
+
+#: patterns/section-approach.php
+msgctxt "Pattern description"
+msgid "Three cards that explain how the firm works."
+msgstr ""
+
+#: patterns/section-approach.php:16
+msgid "Approach"
+msgstr ""
+
+#: patterns/section-approach.php:17
+msgid "Comprehensive advice, with clear rules from the start."
+msgstr ""
+
+#: patterns/section-approach.php:21
+msgid "Comprehensive"
+msgstr ""
+
+#: patterns/section-approach.php:22
+msgid "We cover the whole cycle: assessment, design, permits and supervision."
+msgstr ""
+
+#: patterns/section-approach.php:25
+msgid "Transparent"
+msgstr ""
+
+#: patterns/section-approach.php:26
+msgid "A detailed quote and schedule before any work begins."
+msgstr ""
+
+#: patterns/section-approach.php:29
+msgid "Accountable"
+msgstr ""
+
+#: patterns/section-approach.php:30
+msgid "One lead for each project, available from start to finish."
+msgstr ""
+
+#: patterns/section-cta-custom.php
+msgctxt "Pattern title"
+msgid "Section · Call to action with its own text"
+msgstr ""
+
+#: patterns/section-cta-custom.php
+msgctxt "Pattern description"
+msgid "A call to action with its own eyebrow, title and text instead of the site-wide ones."
+msgstr ""
+
+#: patterns/section-cta-custom.php:18
+msgid "Is your project in another region? We can help too."
+msgstr ""
+
+#: patterns/section-cta-custom.php:19
+msgid "We reply on business days and work with industries, studios, builders and private clients across the country."
+msgstr ""
+
+#: patterns/template-news.php
+msgctxt "Pattern title"
+msgid "Template · News"
+msgstr ""
+
+#: patterns/template-news.php
+msgctxt "Pattern description"
+msgid "Content of the posts page and category templates."
+msgstr ""
+
+#: patterns/template-news.php:15
+msgid "Company news, ongoing works and technical guides to plan your project."
+msgstr ""
+
+#: patterns/template-projects-archive.php
+msgctxt "Pattern title"
+msgid "Template · Projects archive"
+msgstr ""
+
+#: patterns/template-projects-archive.php
+msgctxt "Pattern description"
+msgid "Content of the projects archive template."
+msgstr ""
+
+#: patterns/template-projects-archive.php:15
+msgid "Industrial works, structural calculations, architecture and telecommunication sites in different regions."
+msgstr ""
+
+#: patterns/template-projects-archive.php:19
+msgid "Have a similar project? Request your quote."
+msgstr ""
+
+#: patterns/template-single-post.php
+msgctxt "Pattern title"
+msgid "Template · Single post"
+msgstr ""
+
+#: patterns/template-single-post.php
+msgctxt "Pattern description"
+msgid "Content of the single post template."
+msgstr ""
+
+#: patterns/template-single-post.php:15
+msgid "Keep reading"
+msgstr ""
+
+#: patterns/template-single-project.php
+msgctxt "Pattern title"
+msgid "Template · Single project"
+msgstr ""
+
+#: patterns/template-single-project.php
+msgctxt "Pattern description"
+msgid "Content of the single project template."
+msgstr ""
+
+#: patterns/template-single-project.php:17
+msgid "Related projects"
+msgstr ""
+
+#: patterns/template-single-project.php:18
+#: patterns/template-single-service.php:35
+msgid "View all →"
+msgstr ""
+
+#: patterns/template-single-service.php
+msgctxt "Pattern title"
+msgid "Template · Single service"
+msgstr ""
+
+#: patterns/template-single-service.php
+msgctxt "Pattern description"
+msgid "Content of the single service template."
+msgstr ""
+
+#: patterns/template-single-service.php:15
+msgid "How we work"
+msgstr ""
+
+#: patterns/template-single-service.php:18
+msgid "Planning"
+msgstr ""
+
+#: patterns/template-single-service.php:19
+msgid "We survey the need and the site, and send you the scope, a fixed quote and a schedule."
+msgstr ""
+
+#: patterns/template-single-service.php:22
+msgid "Design"
+msgstr ""
+
+#: patterns/template-single-service.php:23
+msgid "We develop the calculations, drawings and technical documents to approve and build."
+msgstr ""
+
+#: patterns/template-single-service.php:26
+msgid "Construction"
+msgstr ""
+
+#: patterns/template-single-service.php:27
+msgid "We follow the works with supervision and inspections until the handover."
+msgstr ""
+
+#: patterns/template-single-service.php:34
+msgid "Projects of this service"
+msgstr ""
+
+#: patterns/template-single-service.php:42
+msgid "Other services"
+msgstr ""
+
+#: src/blocks/contact/render.php:70
+msgid "Send"
+msgstr ""
+
+#: src/blocks/contact/render.php:78
+msgid "Choose a Contact Form 7 form in the block settings (only editors see this message)."
+msgstr ""
+
+#: src/blocks/contact/render.php:84
+#: src/blocks/contact/edit.js:100
+msgid "Request type"
+msgstr ""
+
+#: src/blocks/contact/render.php:117
+#: src/blocks/service-hero/render.php:71
+msgid "Leave empty"
+msgstr ""
+
+#: src/blocks/contact/render.php:152
+msgid "Other ways to reach us"
+msgstr ""
+
+#: src/blocks/institutions/render.php:24
+msgid "Registrations"
+msgstr ""
+
+#: src/blocks/map/render.php:28
+msgid "Set the place or the coordinates of the map in the block settings."
+msgstr ""
+
+#: src/blocks/map/render.php:40
+msgid "Use Ctrl + scroll to zoom the map"
+msgstr ""
+
+#: src/blocks/map/render.php:41
+msgid "Use ⌘ + scroll to zoom the map"
+msgstr ""
+
+#: src/blocks/map/render.php:42
+msgid "Use two fingers to move the map"
+msgstr ""
+
+#: src/blocks/map/render.php:43
+msgid "Zoom in"
+msgstr ""
+
+#: src/blocks/map/render.php:44
+msgid "Zoom out"
+msgstr ""
+
+#: src/blocks/map/render.php:45
+msgid "Toggle attribution"
+msgstr ""
+
+#: src/blocks/map/render.php:56
+#: src/blocks/contact/edit.js:32
+#: src/blocks/project-header/edit.js:31
+msgid "Location"
+msgstr ""
+
+#. translators: %s: place.
+#: src/blocks/map/render.php:71
+#, php-format
+msgid "Interactive map of %s"
+msgstr ""
+
+#: src/blocks/map/render.php:91
+msgid "(opens Google Maps in a new tab)"
+msgstr ""
+
+#: src/blocks/map/render.php:100
+msgid "Map credits"
+msgstr ""
+
+#: src/blocks/map/render.php:106
+msgid "Data ©"
+msgstr ""
+
+#: src/blocks/map/render.php:107
+msgid "OpenStreetMap contributors"
+msgstr ""
+
+#: src/blocks/news/render.php:45
+msgid "Posts"
+msgstr ""
+
+#: src/blocks/news/render.php:104
+msgid "Pagination"
+msgstr ""
+
+#. translators: %d: page number.
+#: src/blocks/news/render.php:106
+#, php-format
+msgid "Page %d"
+msgstr ""
+
+#: src/blocks/page-hero/render.php:79
+msgid "Filter by area"
+msgstr ""
+
+#. translators: %d: number of projects shown.
+#: src/blocks/projects/render.php:38
+#, php-format
+msgid "%d project"
+msgid_plural "%d projects"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/blocks/projects/render.php:60
+msgid "Results"
+msgstr ""
+
+#: src/blocks/projects/render.php:62
+msgid "project"
+msgstr ""
+
+#: src/blocks/projects/render.php:62
+msgid "projects"
+msgstr ""
+
+#: src/blocks/services/render.php:75
+msgid "Services"
+msgstr ""
+
+#: src/blocks/services/render.php:77
+msgid "service"
+msgstr ""
+
+#: src/blocks/services/render.php:77
+msgid "services"
+msgstr ""
+
+#. translators: %d: number of services shown.
+#: src/blocks/services/render.php:80
+#, php-format
+msgid "%d service"
+msgid_plural "%d services"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/blocks/site-footer/render.php:111
+#: src/blocks/site-header/render.php:222
+msgid "WhatsApp"
+msgstr ""
+
+#: src/blocks/site-header/render.php:56
+msgid "Skip to content"
+msgstr ""
+
+#: src/blocks/site-header/render.php:63
+#: src/blocks/site-header/render.php:177
+msgid "Main"
+msgstr ""
+
+#: src/blocks/site-header/render.php:85
+msgid "Show services"
+msgstr ""
+
+#: src/blocks/site-header/render.php:120
+msgid "Open menu"
+msgstr ""
+
+#: src/blocks/site-header/render.php:120
+msgid "Close menu"
+msgstr ""
+
+#: src/blocks/site-header/render.php:129
+#: src/blocks/site-header/render.php:157
+#: src/blocks/site-header/edit.js:26
+msgid "Menu"
+msgstr ""
+
+#: src/blocks/site-header/render.php:130
+msgid "Close"
+msgstr ""
+
+#: src/blocks/site-header/render.php:195
+#: src/blocks/site-header/render.php:212
+msgid "Soon"
+msgstr ""
+
+#: src/blocks/team/render.php:53
+msgid "LinkedIn profile"
+msgstr ""
+
+#. translators: %s: person name.
+#: src/blocks/team/render.php:57
+#, php-format
+msgid "of %s (opens in a new tab)"
+msgstr ""
+
+#: src/blocks/areas/edit.js:24
+msgid "Link text of each area"
+msgstr ""
+
+#: src/blocks/areas/edit.js:25
+msgid "{area} is replaced with the name of the area. Empty = no link."
+msgstr ""
+
+#: src/blocks/areas/edit.js:35
+msgid "The name, text and icon of each area are edited in Services → Areas."
+msgstr ""
+
+#: src/blocks/audiences/edit.js:26
+msgid "Audiences"
+msgstr ""
+
+#: src/blocks/audiences/edit.js:31
+msgid "Add audience"
+msgstr ""
+
+#: src/blocks/audiences/edit.js:37
+#: src/blocks/contact/edit.js:236
+#: src/blocks/cta/edit.js:57
+#: src/blocks/features/edit.js:59
+#: src/blocks/not-found/edit.js:30
+#: src/blocks/process/edit.js:110
+#: src/blocks/project-body/edit.js:26
+#: src/blocks/project-body/edit.js:35
+#: src/blocks/services/edit.js:115
+#: src/editor/fields.js:73
+msgid "Title"
+msgstr ""
+
+#: src/blocks/audiences/edit.js:44
+#: src/blocks/contact/edit.js:120
+#: src/blocks/contact/edit.js:241
+#: src/blocks/cta/edit.js:24
+#: src/blocks/cta/edit.js:66
+#: src/blocks/features/edit.js:63
+#: src/blocks/home-hero/edit.js:22
+#: src/blocks/home-hero/edit.js:41
+#: src/blocks/home-hero/edit.js:71
+#: src/blocks/map/edit.js:49
+#: src/blocks/not-found/edit.js:37
+#: src/blocks/not-found/edit.js:72
+#: src/blocks/page-hero/edit.js:18
+#: src/blocks/page-hero/edit.js:44
+#: src/blocks/process/edit.js:114
+#: src/blocks/project-body/edit.js:40
+#: src/blocks/services/edit.js:120
+#: src/blocks/site-footer/edit.js:77
+#: src/blocks/site-header/edit.js:44
+#: src/blocks/site-header/edit.js:105
+#: src/editor/fields.js:82
+#: src/editor/links.js:99
+msgid "Text"
+msgstr ""
+
+#: src/blocks/audiences/edit.js:51
+msgid "Linked services"
+msgstr ""
+
+#: src/blocks/audiences/edit.js:55
+msgid "Type to search; they are shown in this order."
+msgstr ""
+
+#: src/blocks/contact/edit.js:27
+msgid "Name (required)"
+msgstr ""
+
+#: src/blocks/contact/edit.js:28
+msgid "Company"
+msgstr ""
+
+#: src/blocks/contact/edit.js:29
+msgid "Email (required)"
+msgstr ""
+
+#: src/blocks/contact/edit.js:30
+#: src/blocks/map/edit.js:120
+msgid "Phone"
+msgstr ""
+
+#: src/blocks/contact/edit.js:33
+msgid "Message (required)"
+msgstr ""
+
+#: src/blocks/contact/edit.js:62
+msgid "Form"
+msgstr ""
+
+#: src/blocks/contact/edit.js:65
+msgid "Contact Form 7 form"
+msgstr ""
+
+#: src/blocks/contact/edit.js:70
+msgid "The one in the site settings"
+msgstr ""
+
+#: src/blocks/contact/edit.js:89
+msgid "Recipient, subject and mail texts are set in Contact → Contact Forms."
+msgstr ""
+
+#: src/blocks/contact/edit.js:95
+msgid "Open Contact Form 7"
+msgstr ""
+
+#: src/blocks/contact/edit.js:108
+msgid "Add type"
+msgstr ""
+
+#: src/blocks/contact/edit.js:113
+msgid "Value (sent in the mail subject)"
+msgstr ""
+
+#: src/blocks/contact/edit.js:124
+#: src/blocks/site-header/edit.js:110
+msgid "Short text (phones)"
+msgstr ""
+
+#: src/blocks/contact/edit.js:128
+msgid "Send button text"
+msgstr ""
+
+#: src/blocks/contact/edit.js:134
+msgid "Fields"
+msgstr ""
+
+#: src/blocks/contact/edit.js:145
+#: src/blocks/institutions/edit.js:40
+#: src/blocks/not-found/edit.js:25
+#: src/blocks/post-body/edit.js:35
+msgid "Label"
+msgstr ""
+
+#: src/blocks/contact/edit.js:154
+msgid "First option"
+msgstr ""
+
+#: src/blocks/contact/edit.js:155
+msgid "Placeholder"
+msgstr ""
+
+#: src/blocks/contact/edit.js:165
+msgid "Last service option"
+msgstr ""
+
+#: src/blocks/contact/edit.js:166
+msgid "Empty = no such option."
+msgstr ""
+
+#: src/blocks/contact/edit.js:173
+msgid "Messages and note"
+msgstr ""
+
+#: src/blocks/contact/edit.js:178
+msgid "Required field"
+msgstr ""
+
+#: src/blocks/contact/edit.js:183
+msgid "Invalid email"
+msgstr ""
+
+#: src/blocks/contact/edit.js:188
+msgid "Sending error"
+msgstr ""
+
+#: src/blocks/contact/edit.js:195
+msgid "Button while sending"
+msgstr ""
+
+#: src/blocks/contact/edit.js:200
+msgid "Required fields note"
+msgstr ""
+
+#: src/blocks/contact/edit.js:205
+#: src/blocks/service-hero/edit.js:92
+msgid "Text before the privacy link"
+msgstr ""
+
+#: src/blocks/contact/edit.js:213
+#: src/blocks/site-footer/edit.js:155
+msgid "Privacy link: text"
+msgstr ""
+
+#: src/blocks/contact/edit.js:218
+#: src/blocks/site-footer/edit.js:160
+msgid "Privacy link: destination (empty = the privacy page)"
+msgstr ""
+
+#: src/blocks/contact/edit.js:231
+msgid "Success message"
+msgstr ""
+
+#: src/blocks/contact/edit.js:248
+msgid "Link to WhatsApp"
+msgstr ""
+
+#: src/blocks/contact/edit.js:253
+msgid "Button to send another one"
+msgstr ""
+
+#: src/blocks/contact/edit.js:263
+msgid "Side column"
+msgstr ""
+
+#: src/blocks/contact/edit.js:268
+msgid "WhatsApp card"
+msgstr ""
+
+#: src/blocks/contact/edit.js:274
+msgid "WhatsApp: title"
+msgstr ""
+
+#: src/blocks/contact/edit.js:279
+msgid "WhatsApp: text"
+msgstr ""
+
+#: src/blocks/contact/edit.js:284
+msgid "Phone label"
+msgstr ""
+
+#: src/blocks/contact/edit.js:289
+msgid "Email label"
+msgstr ""
+
+#: src/blocks/contact/edit.js:294
+msgid "Hours label"
+msgstr ""
+
+#: src/blocks/contact/edit.js:299
+msgid "Location label"
+msgstr ""
+
+#: src/blocks/contact/edit.js:304
+msgid "Social profiles"
+msgstr ""
+
+#: src/blocks/contact/edit.js:310
+msgid "Contact details and social profiles come from the site settings."
+msgstr ""
+
+#: src/blocks/cta/edit.js:27
+msgid "Use the text of the site settings"
+msgstr ""
+
+#: src/blocks/cta/edit.js:31
+msgid "Change it once for every page. Turn it off to write a text for this page only (empty fields keep using the site settings)."
+msgstr ""
+
+#: src/blocks/cta/edit.js:44
+#: src/blocks/home-hero/edit.js:25
+#: src/editor/fields.js:63
+msgid "Eyebrow"
+msgstr ""
+
+#: src/blocks/cta/edit.js:78
+#: src/blocks/home-hero/edit.js:49
+#: src/blocks/not-found/edit.js:45
+msgid "Buttons"
+msgstr ""
+
+#: src/blocks/features/edit.js:24
+msgid "Items"
+msgstr ""
+
+#: src/blocks/features/edit.js:27
+#: src/blocks/institutions/edit.js:19
+#: src/blocks/news/edit.js:40
+#: src/blocks/news/edit.js:42
+#: src/blocks/page-hero/edit.js:75
+#: src/blocks/process/edit.js:28
+#: src/blocks/process/edit.js:31
+#: src/blocks/projects/edit.js:26
+#: src/blocks/projects/edit.js:28
+#: src/blocks/services/edit.js:27
+msgid "Layout"
+msgstr ""
+
+#: src/blocks/features/edit.js:32
+msgid "With an accent dot"
+msgstr ""
+
+#: src/blocks/features/edit.js:39
+msgid "Cards"
+msgstr ""
+
+#: src/blocks/features/edit.js:49
+msgid "The numbering is automatic."
+msgstr ""
+
+#: src/blocks/features/edit.js:55
+msgid "Add item"
+msgstr ""
+
+#: src/blocks/home-hero/edit.js:30
+#: src/blocks/page-hero/edit.js:32
+msgid "Main title (H1)"
+msgstr ""
+
+#: src/blocks/home-hero/edit.js:31
+#: src/blocks/page-hero/edit.js:33
+msgid "It is the only H1 of the page."
+msgstr ""
+
+#: src/blocks/home-hero/edit.js:57
+msgid "Counter card"
+msgstr ""
+
+#: src/blocks/home-hero/edit.js:62
+msgid "Number"
+msgstr ""
+
+#: src/blocks/home-hero/edit.js:63
+msgid "A number (e.g. +30) counts up from 0 when it appears. Empty = no card."
+msgstr ""
+
+#: src/blocks/home-hero/edit.js:72
+msgid "Each line goes on its own row."
+msgstr ""
+
+#: src/blocks/home-hero/edit.js:84
+#: src/blocks/process/edit.js:72
+#: src/blocks/text-media/edit.js:40
+msgid "Illustration"
+msgstr ""
+
+#: src/blocks/home-hero/edit.js:88
+msgid "Show the large background illustration"
+msgstr ""
+
+#: src/blocks/institutions/edit.js:16
+msgid "Content"
+msgstr ""
+
+#: src/blocks/institutions/edit.js:24
+msgid "Statement and logos, with a line above"
+msgstr ""
+
+#: src/blocks/institutions/edit.js:31
+msgid "Label and logos"
+msgstr ""
+
+#: src/blocks/institutions/edit.js:46
+msgid "Statement"
+msgstr ""
+
+#: src/blocks/institutions/edit.js:54
+msgid "Logos, names and links come from the Institutions section."
+msgstr ""
+
+#: src/blocks/institutions/edit.js:60
+msgid "View the institutions"
+msgstr ""
+
+#: src/blocks/map/edit.js:37
+msgid "Location card"
+msgstr ""
+
+#: src/blocks/map/edit.js:40
+msgid "Place"
+msgstr ""
+
+#: src/blocks/map/edit.js:41
+msgid "Empty = the location of the site settings."
+msgstr ""
+
+#: src/blocks/map/edit.js:54
+msgid "Directions link"
+msgstr ""
+
+#: src/blocks/map/edit.js:55
+#: src/editor/fields.js:93
+msgid "Empty = no link."
+msgstr ""
+
+#: src/blocks/map/edit.js:62
+msgid "Interactive map"
+msgstr ""
+
+#: src/blocks/map/edit.js:67
+#: src/blocks/project-body/edit.js:47
+msgid "Button"
+msgstr ""
+
+#: src/blocks/map/edit.js:72
+msgid "While loading"
+msgstr ""
+
+#: src/blocks/map/edit.js:77
+msgid "If it fails"
+msgstr ""
+
+#: src/blocks/map/edit.js:82
+msgid "Latitude"
+msgstr ""
+
+#: src/blocks/map/edit.js:87
+msgid "Longitude"
+msgstr ""
+
+#: src/blocks/map/edit.js:92
+msgid "Initial zoom"
+msgstr ""
+
+#: src/blocks/map/edit.js:93
+msgid "4 = country, 15 = street."
+msgstr ""
+
+#: src/blocks/map/edit.js:104
+msgid "Preview image"
+msgstr ""
+
+#: src/blocks/map/edit.js:109
+msgid "Shown before the map loads, centered on the location. Without coordinates there is no interactive map; without images the card sits on a plain background."
+msgstr ""
+
+#: src/blocks/map/edit.js:115
+msgid "Desktop"
+msgstr ""
+
+#: src/blocks/news/edit.js:47
+msgid "Section with the latest posts"
+msgstr ""
+
+#: src/blocks/news/edit.js:54
+msgid "Full listing (posts page)"
+msgstr ""
+
+#: src/blocks/news/edit.js:66
+msgid "Listing"
+msgstr ""
+
+#: src/blocks/news/edit.js:69
+msgid "Shows every published post; the first one of each page is featured. Posts per page are set in Settings → Reading."
+msgstr ""
+
+#: src/blocks/news/edit.js:75
+msgid "Featured badge"
+msgstr ""
+
+#: src/blocks/news/edit.js:80
+msgid "Featured post link"
+msgstr ""
+
+#: src/blocks/news/edit.js:85
+msgid "Filter name (screen readers)"
+msgstr ""
+
+#: src/blocks/news/edit.js:93
+msgid "All categories button"
+msgstr ""
+
+#: src/blocks/news/edit.js:101
+msgid "Next page button"
+msgstr ""
+
+#: src/blocks/news/edit.js:106
+msgid "No posts: text"
+msgstr ""
+
+#: src/blocks/news/edit.js:113
+msgid "No posts: button (empty = no button)"
+msgstr ""
+
+#: src/blocks/news/edit.js:121
+msgid "No posts: button destination"
+msgstr ""
+
+#: src/blocks/news/edit.js:140
+msgid "Posts to show"
+msgstr ""
+
+#: src/blocks/news/edit.js:143
+msgid "Category"
+msgstr ""
+
+#: src/blocks/news/edit.js:148
+msgid "All"
+msgstr ""
+
+#: src/blocks/news/edit.js:162
+msgid "Number of posts"
+msgstr ""
+
+#: src/blocks/news/edit.js:176
+msgid "The section is hidden while there are no published posts."
+msgstr ""
+
+#: src/blocks/not-found/edit.js:22
+msgid "Message"
+msgstr ""
+
+#: src/blocks/not-found/edit.js:52
+msgid "Links to sections"
+msgstr ""
+
+#: src/blocks/not-found/edit.js:55
+msgid "List name (screen readers)"
+msgstr ""
+
+#: src/blocks/not-found/edit.js:66
+#: src/blocks/site-footer/edit.js:71
+#: src/blocks/site-header/edit.js:38
+msgid "Add link"
+msgstr ""
+
+#: src/blocks/not-found/edit.js:79
+#: src/blocks/site-footer/edit.js:84
+#: src/blocks/site-header/edit.js:51
+#: src/blocks/site-header/edit.js:115
+#: src/editor/links.js:127
+msgid "Link"
+msgstr ""
+
+#: src/blocks/page-hero/edit.js:21
+msgid "Use the page title"
+msgstr ""
+
+#: src/blocks/page-hero/edit.js:22
+msgid "For templates: shows the title of each page."
+msgstr ""
+
+#: src/blocks/page-hero/edit.js:51
+msgid "Show the last updated date"
+msgstr ""
+
+#: src/blocks/page-hero/edit.js:55
+msgid "The date the page was last modified."
+msgstr ""
+
+#: src/blocks/page-hero/edit.js:65
+msgid "Text before the date"
+msgstr ""
+
+#: src/blocks/page-hero/edit.js:78
+msgid "Background"
+msgstr ""
+
+#: src/blocks/page-hero/edit.js:83
+#: src/editor/section-style.js:24
+msgid "Light"
+msgstr ""
+
+#: src/blocks/page-hero/edit.js:87
+msgid "Dark, with an arc and a dot"
+msgstr ""
+
+#: src/blocks/page-hero/edit.js:94
+msgid "Light and compact (legal texts)"
+msgstr ""
+
+#: src/blocks/page-hero/edit.js:106
+msgid "Arc and accent dot"
+msgstr ""
+
+#: src/blocks/page-hero/edit.js:114
+msgid "Line below"
+msgstr ""
+
+#: src/blocks/page-hero/edit.js:120
+msgid "Area filter (services page)"
+msgstr ""
+
+#: src/blocks/page-hero/edit.js:124
+msgid "Chips with the areas; they filter the Services block in its Listing layout."
+msgstr ""
+
+#: src/blocks/page-hero/edit.js:134
+msgid "Text of the \"all\" chip"
+msgstr ""
+
+#: src/blocks/page-hero/edit.js:152
+msgid "Show the breadcrumbs (Home / page)"
+msgstr ""
+
+#: src/blocks/page-hero/edit.js:161
+msgid "Name of this page in the breadcrumbs"
+msgstr ""
+
+#: src/blocks/page-hero/edit.js:165
+msgid "Empty = the page title."
+msgstr ""
+
+#: src/blocks/post-body/edit.js:32
+msgid "Share"
+msgstr ""
+
+#: src/blocks/post-body/edit.js:51
+msgid "Without any network checked, the share row is hidden."
+msgstr ""
+
+#: src/blocks/post-header/edit.js:17
+#: src/blocks/project-body/edit.js:17
+#: src/editor/section-style.js:75
+msgid "Texts"
+msgstr ""
+
+#: src/blocks/post-header/edit.js:20
+msgid "The lead is the excerpt of each post (or the start of the text when it is empty)."
+msgstr ""
+
+#: src/blocks/post-header/edit.js:26
+msgid "After the reading time"
+msgstr ""
+
+#: src/blocks/post-header/edit.js:31
+msgid "Author (by default, the site title)"
+msgstr ""
+
+#: src/blocks/post-header/edit.js:39
+msgid "Author description"
+msgstr ""
+
+#. translators: %d: illustration number.
+#: src/blocks/process/edit.js:20
+#, js-format
+msgid "Illustration %d"
+msgstr ""
+
+#: src/blocks/process/edit.js:36
+msgid "Timeline"
+msgstr ""
+
+#: src/blocks/process/edit.js:40
+msgid "List with an illustration"
+msgstr ""
+
+#: src/blocks/process/edit.js:55
+msgid "In the service template each service uses its own cover. On a page, choose an image or an illustration."
+msgstr ""
+
+#: src/blocks/process/edit.js:61
+msgid "Image (optional)"
+msgstr ""
+
+#: src/blocks/process/edit.js:94
+msgid "Steps"
+msgstr ""
+
+#: src/blocks/process/edit.js:97
+msgid "The numbering and the colors (white, yellow, blue) are automatic."
+msgstr ""
+
+#: src/blocks/process/edit.js:106
+msgid "Add step"
+msgstr ""
+
+#: src/blocks/project-body/edit.js:20
+msgid "The summary (excerpt) and the description are written in each project."
+msgstr ""
+
+#: src/blocks/project-body/edit.js:32
+msgid "Box"
+msgstr ""
+
+#: src/blocks/project-body/edit.js:52
+#: src/blocks/service-hero/edit.js:41
+msgid "Button destination (the service is added)"
+msgstr ""
+
+#: src/blocks/project-body/edit.js:63
+msgid "Link to the service (empty = no link)"
+msgstr ""
+
+#: src/blocks/project-body/edit.js:67
+msgid "It is followed by the name of the service."
+msgstr ""
+
+#: src/blocks/project-header/edit.js:17
+msgid "Fact sheet"
+msgstr ""
+
+#: src/blocks/project-header/edit.js:20
+msgid "Title, area, image and details come from each project. Empty details are not shown."
+msgstr ""
+
+#: src/blocks/project-header/edit.js:26
+msgid "Client"
+msgstr ""
+
+#: src/blocks/project-header/edit.js:41
+msgid "Year"
+msgstr ""
+
+#: src/blocks/projects/edit.js:33
+msgid "Section with some projects"
+msgstr ""
+
+#: src/blocks/projects/edit.js:40
+msgid "Full listing with filters (projects page)"
+msgstr ""
+
+#: src/blocks/projects/edit.js:52
+msgid "Filters"
+msgstr ""
+
+#: src/blocks/projects/edit.js:55
+msgid "Every published project is shown. The areas and services of the filter come from their sections."
+msgstr ""
+
+#: src/blocks/projects/edit.js:61
+msgid "Name of the area group (screen readers)"
+msgstr ""
+
+#: src/blocks/projects/edit.js:69
+msgid "All areas button"
+msgstr ""
+
+#: src/blocks/projects/edit.js:74
+msgid "Service selector label"
+msgstr ""
+
+#: src/blocks/projects/edit.js:82
+msgid "All services option"
+msgstr ""
+
+#: src/blocks/projects/edit.js:90
+msgid "No results: text"
+msgstr ""
+
+#: src/blocks/projects/edit.js:97
+msgid "No results: button (empty = no button)"
+msgstr ""
+
+#: src/blocks/projects/edit.js:115
+msgid "The link goes to the projects of the service being viewed."
+msgstr ""
+
+#: src/blocks/projects/edit.js:122
+msgid "Line above the title"
+msgstr ""
+
+#: src/blocks/projects/edit.js:126
+msgid "Separates the section from the previous one when both are white."
+msgstr ""
+
+#: src/blocks/projects/edit.js:136
+msgid "Projects to show"
+msgstr ""
+
+#: src/blocks/reach/edit.js:21
+msgid "List of registrations"
+msgstr ""
+
+#: src/blocks/reach/edit.js:22
+msgid "It comes from the Institutions section (full name and relation)."
+msgstr ""
+
+#: src/blocks/reach/edit.js:33
+msgid "Large background illustration"
+msgstr ""
+
+#: src/blocks/service-hero/edit.js:28
+msgid "Active service"
+msgstr ""
+
+#: src/blocks/service-hero/edit.js:31
+msgid "Title, number, area, description and \"What it includes\" come from each service. These texts are the same for all of them."
+msgstr ""
+
+#: src/blocks/service-hero/edit.js:38
+#: src/blocks/site-header/edit.js:100
+msgid "Quote button"
+msgstr ""
+
+#: src/blocks/service-hero/edit.js:53
+msgid "WhatsApp button (empty = no button)"
+msgstr ""
+
+#: src/blocks/service-hero/edit.js:60
+#: src/blocks/service-hero/edit.js:72
+msgid "Box title"
+msgstr ""
+
+#: src/blocks/service-hero/edit.js:65
+msgid "Service \"coming soon\""
+msgstr ""
+
+#: src/blocks/service-hero/edit.js:69
+msgid "Badge"
+msgstr ""
+
+#: src/blocks/service-hero/edit.js:76
+msgid "Form: title"
+msgstr ""
+
+#: src/blocks/service-hero/edit.js:80
+msgid "Form: email placeholder"
+msgstr ""
+
+#: src/blocks/service-hero/edit.js:84
+msgid "Form: button"
+msgstr ""
+
+#: src/blocks/service-hero/edit.js:88
+msgid "Form: button while sending"
+msgstr ""
+
+#: src/blocks/service-hero/edit.js:96
+msgid "Privacy link"
+msgstr ""
+
+#: src/blocks/service-hero/edit.js:100
+msgid "Contact link (empty = no link)"
+msgstr ""
+
+#: src/blocks/service-hero/edit.js:103
+msgid "Contact link destination"
+msgstr ""
+
+#: src/blocks/service-hero/edit.js:115
+msgid "Message: empty email"
+msgstr ""
+
+#: src/blocks/service-hero/edit.js:119
+msgid "Message: invalid email"
+msgstr ""
+
+#: src/blocks/service-hero/edit.js:123
+msgid "Message: sending error"
+msgstr ""
+
+#: src/blocks/service-hero/edit.js:127
+msgid "The form is the \"notify me\" form of the site settings; the confirmation message is edited in Contact Form 7."
+msgstr ""
+
+#: src/blocks/services/edit.js:25
+msgid "Variant"
+msgstr ""
+
+#: src/blocks/services/edit.js:30
+msgid "For the services page: it follows the area filter of the page header and has no title of its own."
+msgstr ""
+
+#: src/blocks/services/edit.js:40
+msgid "With a title"
+msgstr ""
+
+#: src/blocks/services/edit.js:44
+msgid "Listing (services page)"
+msgstr ""
+
+#: src/blocks/services/edit.js:62
+msgid "Services to show"
+msgstr ""
+
+#: src/blocks/services/edit.js:68
+msgid "All of them, in the order of the Services section"
+msgstr ""
+
+#: src/blocks/services/edit.js:74
+msgid "Hide those \"coming soon\""
+msgstr ""
+
+#: src/blocks/services/edit.js:84
+msgid "Line above the section"
+msgstr ""
+
+#: src/blocks/services/edit.js:88
+msgid "Separates the section from the previous one when both are white. In the service template, the service being viewed is not repeated."
+msgstr ""
+
+#: src/blocks/services/edit.js:101
+msgid "Inquiry card"
+msgstr ""
+
+#: src/blocks/services/edit.js:106
+msgid "Show at the end of the listing"
+msgstr ""
+
+#: src/blocks/services/edit.js:127
+#: src/editor/fields.js:92
+msgid "Link: text"
+msgstr ""
+
+#: src/blocks/services/edit.js:132
+#: src/editor/fields.js:98
+msgid "Link: destination"
+msgstr ""
+
+#: src/blocks/site-footer/edit.js:26
+msgid "Brand"
+msgstr ""
+
+#: src/blocks/site-footer/edit.js:29
+#: src/blocks/site-header/edit.js:88
+msgid "Logo for dark backgrounds"
+msgstr ""
+
+#: src/blocks/site-footer/edit.js:33
+msgid "Without it, the logo of Site Identity is used."
+msgstr ""
+
+#: src/blocks/site-footer/edit.js:43
+msgid "Text under the logo"
+msgstr ""
+
+#: src/blocks/site-footer/edit.js:50
+msgid "Social profiles come from the site settings."
+msgstr ""
+
+#: src/blocks/site-footer/edit.js:58
+msgid "Site links"
+msgstr ""
+
+#: src/blocks/site-footer/edit.js:63
+msgid "Column title"
+msgstr ""
+
+#: src/blocks/site-footer/edit.js:95
+msgid "Services and contact"
+msgstr ""
+
+#: src/blocks/site-footer/edit.js:100
+msgid "Show the services column"
+msgstr ""
+
+#: src/blocks/site-footer/edit.js:109
+msgid "Services title"
+msgstr ""
+
+#: src/blocks/site-footer/edit.js:114
+msgid "Contact title"
+msgstr ""
+
+#: src/blocks/site-footer/edit.js:119
+msgid "Phone, email, hours and location come from the site settings."
+msgstr ""
+
+#: src/blocks/site-footer/edit.js:127
+msgid "Institutions and legal notice"
+msgstr ""
+
+#: src/blocks/site-footer/edit.js:132
+msgid "Show the institution logos"
+msgstr ""
+
+#: src/blocks/site-footer/edit.js:141
+msgid "Logos label"
+msgstr ""
+
+#: src/blocks/site-footer/edit.js:146
+msgid "Legal notice"
+msgstr ""
+
+#: src/blocks/site-footer/edit.js:147
+msgid "{year} is replaced with the current year and {site} with the site title."
+msgstr ""
+
+#: src/blocks/site-header/edit.js:29
+msgid "The same links are used in the bar and in the full-screen menu."
+msgstr ""
+
+#: src/blocks/site-header/edit.js:57
+msgid "Show the services submenu"
+msgstr ""
+
+#: src/blocks/site-header/edit.js:61
+msgid "Only one link can have it."
+msgstr ""
+
+#: src/blocks/site-header/edit.js:82
+msgid "The logo is the one set in Site Identity. Add a light version for the dark backgrounds (top of dark pages and the full-screen menu)."
+msgstr ""
+
+#: src/blocks/site-header/edit.js:125
+msgid "Services submenu"
+msgstr ""
+
+#: src/blocks/site-header/edit.js:130
+msgid "Link to all services"
+msgstr ""
+
+#: src/blocks/site-header/edit.js:135
+msgid "Services page"
+msgstr ""
+
+#: src/blocks/site-header/edit.js:143
+msgid "Box: title"
+msgstr ""
+
+#: src/blocks/site-header/edit.js:148
+msgid "Box: text"
+msgstr ""
+
+#: src/blocks/site-header/edit.js:155
+msgid "Box: link"
+msgstr ""
+
+#: src/blocks/site-header/edit.js:160
+msgid "Box: destination"
+msgstr ""
+
+#: src/blocks/site-header/edit.js:170
+msgid "Full-screen menu"
+msgstr ""
+
+#: src/blocks/site-header/edit.js:175
+msgid "Title of the services column"
+msgstr ""
+
+#: src/blocks/site-header/edit.js:183
+msgid "Phone, email, hours and WhatsApp come from the site settings; the services, from the Services section."
+msgstr ""
+
+#: src/blocks/stats/edit.js:26
+msgid "Figures"
+msgstr ""
+
+#: src/blocks/stats/edit.js:31
+msgid "Add figure"
+msgstr ""
+
+#: src/blocks/stats/edit.js:35
+msgid "Value"
+msgstr ""
+
+#: src/blocks/stats/edit.js:36
+msgid "Numbers (e.g. +30) count up from 0 when they appear."
+msgstr ""
+
+#: src/blocks/stats/edit.js:43
+msgid "Description"
+msgstr ""
+
+#: src/blocks/team/edit.js:26
+msgid "Caption when there is no photo"
+msgstr ""
+
+#: src/blocks/team/edit.js:30
+msgid "Empty = no caption."
+msgstr ""
+
+#: src/blocks/team/edit.js:37
+msgid "People, their photos (featured image), roles and profiles are managed in the Team section."
+msgstr ""
+
+#: src/blocks/team/edit.js:43
+msgid "View the team"
+msgstr ""
+
+#: src/blocks/testimonials/edit.js:20
+msgid "Testimonials are managed in the Testimonials section. This section stays hidden until at least one is published."
+msgstr ""
+
+#: src/blocks/testimonials/edit.js:26
+msgid "View the testimonials"
+msgstr ""
+
+#: src/blocks/text-media/edit.js:17
+msgid "Blue with arc"
+msgstr ""
+
+#: src/blocks/text-media/edit.js:18
+msgid "Gray with yellow sun"
+msgstr ""
+
+#: src/blocks/text-media/edit.js:19
+msgid "Gray with rings"
+msgstr ""
+
+#: src/blocks/text-media/edit.js:20
+msgid "Blue with red bar"
+msgstr ""
+
+#: src/blocks/text-media/edit.js:21
+msgid "Cream with logo"
+msgstr ""
+
+#: src/blocks/text-media/edit.js:22
+msgid "Dark blue"
+msgstr ""
+
+#: src/blocks/text-media/edit.js:35
+msgid "Text (a blank line separates paragraphs)"
+msgstr ""
+
+#: src/blocks/text-media/edit.js:43
+#: src/editor/query.js:100
+msgid "Show"
+msgstr ""
+
+#: src/blocks/text-media/edit.js:48
+msgid "Graphic cover"
+msgstr ""
+
+#: src/blocks/text-media/edit.js:52
+msgid "An image"
+msgstr ""
+
+#: src/blocks/text-media/edit.js:61
+msgid "Image"
+msgstr ""
+
+#: src/blocks/text-media/edit.js:62
+msgid "Without an image, the graphic cover is shown."
+msgstr ""
+
+#: src/blocks/text-media/edit.js:71
+msgid "Cover"
+msgstr ""
+
+#: src/blocks/text-media/edit.js:82
+msgid "Aspect ratio"
+msgstr ""
+
+#: src/blocks/text-media/edit.js:98
+msgid "Side"
+msgstr ""
+
+#: src/blocks/text-media/edit.js:103
+msgid "Right"
+msgstr ""
+
+#: src/blocks/text-media/edit.js:107
+msgid "Left"
+msgstr ""
+
+#: src/editor/fields.js:60
+msgid "Heading"
+msgstr ""
+
+#: src/editor/fields.js:64
+msgid "Small text with the accent bar, above the title."
+msgstr ""
+
+#: src/editor/links.js:35
+msgid "Search for a page of the site or paste an address."
+msgstr ""
+
+#: src/editor/links.js:52
+msgid "Open in a new tab"
+msgstr ""
+
+#: src/editor/links.js:63
+msgid "Red (primary)"
+msgstr ""
+
+#: src/editor/links.js:64
+msgid "Blue"
+msgstr ""
+
+#: src/editor/links.js:65
+msgid "Blue outline"
+msgstr ""
+
+#: src/editor/links.js:66
+msgid "White outline (on dark backgrounds)"
+msgstr ""
+
+#: src/editor/links.js:87
+msgid "Add button"
+msgstr ""
+
+#: src/editor/links.js:106
+msgid "Destination"
+msgstr ""
+
+#: src/editor/links.js:111
+msgid "A link"
+msgstr ""
+
+#: src/editor/links.js:115
+msgid "WhatsApp (from the site settings)"
+msgstr ""
+
+#: src/editor/links.js:134
+msgid "Style"
+msgstr ""
+
+#: src/editor/media.js:58
+msgid "Replace image"
+msgstr ""
+
+#: src/editor/media.js:59
+msgid "Choose image"
+msgstr ""
+
+#: src/editor/media.js:68
+#: src/editor/repeater.js:110
+msgid "Remove"
+msgstr ""
+
+#: src/editor/query.js:78
+msgid "All, newest first"
+msgstr ""
+
+#: src/editor/query.js:79
+msgid "From one area"
+msgstr ""
+
+#: src/editor/query.js:80
+msgid "From one service"
+msgstr ""
+
+#: src/editor/query.js:81
+msgid "Picked by hand"
+msgstr ""
+
+#: src/editor/query.js:82
+msgid "From the service being viewed (service template)"
+msgstr ""
+
+#: src/editor/query.js:86
+msgid "Related to the one being viewed (template)"
+msgstr ""
+
+#: src/editor/query.js:113
+msgid "Area"
+msgstr ""
+
+#: src/editor/query.js:118
+msgid "Choose an area"
+msgstr ""
+
+#: src/editor/query.js:137
+msgid "Choose a service"
+msgstr ""
+
+#: src/editor/query.js:153
+msgid "Choose and sort the items"
+msgstr ""
+
+#: src/editor/query.js:172
+msgid "Amount"
+msgstr ""
+
+#: src/editor/query.js:173
+msgid "0 = all."
+msgstr ""
+
+#. translators: %d: item number in the list.
+#: src/editor/repeater.js:62
+#, js-format
+msgid "Item %d"
+msgstr ""
+
+#: src/editor/repeater.js:94
+msgid "Move up"
+msgstr ""
+
+#: src/editor/repeater.js:102
+msgid "Move down"
+msgstr ""
+
+#: src/editor/repeater.js:138
+msgid "Add"
+msgstr ""
+
+#: src/editor/section-preview.js:28
+msgid "This section has no content to show yet. Fill it in from the sidebar."
+msgstr ""
+
+#: src/editor/section-style.js:25
+msgid "Gray"
+msgstr ""
+
+#: src/editor/section-style.js:26
+msgid "Dark"
+msgstr ""
+
+#: src/editor/section-style.js:30
+msgid "None"
+msgstr ""
+
+#: src/editor/section-style.js:31
+msgid "Small"
+msgstr ""
+
+#: src/editor/section-style.js:32
+msgid "Normal"
+msgstr ""
+
+#: src/editor/section-style.js:33
+msgid "Large"
+msgstr ""
+
+#: src/editor/section-style.js:74
+msgid "Titles"
+msgstr ""
+
+#: src/editor/section-style.js:76
+msgid "Accent (eyebrow bar)"
+msgstr ""
+
+#: src/editor/section-style.js:83
+msgid "Scheme"
+msgstr ""
+
+#: src/editor/section-style.js:85
+msgid "Section background"
+msgstr ""
+
+#: src/editor/section-style.js:98
+msgid "Colors"
+msgstr ""
+
+#: src/editor/section-style.js:103
+msgid "Empty = the scheme color. Only colors from the site palette can be chosen."
+msgstr ""
+
+#: src/editor/section-style.js:127
+msgid "Spacing"
+msgstr ""
+
+#: src/editor/section-style.js:132
+msgid "Top"
+msgstr ""
+
+#: src/editor/section-style.js:140
+msgid "Bottom"
+msgstr ""
+
+#: src/editor/section-style.js:153
+msgid "Animations"
+msgstr ""
+
+#: src/editor/section-style.js:154
+msgid "When off, the section appears without motion."
+msgstr ""
+
+#: src/blocks/areas/block.json
+msgctxt "block title"
+msgid "Areas"
+msgstr ""
+
+#: src/blocks/areas/block.json
+msgctxt "block description"
+msgid "The areas of the firm with their animated icon, their text and a link to their services. They come from Services → Areas (the text is the description of each area)."
+msgstr ""
+
+#: src/blocks/areas/block.json
+msgctxt "block keyword"
+msgid "areas"
+msgstr ""
+
+#: src/blocks/areas/block.json
+msgctxt "block keyword"
+msgid "disciplines"
+msgstr ""
+
+#: src/blocks/areas/block.json
+msgctxt "block keyword"
+msgid "practice"
+msgstr ""
+
+#: src/blocks/audiences/block.json
+msgctxt "block title"
+msgid "Who we work for"
+msgstr ""
+
+#: src/blocks/audiences/block.json
+msgctxt "block description"
+msgid "Cards by type of client, each with links to the services that suit them."
+msgstr ""
+
+#: src/blocks/audiences/block.json
+msgctxt "block keyword"
+msgid "audiences"
+msgstr ""
+
+#: src/blocks/audiences/block.json
+#: src/blocks/testimonials/block.json
+msgctxt "block keyword"
+msgid "clients"
+msgstr ""
+
+#: src/blocks/audiences/block.json
+msgctxt "block keyword"
+msgid "who we serve"
+msgstr ""
+
+#: src/blocks/audiences/block.json
+#: src/blocks/services/block.json
+msgctxt "block keyword"
+msgid "services"
+msgstr ""
+
+#: src/blocks/contact/block.json
+msgctxt "block title"
+msgid "Contact form"
+msgstr ""
+
+#: src/blocks/contact/block.json
+msgctxt "block description"
+msgid "Quote or question form (sent through Contact Form 7) with WhatsApp, phone, email, hours, location and social profiles from the site settings beside it."
+msgstr ""
+
+#: src/blocks/contact/block.json
+#: src/blocks/cta/block.json
+#: src/blocks/site-footer/block.json
+msgctxt "block keyword"
+msgid "contact"
+msgstr ""
+
+#: src/blocks/contact/block.json
+msgctxt "block keyword"
+msgid "form"
+msgstr ""
+
+#: src/blocks/contact/block.json
+#: src/blocks/cta/block.json
+#: src/blocks/project-body/block.json
+msgctxt "block keyword"
+msgid "quote"
+msgstr ""
+
+#: src/blocks/contact/block.json
+msgctxt "block keyword"
+msgid "question"
+msgstr ""
+
+#: src/blocks/contact/block.json
+#: src/blocks/cta/block.json
+msgctxt "block keyword"
+msgid "whatsapp"
+msgstr ""
+
+#: src/blocks/cta/block.json
+msgctxt "block title"
+msgid "Call to action"
+msgstr ""
+
+#: src/blocks/cta/block.json
+msgctxt "block description"
+msgid "Dark box with a title, text and buttons to request a quote. By default it uses the text of the site settings; each page can replace it."
+msgstr ""
+
+#: src/blocks/cta/block.json
+msgctxt "block keyword"
+msgid "cta"
+msgstr ""
+
+#: src/blocks/cta/block.json
+msgctxt "block keyword"
+msgid "call to action"
+msgstr ""
+
+#: src/blocks/features/block.json
+msgctxt "block title"
+msgid "Numbered items"
+msgstr ""
+
+#: src/blocks/features/block.json
+msgctxt "block description"
+msgid "A title and a list of numbered items, each with a title and a text: with an accent dot or as cards."
+msgstr ""
+
+#: src/blocks/features/block.json
+msgctxt "block keyword"
+msgid "benefits"
+msgstr ""
+
+#: src/blocks/features/block.json
+msgctxt "block keyword"
+msgid "why us"
+msgstr ""
+
+#: src/blocks/features/block.json
+msgctxt "block keyword"
+msgid "approach"
+msgstr ""
+
+#: src/blocks/features/block.json
+msgctxt "block keyword"
+msgid "features"
+msgstr ""
+
+#: src/blocks/features/block.json
+msgctxt "block keyword"
+msgid "items"
+msgstr ""
+
+#: src/blocks/home-hero/block.json
+msgctxt "block title"
+msgid "Home hero"
+msgstr ""
+
+#: src/blocks/home-hero/block.json
+msgctxt "block description"
+msgid "First screen of the home page: background illustration, main title (H1), text, buttons and a card with a counter."
+msgstr ""
+
+#: src/blocks/home-hero/block.json
+#: src/blocks/page-hero/block.json
+msgctxt "block keyword"
+msgid "hero"
+msgstr ""
+
+#: src/blocks/home-hero/block.json
+msgctxt "block keyword"
+msgid "home"
+msgstr ""
+
+#: src/blocks/home-hero/block.json
+msgctxt "block keyword"
+msgid "cover"
+msgstr ""
+
+#: src/blocks/home-hero/block.json
+#: src/blocks/page-hero/block.json
+msgctxt "block keyword"
+msgid "h1"
+msgstr ""
+
+#: src/blocks/institutions/block.json
+msgctxt "block title"
+msgid "Institutions"
+msgstr ""
+
+#: src/blocks/institutions/block.json
+msgctxt "block description"
+msgid "Logos of professional boards and associations, from the Institutions section, with a statement or a label."
+msgstr ""
+
+#: src/blocks/institutions/block.json
+#: src/blocks/reach/block.json
+#: src/blocks/site-footer/block.json
+msgctxt "block keyword"
+msgid "institutions"
+msgstr ""
+
+#: src/blocks/institutions/block.json
+msgctxt "block keyword"
+msgid "associations"
+msgstr ""
+
+#: src/blocks/institutions/block.json
+msgctxt "block keyword"
+msgid "memberships"
+msgstr ""
+
+#: src/blocks/institutions/block.json
+msgctxt "block keyword"
+msgid "logos"
+msgstr ""
+
+#: src/blocks/map/block.json
+msgctxt "block title"
+msgid "Location map"
+msgstr ""
+
+#: src/blocks/map/block.json
+msgctxt "block description"
+msgid "A light map image with a marker and a location card. The interactive map (MapLibre + OpenFreeMap) is downloaded only when the visitor taps \"Explore map\"."
+msgstr ""
+
+#: src/blocks/map/block.json
+msgctxt "block keyword"
+msgid "map"
+msgstr ""
+
+#: src/blocks/map/block.json
+msgctxt "block keyword"
+msgid "location"
+msgstr ""
+
+#: src/blocks/map/block.json
+msgctxt "block keyword"
+msgid "directions"
+msgstr ""
+
+#: src/blocks/map/block.json
+msgctxt "block keyword"
+msgid "address"
+msgstr ""
+
+#: src/blocks/news/block.json
+msgctxt "block title"
+msgid "News"
+msgstr ""
+
+#: src/blocks/news/block.json
+msgctxt "block description"
+msgid "Published posts. As a section: the latest ones (hidden while there are none). As a listing (posts page): featured post, category filter and pagination."
+msgstr ""
+
+#: src/blocks/news/block.json
+#: src/blocks/post-body/block.json
+#: src/blocks/post-header/block.json
+msgctxt "block keyword"
+msgid "news"
+msgstr ""
+
+#: src/blocks/news/block.json
+msgctxt "block keyword"
+msgid "blog"
+msgstr ""
+
+#: src/blocks/news/block.json
+msgctxt "block keyword"
+msgid "posts"
+msgstr ""
+
+#: src/blocks/news/block.json
+#: src/blocks/projects/block.json
+#: src/blocks/services/block.json
+msgctxt "block keyword"
+msgid "listing"
+msgstr ""
+
+#: src/blocks/not-found/block.json
+msgctxt "block title"
+msgid "Page not found"
+msgstr ""
+
+#: src/blocks/not-found/block.json
+msgctxt "block description"
+msgid "For the 404 template: the large \"404\", the message, buttons and links to the main sections."
+msgstr ""
+
+#: src/blocks/not-found/block.json
+msgctxt "block keyword"
+msgid "404"
+msgstr ""
+
+#: src/blocks/not-found/block.json
+msgctxt "block keyword"
+msgid "error"
+msgstr ""
+
+#: src/blocks/not-found/block.json
+msgctxt "block keyword"
+msgid "not found"
+msgstr ""
+
+#: src/blocks/page-hero/block.json
+msgctxt "block title"
+msgid "Page header"
+msgstr ""
+
+#: src/blocks/page-hero/block.json
+msgctxt "block description"
+msgid "First section of an inner page: breadcrumbs, main title (H1) and text. Dark with an arc and a dot, light, or compact for legal texts. It can show the area filter of the services page."
+msgstr ""
+
+#: src/blocks/page-hero/block.json
+#: src/blocks/post-header/block.json
+#: src/blocks/project-header/block.json
+#: src/blocks/service-hero/block.json
+#: src/blocks/site-header/block.json
+msgctxt "block keyword"
+msgid "header"
+msgstr ""
+
+#: src/blocks/page-hero/block.json
+msgctxt "block keyword"
+msgid "title"
+msgstr ""
+
+#: src/blocks/page-hero/block.json
+msgctxt "block keyword"
+msgid "breadcrumbs"
+msgstr ""
+
+#: src/blocks/post-body/block.json
+msgctxt "block title"
+msgid "Post body"
+msgstr ""
+
+#: src/blocks/post-body/block.json
+msgctxt "block description"
+msgid "For the single post template: the post text in a reading column and the buttons to share it on LinkedIn, Facebook, WhatsApp or X."
+msgstr ""
+
+#: src/blocks/post-body/block.json
+#: src/blocks/post-header/block.json
+msgctxt "block keyword"
+msgid "post"
+msgstr ""
+
+#: src/blocks/post-body/block.json
+#: src/blocks/project-body/block.json
+msgctxt "block keyword"
+msgid "content"
+msgstr ""
+
+#: src/blocks/post-body/block.json
+msgctxt "block keyword"
+msgid "share"
+msgstr ""
+
+#: src/blocks/post-header/block.json
+msgctxt "block title"
+msgid "Post header"
+msgstr ""
+
+#: src/blocks/post-header/block.json
+msgctxt "block description"
+msgid "For the single post template: breadcrumbs, category, date and reading time, title (H1), lead (the excerpt), author and the image or cover. The data comes from the post."
+msgstr ""
+
+#: src/blocks/post-header/block.json
+msgctxt "block keyword"
+msgid "article"
+msgstr ""
+
+#: src/blocks/process/block.json
+msgctxt "block title"
+msgid "Process"
+msgstr ""
+
+#: src/blocks/process/block.json
+msgctxt "block description"
+msgid "Numbered work steps: as a timeline (colored number, a line that draws itself and an arrow) or as a list next to an illustration."
+msgstr ""
+
+#: src/blocks/process/block.json
+msgctxt "block keyword"
+msgid "process"
+msgstr ""
+
+#: src/blocks/process/block.json
+msgctxt "block keyword"
+msgid "steps"
+msgstr ""
+
+#: src/blocks/process/block.json
+msgctxt "block keyword"
+msgid "stages"
+msgstr ""
+
+#: src/blocks/process/block.json
+msgctxt "block keyword"
+msgid "how we work"
+msgstr ""
+
+#: src/blocks/project-body/block.json
+msgctxt "block title"
+msgid "Project description"
+msgstr ""
+
+#: src/blocks/project-body/block.json
+msgctxt "block description"
+msgid "For the single project template: the summary and content of the project, and a box to request a quote (with the project service preselected in the form)."
+msgstr ""
+
+#: src/blocks/project-body/block.json
+#: src/blocks/project-header/block.json
+msgctxt "block keyword"
+msgid "project"
+msgstr ""
+
+#: src/blocks/project-body/block.json
+msgctxt "block keyword"
+msgid "description"
+msgstr ""
+
+#: src/blocks/project-header/block.json
+msgctxt "block title"
+msgid "Project header"
+msgstr ""
+
+#: src/blocks/project-header/block.json
+msgctxt "block description"
+msgid "For the single project template: breadcrumbs, area, title (H1), fact sheet (client, location, service and year) and the image or cover. The data comes from the project."
+msgstr ""
+
+#: src/blocks/project-header/block.json
+msgctxt "block keyword"
+msgid "details"
+msgstr ""
+
+#: src/blocks/project-header/block.json
+#: src/blocks/projects/block.json
+msgctxt "block keyword"
+msgid "works"
+msgstr ""
+
+#: src/blocks/projects/block.json
+msgctxt "block title"
+msgid "Projects"
+msgstr ""
+
+#: src/blocks/projects/block.json
+msgctxt "block description"
+msgid "Project cards with their image or cover. They come from the Projects section: the latest, those of an area or a service, hand-picked, those of the service being viewed or related to the project being viewed. Also as a full listing with filters by area and service."
+msgstr ""
+
+#: src/blocks/projects/block.json
+msgctxt "block keyword"
+msgid "projects"
+msgstr ""
+
+#: src/blocks/projects/block.json
+#: src/blocks/services/block.json
+msgctxt "block keyword"
+msgid "cards"
+msgstr ""
+
+#: src/blocks/projects/block.json
+msgctxt "block keyword"
+msgid "portfolio"
+msgstr ""
+
+#: src/blocks/projects/block.json
+msgctxt "block keyword"
+msgid "related"
+msgstr ""
+
+#: src/blocks/reach/block.json
+msgctxt "block title"
+msgid "Reach and registrations"
+msgstr ""
+
+#: src/blocks/reach/block.json
+msgctxt "block description"
+msgid "Dark section with a large animated arc in the background, a text and the list of registrations and memberships (from the Institutions section)."
+msgstr ""
+
+#: src/blocks/reach/block.json
+msgctxt "block keyword"
+msgid "reach"
+msgstr ""
+
+#: src/blocks/reach/block.json
+msgctxt "block keyword"
+msgid "nationwide"
+msgstr ""
+
+#: src/blocks/reach/block.json
+msgctxt "block keyword"
+msgid "registrations"
+msgstr ""
+
+#: src/blocks/reach/block.json
+#: src/blocks/team/block.json
+#: src/blocks/text-media/block.json
+msgctxt "block keyword"
+msgid "about"
+msgstr ""
+
+#: src/blocks/service-hero/block.json
+msgctxt "block title"
+msgid "Service header"
+msgstr ""
+
+#: src/blocks/service-hero/block.json
+msgctxt "block description"
+msgid "For the single service template: breadcrumbs, number and area, title (H1), description, quote and WhatsApp buttons (or the \"notify me\" form when the service is coming soon) and the \"What it includes\" box. The data comes from the service."
+msgstr ""
+
+#: src/blocks/service-hero/block.json
+msgctxt "block keyword"
+msgid "service"
+msgstr ""
+
+#: src/blocks/service-hero/block.json
+msgctxt "block keyword"
+msgid "coming soon"
+msgstr ""
+
+#: src/blocks/service-hero/block.json
+msgctxt "block keyword"
+msgid "includes"
+msgstr ""
+
+#: src/blocks/services/block.json
+msgctxt "block title"
+msgid "Services"
+msgstr ""
+
+#: src/blocks/services/block.json
+msgctxt "block description"
+msgid "Service cards from the Services section: all of them, those of an area or hand-picked. In the Listing layout it follows the area filter of the page header and adds an inquiry card."
+msgstr ""
+
+#: src/blocks/site-footer/block.json
+msgctxt "block title"
+msgid "Site footer"
+msgstr ""
+
+#: src/blocks/site-footer/block.json
+msgctxt "block description"
+msgid "Footer with the logo, site links, services, contact details, institutions and the legal notice. Services, contact details, social profiles and institutions are loaded automatically."
+msgstr ""
+
+#: src/blocks/site-footer/block.json
+msgctxt "block keyword"
+msgid "footer"
+msgstr ""
+
+#: src/blocks/site-header/block.json
+msgctxt "block title"
+msgid "Site header"
+msgstr ""
+
+#: src/blocks/site-header/block.json
+msgctxt "block description"
+msgid "Floating bar with the menu, the services submenu and the full-screen menu. Services and contact details are loaded automatically."
+msgstr ""
+
+#: src/blocks/site-header/block.json
+msgctxt "block keyword"
+msgid "menu"
+msgstr ""
+
+#: src/blocks/site-header/block.json
+msgctxt "block keyword"
+msgid "navigation"
+msgstr ""
+
+#: src/blocks/stats/block.json
+msgctxt "block title"
+msgid "Stats"
+msgstr ""
+
+#: src/blocks/stats/block.json
+msgctxt "block description"
+msgid "Text with a link on one side and highlighted figures on the other. Numbers count up from 0 when they appear."
+msgstr ""
+
+#: src/blocks/stats/block.json
+msgctxt "block keyword"
+msgid "stats"
+msgstr ""
+
+#: src/blocks/stats/block.json
+msgctxt "block keyword"
+msgid "figures"
+msgstr ""
+
+#: src/blocks/stats/block.json
+msgctxt "block keyword"
+msgid "numbers"
+msgstr ""
+
+#: src/blocks/stats/block.json
+msgctxt "block keyword"
+msgid "track record"
+msgstr ""
+
+#: src/blocks/team/block.json
+msgctxt "block title"
+msgid "Team"
+msgstr ""
+
+#: src/blocks/team/block.json
+msgctxt "block description"
+msgid "Text and cards for the team members (photo or initials, role, education and LinkedIn), taken from the Team section."
+msgstr ""
+
+#: src/blocks/team/block.json
+msgctxt "block keyword"
+msgid "team"
+msgstr ""
+
+#: src/blocks/team/block.json
+msgctxt "block keyword"
+msgid "people"
+msgstr ""
+
+#: src/blocks/team/block.json
+msgctxt "block keyword"
+msgid "members"
+msgstr ""
+
+#: src/blocks/testimonials/block.json
+msgctxt "block title"
+msgid "Testimonials"
+msgstr ""
+
+#: src/blocks/testimonials/block.json
+msgctxt "block description"
+msgid "Client testimonials from the Testimonials section. The section stays hidden until at least one is published."
+msgstr ""
+
+#: src/blocks/testimonials/block.json
+msgctxt "block keyword"
+msgid "testimonials"
+msgstr ""
+
+#: src/blocks/testimonials/block.json
+msgctxt "block keyword"
+msgid "quotes"
+msgstr ""
+
+#: src/blocks/testimonials/block.json
+msgctxt "block keyword"
+msgid "reviews"
+msgstr ""
+
+#: src/blocks/text-media/block.json
+msgctxt "block title"
+msgid "Text and media"
+msgstr ""
+
+#: src/blocks/text-media/block.json
+msgctxt "block description"
+msgid "Eyebrow, title and paragraphs with a graphic cover or an image beside them."
+msgstr ""
+
+#: src/blocks/text-media/block.json
+msgctxt "block keyword"
+msgid "story"
+msgstr ""
+
+#: src/blocks/text-media/block.json
+msgctxt "block keyword"
+msgid "text"
+msgstr ""
+
+#: src/blocks/text-media/block.json
+msgctxt "block keyword"
+msgid "image"
+msgstr ""
+
+#: src/blocks/text-media/block.json
+msgctxt "block keyword"
+msgid "illustration"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Navy"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Navy light"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Navy dark"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Yellow"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Red"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Red dark"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Red bright"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Text"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Muted text"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Text on dark"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Line"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Gray background"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "White"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Geist Sans"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Text"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Lead"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 3"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 2"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Heading 1"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "1"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "3"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "4"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "5"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Section small"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Section"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Section large"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Text page"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/areas/block.json
+msgid "Areas"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/areas/block.json
+msgid "Three disciplines in one team."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/areas/block.json
+msgid "{area} services →"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/audiences/block.json
+msgid "Who we work for"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/audiences/block.json
+msgid "Find the right service for your project."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/audiences/block.json
+msgid "Industry"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/audiences/block.json
+msgid "Plants, machinery foundations, warehouses and facilities."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/audiences/block.json
+msgid "Firms and builders"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/audiences/block.json
+msgid "Calculations, technical documents and site supervision for their projects."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/audiences/block.json
+msgid "Homeowners"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/audiences/block.json
+msgid "Homes, extensions and structural design with a fixed quote."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json src/blocks/site-header/block.json
+msgid "Quote"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json src/blocks/project-body/block.json src/blocks/site-header/block.json
+msgid "Request a quote"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Send quote request"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Question"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Ask a question"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Send question"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Full name"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Your name"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Optional"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Email"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "name@company.com"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Project location"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "City, region"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Briefly describe the project, timing and anything useful."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "I'm not sure"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "* Required fields"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json src/blocks/service-hero/block.json
+msgid "By sending you accept the"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json src/blocks/service-hero/block.json
+msgid "Sending…"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json src/blocks/service-hero/block.json
+msgid "This field is required."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json src/blocks/service-hero/block.json
+msgid "Enter a valid email address."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "We could not send the form. Check your connection and try again."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Thank you! We got your message."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "If it is urgent, message us on WhatsApp."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Send another message"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json src/blocks/cta/block.json
+msgid "Message us on WhatsApp"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Replies during office hours"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/contact/block.json
+msgid "Hours"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/cta/block.json src/blocks/home-hero/block.json src/blocks/service-hero/block.json
+msgid "Request a quote →"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/cta/block.json src/blocks/home-hero/block.json src/blocks/not-found/block.json src/blocks/project-body/block.json src/blocks/service-hero/block.json src/blocks/services/block.json src/blocks/site-footer/block.json src/blocks/site-header/block.json
+msgid "/contact/"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/features/block.json
+msgid "Why choose us"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/features/block.json
+msgid "One point of contact, a fixed price and a delivery date."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/features/block.json
+msgid "Fixed quote"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/features/block.json
+msgid "We quote the whole project before starting, so you know the investment from day one."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/features/block.json
+msgid "Project management"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/features/block.json
+msgid "We coordinate professionals, suppliers and permits. You have a single point of contact throughout."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/features/block.json
+msgid "Firm deadlines"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/features/block.json
+msgid "We set a schedule at the start and every stage has a committed delivery date."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/home-hero/block.json
+msgid "Engineering · Architecture · Design"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/home-hero/block.json
+msgid "Engineering projects with fixed quotes and firm deadlines."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/home-hero/block.json
+msgid "A multidisciplinary team for industry, firms, builders and homeowners. We design, calculate and supervise projects from start to finish."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/home-hero/block.json src/blocks/news/block.json
+msgid "View projects"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/home-hero/block.json src/blocks/news/block.json src/blocks/not-found/block.json src/blocks/projects/block.json src/blocks/site-footer/block.json src/blocks/site-header/block.json
+msgid "/projects/"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/home-hero/block.json
+msgid "years of experience\nacross the country"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/institutions/block.json
+msgid "Registered with the professional boards of the regions where we work."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/map/block.json
+msgid "Visits by appointment"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/map/block.json
+msgid "Get directions"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/map/block.json
+msgid "Explore map"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/map/block.json
+msgid "Loading map…"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/map/block.json
+msgid "The map could not be loaded"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/news/block.json
+msgid "Latest news"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/news/block.json src/blocks/not-found/block.json src/blocks/site-footer/block.json src/blocks/site-header/block.json
+msgid "/news/"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/news/block.json
+msgid "Featured"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/news/block.json
+msgid "Filter by category"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/news/block.json
+msgid "Next →"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/news/block.json
+msgid "The first posts are coming soon."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/not-found/block.json
+msgid "Error 404 · Page not found"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/not-found/block.json
+msgid "We couldn't find the page you are looking for."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/not-found/block.json
+msgid "The link may be broken or the page may have moved. These sections can help."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/not-found/block.json
+msgid "Back to home"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/not-found/block.json
+msgid "Contact us"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/not-found/block.json
+msgid "Sections"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/not-found/block.json src/blocks/services/block.json src/blocks/site-footer/block.json src/blocks/site-header/block.json
+msgid "/services/"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/not-found/block.json src/blocks/site-footer/block.json src/blocks/site-header/block.json
+msgid "About"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/not-found/block.json src/blocks/site-footer/block.json src/blocks/site-header/block.json src/blocks/stats/block.json
+msgid "/about/"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/page-hero/block.json
+msgid "Last updated:"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/post-header/block.json
+msgid "Editorial team"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/process/block.json
+msgid "Process"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/process/block.json
+msgid "Planning, design and construction."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/process/block.json
+msgid "We survey the need, the site and the regulations, and define scope, budget and schedule."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/process/block.json
+msgid "We develop the design, calculations and technical documents needed to approve and build."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/process/block.json
+msgid "We supervise the works until handover, with progress reports at every stage."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/project-body/block.json
+msgid "What we did"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/project-body/block.json
+msgid "Have a similar project?"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/project-body/block.json
+msgid "Tell us what you need and we will send you a fixed quote."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/project-body/block.json
+msgid "View service:"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/projects/block.json
+msgid "Latest projects"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/projects/block.json
+msgid "View all projects →"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/projects/block.json
+msgid "All services"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/projects/block.json
+msgid "There are no projects with this filter yet."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/projects/block.json
+msgid "View all"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/reach/block.json
+msgid "Nationwide reach"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/reach/block.json
+msgid "We design from our office for projects anywhere in the country."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/reach/block.json
+msgid "Our professional registrations allow us to work on projects across the country, with site visits and remote follow-up."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/service-hero/block.json
+msgid "Ask on WhatsApp"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/service-hero/block.json
+msgid "What it includes"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/service-hero/block.json
+msgid "In preparation"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/service-hero/block.json
+msgid "We will let you know when it is available"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/service-hero/block.json
+msgid "you@email.com"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/service-hero/block.json
+msgid "Notify me"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/service-hero/block.json
+msgid "Need it now? Write to us and we will refer you."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/service-hero/block.json
+msgid "We could not save your request. Please try again."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/services/block.json
+msgid "From feasibility studies to site supervision."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/services/block.json
+msgid "All services →"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/services/block.json src/blocks/site-header/block.json
+msgid "Not sure which service you need?"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/services/block.json src/blocks/site-header/block.json
+msgid "Tell us about your project and we will point you in the right direction."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/services/block.json src/blocks/site-header/block.json
+msgid "Ask us →"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/site-footer/block.json
+msgid "A short description of the firm and what it does."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/site-footer/block.json
+msgid "Site"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/site-footer/block.json src/blocks/site-header/block.json
+msgid "Contact"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/site-footer/block.json
+msgid "Registered with"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/site-footer/block.json
+msgid "© {year} {site}"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/site-footer/block.json
+msgid "Privacy and cookie policy"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/site-header/block.json
+msgid "View all services →"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/stats/block.json
+msgid "Track record"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/stats/block.json
+msgid "Experience you can measure."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/stats/block.json
+msgid "We work with industrial plants, architecture studios, builders and private clients. One team designs, calculates and supervises every project."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/stats/block.json
+msgid "About us →"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/stats/block.json
+msgid "years of experience in projects and works"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/stats/block.json
+msgid "service areas under one team"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/stats/block.json
+msgid "completed projects"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/stats/block.json
+msgid "of projects with a direct lead"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/team/block.json
+msgid "Team"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/team/block.json
+msgid "The people behind every project"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/team/block.json
+msgid "Every project has a direct lead. We coordinate with licensed professionals of each specialty as each project requires."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/team/block.json
+msgid "Portrait coming soon"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/testimonials/block.json
+msgid "Testimonials"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/testimonials/block.json
+msgid "What our clients say"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/text-media/block.json
+msgid "Our story"
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/text-media/block.json
+msgid "A consultancy built on engineering experience, with a multidisciplinary team."
+msgstr ""
+
+#. Default text of a block attribute.
+#: src/blocks/text-media/block.json
+msgid "The firm grew out of years of experience in the design, calculation and supervision of building works. Over time it added architecture and telecommunications to support clients through every stage of a project.\n\nToday we work for industries, architecture studios, builders and private clients across the country."
+msgstr ""
