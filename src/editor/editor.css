@@ -1,14 +1,28 @@
 /* Editor library: preview, repeater and panels. Loaded in the editor only. */
 
+/* One column as wide as the panel: fields never overflow it. */
 .ci-editor-stack {
 	display: grid;
+	grid-template-columns: minmax(0, 1fr);
 	gap: 16px;
+}
+
+.ci-editor-stack > * {
+	min-width: 0;
 }
 
 .ci-editor-help {
 	margin: 0;
 	font-size: 12px;
 	color: #757575;
+}
+
+/* Sections span the full canvas width, as on the site (WordPress limits the page blocks to the
+   theme content width, 760 px). */
+.block-editor-block-list__layout.is-root-container > .ci-editor-preview {
+	max-width: none;
+	margin-right: 0;
+	margin-left: 0;
 }
 
 /* Preview: while it updates, the previous version is dimmed. */
