@@ -1,5 +1,7 @@
 # CI Theme
 
+[![CI](https://github.com/npereyradw/ci-theme/actions/workflows/ci.yml/badge.svg)](https://github.com/npereyradw/ci-theme/actions/workflows/ci.yml)
+
 A WordPress block theme (Full Site Editing) for professional services firms. Every section of
 the design is a native block with a dynamic PHP render, a live preview in the editor and its own
 assets, styled only with the values of `theme.json`.
@@ -17,6 +19,9 @@ npm run start      # rebuilds on save
 npm run lint:js
 npm run lint:css
 ```
+
+On every push, GitHub Actions runs the JavaScript and CSS lint, the build, and a PHP syntax
+check on PHP 8.0 to 8.3.
 
 Activate the theme, set the logo in **Appearance → Editor → Site Identity** (a version for dark
 backgrounds can be chosen in the header and footer blocks) and create pages from the
